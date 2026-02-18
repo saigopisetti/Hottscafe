@@ -44,11 +44,11 @@
   --popover-foreground: 210 40% 98%;
  
   /* Signature Red from photo (Hex approx #d32f2f -> HSL 0, 64%, 51%) */
-  --primary: 0 75% 50%; 
+  --primary: 345 100% 45%; 
   --primary-foreground: 0 0% 100%;
  
-  /* Supporting Electric Blue/Cyan for depth */
-  --secondary: 199 89% 48%;
+  /* Supporting Teal/Electric Blue for depth */
+  --secondary: 170 80% 45%;
   --secondary-foreground: 0 0% 100%;
  
   --muted: 217 32% 17%;

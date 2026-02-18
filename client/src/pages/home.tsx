@@ -86,7 +86,7 @@ export default function Home() {
             >
               <h2 className="font-heading text-5xl md:text-7xl font-black mt-4 mb-8 text-foreground leading-tight">
                 Not Just A Café. <br />
-                <span className="text-primary underline decoration-secondary decoration-8 underline-offset-8">A Movement.</span>
+                <span className="text-secondary underline decoration-primary decoration-8 underline-offset-8">A Movement.</span>
               </h2>
               <p className="text-foreground/70 text-lg leading-relaxed mb-8">
                 At Hotts Café, we believe a café is more than just a place to grab a cup of coffee. It is a space where community comes together. Whether you prefer something light and wholesome or a hearty meal to fuel your day, we have options to suit every appetite.
