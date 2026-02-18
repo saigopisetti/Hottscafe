@@ -10,26 +10,24 @@ export default function Menu() {
 
   return (
     <Layout>
-      <div className="bg-neutral-50 py-20 px-4">
-        <div className="max-w-4xl mx-auto text-center mb-16">
-          <span className="text-primary font-medium tracking-wider uppercase text-sm">Delicious Choices</span>
-          <h1 className="font-heading text-5xl md:text-6xl font-bold mt-4 mb-6 text-neutral-900">
-            Our Menu
+      <div className="bg-background py-24 px-4 overflow-hidden">
+        <div className="max-w-5xl mx-auto text-center mb-24 relative">
+          <div className="absolute -top-20 -left-20 w-64 h-64 bg-primary/10 rounded-full blur-3xl -z-10"></div>
+          <span className="text-primary font-black tracking-widest uppercase text-sm mb-4 block">Flavor Town</span>
+          <h1 className="font-heading text-7xl md:text-9xl font-black text-foreground leading-none tracking-tighter">
+            THE <br /><span className="text-stroke text-secondary">LINEUP</span>
           </h1>
-          <p className="text-neutral-600 max-w-2xl mx-auto leading-relaxed">
-            From hearty breakfasts to gourmet lunches, we prepare everything with fresh, quality ingredients.
-          </p>
         </div>
 
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           <Tabs defaultValue={defaultCategory} className="w-full">
-            <div className="flex justify-center mb-12">
-              <TabsList className="flex flex-wrap h-auto gap-2 bg-transparent justify-center max-w-3xl">
+            <div className="flex justify-center mb-20 overflow-x-auto pb-4 scrollbar-hide">
+              <TabsList className="flex h-auto p-2 bg-white/50 backdrop-blur-md rounded-full border border-foreground/5 shadow-xl">
                 {categories.map((cat) => (
                   <TabsTrigger 
                     key={cat} 
                     value={cat}
-                    className="data-[state=active]:bg-primary data-[state=active]:text-white rounded-full px-6 py-2 border border-neutral-200 bg-white hover:bg-neutral-50 transition-all text-sm font-medium"
+                    className="data-[state=active]:bg-primary data-[state=active]:text-white rounded-full px-8 py-3 transition-all text-sm font-black uppercase tracking-wider"
                   >
                     {cat}
                   </TabsTrigger>
@@ -40,45 +38,52 @@ export default function Menu() {
             {menuData.map((category) => (
               <TabsContent key={category.title} value={category.title} className="focus:outline-none">
                 <motion.div 
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.4 }}
-                  className="bg-white rounded-3xl p-8 md:p-12 shadow-sm border border-neutral-100"
+                  initial={{ opacity: 0, scale: 0.95 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.5 }}
+                  className="bg-white rounded-[3rem] p-10 md:p-20 shadow-3xl border border-foreground/5 relative"
                 >
-                  <div className="flex flex-col md:flex-row justify-between items-end mb-10 border-b border-neutral-100 pb-6">
-                    <div>
-                      <h2 className="font-heading text-3xl font-bold text-neutral-900">{category.title}</h2>
+                  <div className="absolute -top-6 -right-6 w-24 h-24 bg-accent rounded-full flex items-center justify-center rotate-12 shadow-lg">
+                    <span className="font-black text-accent-foreground text-xs text-center leading-none">FRESH<br/>DAILY</span>
+                  </div>
+                  
+                  <div className="flex flex-col md:flex-row justify-between items-center mb-16 gap-6">
+                    <div className="text-center md:text-left">
+                      <h2 className="font-heading text-5xl font-black text-foreground mb-2">{category.title}</h2>
                       {category.note && (
-                        <p className="text-primary font-medium mt-2 text-sm">{category.note}</p>
+                        <p className="text-primary font-bold uppercase tracking-widest text-xs">{category.note}</p>
                       )}
                     </div>
-                    <Badge variant="outline" className="mt-4 md:mt-0 border-primary/20 text-primary bg-primary/5">
-                      {category.items.length} Items
-                    </Badge>
                   </div>
 
-                  <div className="grid md:grid-cols-2 gap-x-12 gap-y-10">
+                  <div className="grid lg:grid-cols-2 gap-x-20 gap-y-12">
                     {category.items.map((item, idx) => (
-                      <div key={idx} className="group">
-                        <div className="flex justify-between items-baseline mb-2">
-                          <h3 className="font-bold text-lg text-neutral-800 group-hover:text-primary transition-colors">
+                      <motion.div 
+                        key={idx} 
+                        initial={{ opacity: 0, x: -20 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        transition={{ delay: idx * 0.05 }}
+                        className="group relative"
+                      >
+                        <div className="flex justify-between items-end mb-3">
+                          <h3 className="font-black text-2xl text-foreground group-hover:text-primary transition-colors leading-tight">
                             {item.name}
                           </h3>
-                          <div className="border-b border-dotted border-neutral-300 flex-grow mx-4 relative top-[-4px]"></div>
-                          <span className="font-bold text-primary whitespace-nowrap">{item.price}</span>
+                          <span className="font-black text-2xl text-secondary whitespace-nowrap ml-4">{item.price}</span>
                         </div>
                         {item.description && (
-                          <p className="text-neutral-500 text-sm leading-relaxed mb-2">
+                          <p className="text-foreground/50 text-base leading-relaxed mb-4 font-medium">
                             {item.description}
                           </p>
                         )}
                         {item.comboPrice && (
-                          <div className="flex items-center gap-2 mt-1">
-                            <span className="text-xs font-bold text-white bg-primary px-2 py-0.5 rounded-full">Combo</span>
-                            <span className="text-sm font-medium text-neutral-700">{item.comboPrice}</span>
+                          <div className="inline-flex items-center gap-3 bg-accent/10 px-4 py-1 rounded-full border border-accent/20">
+                            <span className="text-[10px] font-black text-accent-foreground tracking-widest uppercase">Combo</span>
+                            <span className="text-sm font-black text-foreground">{item.comboPrice}</span>
                           </div>
                         )}
-                      </div>
+                        <div className="absolute -left-6 top-0 bottom-0 w-1 bg-primary scale-y-0 group-hover:scale-y-100 transition-transform origin-top"></div>
+                      </motion.div>
                     ))}
                   </div>
                 </motion.div>

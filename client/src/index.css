@@ -24,76 +24,62 @@
   --color-input: hsl(var(--input));
   --color-ring: hsl(var(--ring));
   
-  --radius-sm: calc(var(--radius) - 4px);
-  --radius-md: calc(var(--radius) - 2px);
-  --radius-lg: var(--radius);
+  --radius-sm: 0.5rem;
+  --radius-md: 1rem;
+  --radius-lg: 1.5rem;
 
   --font-sans: 'Inter', sans-serif;
   --font-heading: 'Playfair Display', serif;
 }
 
 :root {
-  /* Elegant Color Palette inspired by the reference (Burgundy/Red + Clean White) */
-  --background: 0 0% 100%;
-  --foreground: 0 0% 10%;
+  /* Funky & Vibrant Palette */
+  --background: 180 20% 98%;
+  --foreground: 260 50% 15%;
 
   --card: 0 0% 100%;
-  --card-foreground: 0 0% 10%;
+  --card-foreground: 260 50% 15%;
  
   --popover: 0 0% 100%;
-  --popover-foreground: 0 0% 10%;
+  --popover-foreground: 260 50% 15%;
  
-  /* Burgundy Red Primary */
-  --primary: 355 45% 40%; 
-  --primary-foreground: 0 0% 98%;
+  /* Vibrant Pink/Magenta */
+  --primary: 330 90% 60%; 
+  --primary-foreground: 0 0% 100%;
  
-  --secondary: 40 20% 97%; /* Warm off-white/beige for sections */
-  --secondary-foreground: 0 0% 10%;
+  /* Electric Teal */
+  --secondary: 170 80% 45%;
+  --secondary-foreground: 0 0% 100%;
  
-  --muted: 0 0% 96%;
-  --muted-foreground: 0 0% 45%;
+  --muted: 180 10% 90%;
+  --muted-foreground: 180 10% 40%;
  
-  --accent: 355 45% 96%; /* Very light tint of primary */
-  --accent-foreground: 355 45% 40%;
+  /* Vivid Yellow/Orange Accent */
+  --accent: 45 100% 60%;
+  --accent-foreground: 260 50% 15%;
  
   --destructive: 0 84% 60%;
   --destructive-foreground: 0 0% 98%;
 
-  --border: 0 0% 90%;
-  --input: 0 0% 90%;
-  --ring: 355 45% 40%;
+  --border: 180 10% 85%;
+  --input: 180 10% 85%;
+  --ring: 330 90% 60%;
  
-  --radius: 0.25rem;
+  --radius: 1.25rem;
 }
 
 .dark {
-  --background: 0 0% 10%;
-  --foreground: 0 0% 98%;
+  --background: 260 50% 5%;
+  --foreground: 180 20% 90%;
  
-  --card: 0 0% 10%;
-  --card-foreground: 0 0% 98%;
+  --card: 260 50% 10%;
+  --card-foreground: 180 20% 90%;
  
-  --popover: 0 0% 10%;
-  --popover-foreground: 0 0% 98%;
+  --primary: 330 90% 70%;
+  --primary-foreground: 260 50% 5%;
  
-  --primary: 355 45% 50%;
-  --primary-foreground: 0 0% 98%;
- 
-  --secondary: 0 0% 15%;
-  --secondary-foreground: 0 0% 98%;
- 
-  --muted: 0 0% 15%;
-  --muted-foreground: 0 0% 65%;
- 
-  --accent: 0 0% 15%;
-  --accent-foreground: 0 0% 98%;
- 
-  --destructive: 0 62% 30%;
-  --destructive-foreground: 0 0% 98%;
- 
-  --border: 0 0% 20%;
-  --input: 0 0% 20%;
-  --ring: 355 45% 50%;
+  --secondary: 170 80% 55%;
+  --secondary-foreground: 260 50% 5%;
 }
 
 @layer base {
@@ -104,6 +90,20 @@
     @apply font-sans antialiased bg-background text-foreground;
   }
   h1, h2, h3, h4, h5, h6 {
-    @apply font-heading text-primary;
+    @apply font-heading text-primary drop-shadow-sm;
   }
+}
+
+/* Custom funky utilities */
+.glass-card {
+  @apply bg-white/70 backdrop-blur-xl border border-white/20 shadow-xl;
+}
+
+.text-stroke {
+  -webkit-text-stroke: 1px currentColor;
+  -webkit-text-fill-color: transparent;
+}
+
+.neon-glow {
+  text-shadow: 0 0 10px hsl(var(--primary) / 0.5), 0 0 20px hsl(var(--primary) / 0.3);
 }
