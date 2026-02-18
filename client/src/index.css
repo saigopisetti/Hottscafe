@@ -34,8 +34,8 @@
 
 :root {
   /* Midnight Blue & Signature Red Palette */
-  --background: 222 47% 11%;
-  --foreground: 210 40% 98%;
+  --background: #fff;
+  --foreground: #201839;
 
   --card: 222 47% 13%;
   --card-foreground: 210 40% 98%;
@@ -48,7 +48,7 @@
   --primary-foreground: 0 0% 100%;
  
   /* Supporting Teal/Electric Blue for depth */
-  --secondary: 170 80% 45%;
+  --secondary: #201839;
   --secondary-foreground: 0 0% 100%;
  
   --muted: 217 32% 17%;

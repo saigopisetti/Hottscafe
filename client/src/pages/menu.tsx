@@ -13,8 +13,8 @@ export default function Menu() {
       <div className="bg-background py-24 px-4 overflow-hidden">
         <div className="max-w-5xl mx-auto text-center mb-24 relative">
           <div className="absolute -top-20 -left-20 w-64 h-64 bg-primary/10 rounded-full blur-3xl -z-10"></div>
-          <span className="text-primary font-black tracking-widest uppercase text-sm mb-4 block">Flavor Town</span>
-          <h1 className="font-heading text-7xl md:text-9xl font-black text-foreground leading-none tracking-tighter">
+          <span className="text-secondary font-black tracking-widest uppercase text-sm mb-4 block">Flavor Town</span>
+          <h1 className="font-heading text-7xl md:text-9xl font-black text-primary leading-none tracking-tighter">
             THE <br /><span className="text-stroke text-secondary">LINEUP</span>
           </h1>
         </div>

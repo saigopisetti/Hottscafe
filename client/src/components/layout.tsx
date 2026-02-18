@@ -1,5 +1,5 @@
 import { Link, useLocation } from "wouter";
-import { Coffee, MapPin, Phone, Menu, X, Facebook } from "lucide-react";
+import { Coffee, MapPin, Phone, Menu, X, Facebook, Mail } from "lucide-react";
 import { useState } from "react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
@@ -23,7 +23,7 @@ export function Navbar() {
           <Link href="/">
             <a className="flex items-center gap-2 group">
               <div className="flex flex-col">
-                <span className="font-heading text-3xl font-black text-primary tracking-tighter leading-none italic">
+                <span className="font-heading text-3xl font-bold text-black tracking-tighter leading-none">
                   Hotts Café
                 </span>
               </div>
@@ -91,7 +91,7 @@ export function Navbar() {
 
 export function Footer() {
   return (
-    <footer className="bg-neutral-900 text-white pt-16 pb-8">
+    <footer className="bg-neutral-100 text-white pt-16 pb-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Brand */}
@@ -99,12 +99,12 @@ export function Footer() {
             <div className="flex items-center gap-2">
               <span className="font-heading text-2xl font-black text-primary italic">Hotts Café</span>
             </div>
-            <p className="text-neutral-400 text-sm leading-relaxed max-w-xs">
+            <p className="text-neutral-900 text-sm leading-relaxed max-w-xs">
               More than just a meal. It is a moment to connect, recharge, and enjoy.
               Be there for the experience. Be there for the community.
             </p>
             <div className="flex gap-4 pt-2">
-               <a href="#" className="text-white hover:text-primary transition-colors">
+               <a href="#" className="text-primary hover:text-black transition-colors">
                   <Facebook className="h-5 w-5" />
                </a>
             </div>
@@ -112,32 +112,36 @@ export function Footer() {
 
           {/* Contact */}
           <div className="space-y-4">
-            <h3 className="font-heading text-xl text-white">Contact Us</h3>
+            <h3 className="font-heading text-xl text-primary">Contact Us</h3>
             <div className="space-y-3">
-              <div className="flex items-start gap-3 text-neutral-400 text-sm">
+              <div className="flex items-start gap-3 text-neutral-600 text-sm">
                 <MapPin className="h-5 w-5 text-primary shrink-0" />
                 <span>
                   Factory 10, 1–3 Kilmur Road,<br />
                   Hoppers Crossing (cnr Old Geelong Road)
                 </span>
               </div>
-              <div className="flex items-center gap-3 text-neutral-400 text-sm">
+              <div className="flex items-center gap-3 text-neutral-600 text-sm">
                 <Phone className="h-5 w-5 text-primary shrink-0" />
                 <span>9369 6504</span>
               </div>
-              <div className="text-neutral-400 text-sm pl-8">
-                orders@hottscafe.com.au
+              <div className="flex items-center gap-3 text-neutral-600 text-sm">
+                <Mail className="h-5 w-5 text-primary shrink-0" />
+                <span>orders@hottscafe.com.au</span>
               </div>
+              {/* <div className="text-neutral-400 text-sm pl-8">
+                orders@hottscafe.com.au
+              </div> */}
             </div>
           </div>
 
           {/* Hours */}
           <div className="space-y-4">
-             <h3 className="font-heading text-xl text-white">Opening Hours</h3>
-             <ul className="space-y-2 text-neutral-400 text-sm">
+             <h3 className="font-heading text-xl text-primary">Opening Hours</h3>
+             <ul className="space-y-2 text-neutral-600 text-sm">
                <li className="flex justify-between max-w-[200px]">
                  <span>Mon – Fri</span>
-                 <span className="text-white font-medium">5.00am – 2.30pm</span>
+                 <span className="text-neutral-500 font-bold">5.00am – 2.30pm</span>
                </li>
                <li className="pt-4 text-xs italic text-neutral-500">
                  Delivery available till 2pm ($3.00, Min $10)
@@ -147,7 +151,10 @@ export function Footer() {
         </div>
         
         <div className="border-t border-neutral-800 mt-12 pt-8 text-center text-neutral-500 text-xs">
-          © {new Date().getFullYear()} Hotts Café. All rights reserved.
+         Designed by
+          <Link href="https://www.aaria.com.au">
+            <a href="https://www.aaria.com.au"> Aaria</a>
+          </Link> © {new Date().getFullYear()} Hotts Café. All rights reserved.
         </div>
       </div>
     </footer>
