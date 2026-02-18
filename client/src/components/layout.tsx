@@ -26,9 +26,6 @@ export function Navbar() {
                 <span className="font-heading text-3xl font-black text-primary tracking-tighter leading-none italic uppercase">
                   Hotts Café
                 </span>
-                <span className="text-[10px] uppercase tracking-[0.3em] text-neutral-500 font-bold leading-none mt-1">
-                  Est. Hoppers Crossing
-                </span>
               </div>
             </a>
           </Link>
