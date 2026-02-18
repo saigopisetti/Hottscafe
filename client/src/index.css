@@ -33,53 +33,45 @@
 }
 
 :root {
-  /* Funky & Vibrant Palette */
-  --background: 180 20% 98%;
-  --foreground: 260 50% 15%;
+  /* Dark Blue & Electric Lime Palette */
+  --background: 222 47% 11%;
+  --foreground: 210 40% 98%;
 
-  --card: 0 0% 100%;
-  --card-foreground: 260 50% 15%;
+  --card: 222 47% 13%;
+  --card-foreground: 210 40% 98%;
  
-  --popover: 0 0% 100%;
-  --popover-foreground: 260 50% 15%;
+  --popover: 222 47% 13%;
+  --popover-foreground: 210 40% 98%;
  
-  /* Vibrant Pink/Magenta */
-  --primary: 330 90% 60%; 
+  /* Deep Electric Blue */
+  --primary: 217 91% 60%; 
   --primary-foreground: 0 0% 100%;
  
-  /* Electric Teal */
-  --secondary: 170 80% 45%;
-  --secondary-foreground: 0 0% 100%;
+  /* Electric Lime */
+  --secondary: 84 81% 44%;
+  --secondary-foreground: 222 47% 11%;
  
-  --muted: 180 10% 90%;
-  --muted-foreground: 180 10% 40%;
+  --muted: 217 32% 17%;
+  --muted-foreground: 215 20% 65%;
  
-  /* Vivid Yellow/Orange Accent */
-  --accent: 45 100% 60%;
-  --accent-foreground: 260 50% 15%;
+  /* Cyan/Aqua Accent */
+  --accent: 180 100% 50%;
+  --accent-foreground: 222 47% 11%;
  
   --destructive: 0 84% 60%;
   --destructive-foreground: 0 0% 98%;
 
-  --border: 180 10% 85%;
-  --input: 180 10% 85%;
-  --ring: 330 90% 60%;
+  --border: 217 32% 20%;
+  --input: 217 32% 20%;
+  --ring: 217 91% 60%;
  
   --radius: 1.25rem;
 }
 
 .dark {
-  --background: 260 50% 5%;
-  --foreground: 180 20% 90%;
- 
-  --card: 260 50% 10%;
-  --card-foreground: 180 20% 90%;
- 
-  --primary: 330 90% 70%;
-  --primary-foreground: 260 50% 5%;
- 
-  --secondary: 170 80% 55%;
-  --secondary-foreground: 260 50% 5%;
+  /* Already dark by default now for the vibe */
+  --background: 222 47% 5%;
+  --foreground: 210 40% 98%;
 }
 
 @layer base {
@@ -90,20 +82,24 @@
     @apply font-sans antialiased bg-background text-foreground;
   }
   h1, h2, h3, h4, h5, h6 {
-    @apply font-heading text-primary drop-shadow-sm;
+    @apply font-heading text-primary drop-shadow-[0_0_15px_rgba(59,130,246,0.5)];
   }
 }
 
 /* Custom funky utilities */
 .glass-card {
-  @apply bg-white/70 backdrop-blur-xl border border-white/20 shadow-xl;
+  @apply bg-white/5 backdrop-blur-xl border border-white/10 shadow-2xl;
 }
 
 .text-stroke {
-  -webkit-text-stroke: 1px currentColor;
+  -webkit-text-stroke: 1.5px hsl(var(--secondary));
   -webkit-text-fill-color: transparent;
 }
 
 .neon-glow {
-  text-shadow: 0 0 10px hsl(var(--primary) / 0.5), 0 0 20px hsl(var(--primary) / 0.3);
+  text-shadow: 0 0 10px hsl(var(--primary) / 0.8), 0 0 20px hsl(var(--primary) / 0.4);
+}
+
+.lime-glow {
+  text-shadow: 0 0 10px hsl(var(--secondary) / 0.8), 0 0 20px hsl(var(--secondary) / 0.4);
 }
