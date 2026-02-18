@@ -13,17 +13,17 @@ export default function Home() {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="relative h-[85vh] min-h-[700px] flex items-center overflow-hidden bg-background">
+      <section className="relative h-[85vh] min-h-[700px] flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
             src={funkyHero} 
             alt="Hotts Cafe Funky Interior" 
-            className="w-full h-full object-cover scale-110 opacity-40 grayscale-[0.3]"
+            className="w-full h-full object-cover scale-105"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-background via-background/60 to-transparent"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-background/90 via-background/40 to-transparent"></div>
           {/* Animated blobs for vibe */}
-          <div className="absolute top-1/4 -left-20 w-96 h-96 bg-primary/30 rounded-full blur-[120px] animate-pulse"></div>
-          <div className="absolute bottom-1/4 -right-20 w-96 h-96 bg-secondary/20 rounded-full blur-[120px] animate-pulse delay-1000"></div>
+          <div className="absolute top-1/4 -left-20 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-pulse"></div>
+          <div className="absolute bottom-1/4 -right-20 w-96 h-96 bg-secondary/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
         </div>
         
         <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -33,25 +33,25 @@ export default function Home() {
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="max-w-3xl"
           >
-            <Badge className="mb-6 bg-secondary/20 text-secondary border-secondary animate-bounce">
+            <Badge className="mb-6 bg-accent/20 text-accent-foreground border-accent animate-bounce">
               <Sparkles className="w-3 h-3 mr-2" /> NEW VIBE, SAME FLAVOR
             </Badge>
-            <h1 className="font-heading text-7xl md:text-9xl font-black leading-none mb-6 text-foreground tracking-tighter">
+            <h1 className="font-heading text-6xl md:text-8xl font-black leading-none mb-6 text-foreground tracking-tighter">
               COFFEE <br />
-              <span className="text-secondary italic lime-glow">WITH SOUL.</span>
+              <span className="text-primary italic neon-glow">WITH SOUL.</span>
             </h1>
             <p className="text-xl md:text-2xl text-foreground/80 mb-10 max-w-xl font-medium leading-relaxed">
               We're turning up the volume on your morning. Hotts Café is where bold flavors meet vibrant community.
             </p>
             <div className="flex flex-col sm:flex-row gap-6">
               <Link href="/menu">
-                <Button size="lg" className="bg-primary hover:bg-primary/90 text-white rounded-full px-10 h-16 text-lg shadow-[0_0_30px_rgba(59,130,246,0.5)] transition-all active:scale-95 cursor-pointer border-none font-black">
-                  EXPLORE MENU
+                <Button size="lg" className="bg-primary hover:bg-primary/90 text-white rounded-full px-10 h-16 text-lg shadow-lg hover:shadow-primary/40 transition-all active:scale-95 cursor-pointer">
+                  See the Menu
                 </Button>
               </Link>
               <Link href="/contact">
-                <Button size="lg" variant="outline" className="bg-secondary/10 hover:bg-secondary/20 text-secondary border-secondary rounded-full px-10 h-16 text-lg backdrop-blur-md transition-all active:scale-95 cursor-pointer font-black">
-                  FIND US
+                <Button size="lg" variant="outline" className="bg-secondary/10 hover:bg-secondary/20 text-secondary border-secondary/50 rounded-full px-10 h-16 text-lg backdrop-blur-md transition-all active:scale-95 cursor-pointer">
+                  Visit Us
                 </Button>
               </Link>
             </div>
@@ -60,7 +60,7 @@ export default function Home() {
       </section>
 
       {/* Funky Intro Section */}
-      <section className="py-32 bg-card overflow-hidden">
+      <section className="py-32 bg-white overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-20 items-center">
             <div className="relative">
@@ -72,11 +72,11 @@ export default function Home() {
                  <img 
                    src={coffeeImage} 
                    alt="Funky Coffee" 
-                   className="rounded-[3rem] shadow-2xl w-full object-cover h-[500px] border-8 border-secondary/20"
+                   className="rounded-[3rem] shadow-2xl w-full object-cover h-[500px] border-8 border-accent/20"
                  />
                </motion.div>
-               <div className="absolute -top-10 -right-10 w-40 h-40 bg-primary rounded-full -z-10 animate-bounce blur-2xl opacity-50"></div>
-               <div className="absolute -bottom-10 -left-10 w-60 h-60 bg-secondary/20 rounded-full -z-10 blur-[80px]"></div>
+               <div className="absolute -top-10 -right-10 w-40 h-40 bg-secondary rounded-full -z-10 animate-bounce"></div>
+               <div className="absolute -bottom-10 -left-10 w-60 h-60 bg-primary/20 rounded-full -z-10 blur-2xl"></div>
             </div>
             
             <motion.div
@@ -84,24 +84,24 @@ export default function Home() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
             >
-              <h2 className="font-heading text-5xl md:text-7xl font-black mt-4 mb-8 text-foreground leading-tight">
+              <h2 className="font-heading text-5xl md:text-6xl font-black mt-4 mb-8 text-foreground leading-tight">
                 Not Just A Café. <br />
-                <span className="text-primary underline decoration-secondary decoration-8 underline-offset-8">A Movement.</span>
+                <span className="text-secondary underline decoration-accent decoration-8 underline-offset-8">A Movement.</span>
               </h2>
               <p className="text-foreground/70 text-lg leading-relaxed mb-8">
                 At Hotts Café, we believe a café is more than just a place to grab a cup of coffee. It is a space where community comes together. Whether you prefer something light and wholesome or a hearty meal to fuel your day, we have options to suit every appetite.
               </p>
               
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-                <div className="p-8 bg-white/5 rounded-[2rem] border border-white/10 hover:border-secondary transition-colors group">
-                  <Coffee className="w-10 h-10 text-secondary mb-4 group-hover:scale-110 transition-transform" />
-                  <h4 className="font-black text-2xl mb-2 text-foreground">Vibe Check</h4>
-                  <p className="text-sm text-foreground/50">The best beats and the boldest beans in Hoppers Crossing.</p>
+                <div className="p-6 bg-accent/5 rounded-3xl border border-accent/10 hover:border-accent/30 transition-colors">
+                  <Coffee className="w-8 h-8 text-accent mb-4" />
+                  <h4 className="font-black text-xl mb-2">Vibe Check</h4>
+                  <p className="text-sm text-foreground/60">The best beats and the boldest beans in Hoppers Crossing.</p>
                 </div>
-                <div className="p-8 bg-white/5 rounded-[2rem] border border-white/10 hover:border-primary transition-colors group">
-                  <ChefHat className="w-10 h-10 text-primary mb-4 group-hover:scale-110 transition-transform" />
-                  <h4 className="font-black text-2xl mb-2 text-foreground">Soul Food</h4>
-                  <p className="text-sm text-foreground/50">Gourmet flavors that make your tastebuds dance.</p>
+                <div className="p-6 bg-primary/5 rounded-3xl border border-primary/10 hover:border-primary/30 transition-colors">
+                  <ChefHat className="w-8 h-8 text-primary mb-4" />
+                  <h4 className="font-black text-xl mb-2">Soul Food</h4>
+                  <p className="text-sm text-foreground/60">Gourmet flavors that make your tastebuds dance.</p>
                 </div>
               </div>
             </motion.div>
@@ -111,36 +111,38 @@ export default function Home() {
 
       {/* Floating Menu Highlights */}
       <section className="py-32 bg-background relative overflow-hidden">
+        <div className="absolute top-0 left-0 w-full h-20 bg-gradient-to-b from-white to-transparent"></div>
+        
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="text-center mb-24">
-            <h2 className="font-heading text-7xl md:text-9xl font-black text-foreground mb-4">
-              POPULAR <span className="text-stroke">PICKS</span>
+          <div className="text-center mb-20">
+            <h2 className="font-heading text-6xl md:text-7xl font-black text-foreground mb-4">
+              POPULAR <span className="text-stroke text-primary">PICKS</span>
             </h2>
           </div>
 
           <div className="grid md:grid-cols-3 gap-12">
             {[
-              { img: breakfastImage, title: "Big Breaky", price: "$22.90", color: "bg-primary" },
-              { img: burgerImage, title: "The Lot", price: "$15.50", color: "bg-secondary" },
-              { img: coffeeImage, title: "Electric Latte", price: "$4.80", color: "bg-accent" }
+              { img: breakfastImage, title: "Big Breaky", price: "$22.90", color: "bg-accent" },
+              { img: burgerImage, title: "The Lot", price: "$15.50", color: "bg-primary" },
+              { img: coffeeImage, title: "Neon Latte", price: "$4.80", color: "bg-secondary" }
             ].map((item, idx) => (
               <motion.div 
                 key={idx}
-                whileHover={{ y: -20, scale: 1.05 }}
-                className="bg-card rounded-[3rem] overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.3)] group border border-white/5"
+                whileHover={{ y: -15, scale: 1.02 }}
+                className="bg-white rounded-[2.5rem] overflow-hidden shadow-2xl group border border-foreground/5"
               >
                 <div className="h-72 overflow-hidden relative">
                   <img src={item.img} alt={item.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
-                  <div className={`absolute top-6 right-6 ${item.color} text-white font-black px-5 py-2 rounded-full shadow-lg text-lg`}>
+                  <div className={`absolute top-6 right-6 ${item.color} text-white font-black px-4 py-2 rounded-full shadow-lg`}>
                     {item.price}
                   </div>
                 </div>
                 <div className="p-10">
-                  <h3 className="font-heading text-4xl font-black mb-4 group-hover:text-secondary transition-colors">{item.title}</h3>
-                  <p className="text-foreground/50 mb-8 line-clamp-2 text-lg">Fresh ingredients, bold flavors, and that classic Hotts twist.</p>
+                  <h3 className="font-heading text-3xl font-black mb-4 group-hover:text-primary transition-colors">{item.title}</h3>
+                  <p className="text-foreground/60 mb-8 line-clamp-2">Fresh ingredients, bold flavors, and that classic Hotts twist.</p>
                   <Link href="/menu">
-                    <Button variant="ghost" className="p-0 hover:bg-transparent text-secondary font-black flex items-center gap-3 group/btn cursor-pointer text-lg tracking-widest">
-                      FULL MENU <ArrowRight className="w-6 h-6 group-hover/btn:translate-x-3 transition-transform" />
+                    <Button variant="ghost" className="p-0 hover:bg-transparent text-primary font-black flex items-center gap-2 group/btn cursor-pointer">
+                      FULL MENU <ArrowRight className="w-5 h-5 group-hover/btn:translate-x-2 transition-transform" />
                     </Button>
                   </Link>
                 </div>
@@ -153,31 +155,31 @@ export default function Home() {
       {/* Vibrant CTA */}
       <section className="py-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-primary rounded-[4rem] p-16 md:p-32 text-center text-white relative overflow-hidden shadow-[0_0_100px_rgba(59,130,246,0.3)]">
-             <div className="absolute inset-0 bg-black/20 mix-blend-overlay"></div>
-             <div className="absolute -top-24 -right-24 w-80 h-80 bg-secondary rounded-full blur-[100px] opacity-40"></div>
+          <div className="bg-primary rounded-[4rem] p-12 md:p-24 text-center text-white relative overflow-hidden shadow-3xl">
+             <div className="absolute inset-0 bg-white/10 mix-blend-overlay"></div>
+             <div className="absolute -top-24 -right-24 w-64 h-64 bg-accent rounded-full blur-3xl opacity-50"></div>
              
              <div className="relative z-10">
-               <h2 className="font-heading text-6xl md:text-9xl font-black mb-12 leading-none tracking-tighter">
-                 STAY <br />
-                 <span className="text-secondary italic">LIT.</span>
+               <h2 className="font-heading text-5xl md:text-7xl font-black mb-8 leading-none">
+                 BE THERE. <br />
+                 <span className="opacity-50">AT HOTTS CAFÉ.</span>
                </h2>
-               <p className="text-2xl md:text-3xl mb-16 max-w-2xl mx-auto font-medium text-white/90">
+               <p className="text-xl md:text-2xl mb-12 max-w-2xl mx-auto font-medium text-white/90">
                  Connect, recharge, and enjoy the experience. We look forward to welcoming you soon.
                </p>
-               <div className="flex flex-wrap justify-center gap-8">
-                 <div className="flex items-center gap-5 bg-white/10 px-10 py-5 rounded-full backdrop-blur-xl border border-white/10">
-                   <Clock className="w-10 h-10 text-secondary" />
+               <div className="flex flex-wrap justify-center gap-10">
+                 <div className="flex items-center gap-4 bg-white/20 px-8 py-4 rounded-full backdrop-blur-md">
+                   <Clock className="w-8 h-8 text-accent" />
                    <div className="text-left">
-                     <p className="font-black text-xl">EARLY BIRDS</p>
-                     <p className="text-lg opacity-80">5:00 AM - 2:30 PM</p>
+                     <p className="font-black">EARLY BIRDS</p>
+                     <p className="text-sm opacity-80">5:00 AM - 2:30 PM</p>
                    </div>
                  </div>
-                 <div className="flex items-center gap-5 bg-white/10 px-10 py-5 rounded-full backdrop-blur-xl border border-white/10">
-                   <Phone className="w-10 h-10 text-accent" />
+                 <div className="flex items-center gap-4 bg-white/20 px-8 py-4 rounded-full backdrop-blur-md">
+                   <Phone className="w-8 h-8 text-secondary" />
                    <div className="text-left">
-                     <p className="font-black text-xl">HOTLINE</p>
-                     <p className="text-lg opacity-80">9369 6504</p>
+                     <p className="font-black">HOTLINE</p>
+                     <p className="text-sm opacity-80">9369 6504</p>
                    </div>
                  </div>
                </div>
@@ -191,7 +193,7 @@ export default function Home() {
 
 function Badge({ children, className }: any) {
   return (
-    <span className={cn("inline-flex items-center px-5 py-2 rounded-full text-sm font-black tracking-widest uppercase border", className)}>
+    <span className={cn("inline-flex items-center px-4 py-1.5 rounded-full text-xs font-bold tracking-widest uppercase border", className)}>
       {children}
     </span>
   );
