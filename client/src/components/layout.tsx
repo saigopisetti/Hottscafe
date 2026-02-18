@@ -23,7 +23,7 @@ export function Navbar() {
           <Link href="/">
             <a className="flex items-center gap-2 group">
               <div className="flex flex-col">
-                <span className="font-heading text-3xl font-black text-primary tracking-tighter leading-none italic uppercase">
+                <span className="font-heading text-3xl font-black text-primary tracking-tighter leading-none italic">
                   Hotts Café
                 </span>
               </div>
@@ -97,7 +97,7 @@ export function Footer() {
           {/* Brand */}
           <div className="space-y-4">
             <div className="flex items-center gap-2">
-              <span className="font-heading text-2xl font-black text-primary italic uppercase">Hotts Café</span>
+              <span className="font-heading text-2xl font-black text-primary italic">Hotts Café</span>
             </div>
             <p className="text-neutral-400 text-sm leading-relaxed max-w-xs">
               More than just a meal. It is a moment to connect, recharge, and enjoy.
