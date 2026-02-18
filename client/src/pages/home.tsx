@@ -38,7 +38,7 @@ export default function Home() {
             </Badge>
             <h1 className="font-heading text-6xl md:text-8xl font-black leading-none mb-6 text-foreground tracking-tighter">
               COFFEE <br />
-              <span className="text-primary italic neon-glow">WITH SOUL.</span>
+              <span className="text-primary italic neon-glow uppercase">WITH SOUL.</span>
             </h1>
             <p className="text-xl md:text-2xl text-foreground/80 mb-10 max-w-xl font-medium leading-relaxed">
               We're turning up the volume on your morning. Hotts Café is where bold flavors meet vibrant community.
@@ -84,9 +84,9 @@ export default function Home() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
             >
-              <h2 className="font-heading text-5xl md:text-6xl font-black mt-4 mb-8 text-foreground leading-tight">
+              <h2 className="font-heading text-5xl md:text-7xl font-black mt-4 mb-8 text-foreground leading-tight">
                 Not Just A Café. <br />
-                <span className="text-secondary underline decoration-accent decoration-8 underline-offset-8">A Movement.</span>
+                <span className="text-primary underline decoration-secondary decoration-8 underline-offset-8">A Movement.</span>
               </h2>
               <p className="text-foreground/70 text-lg leading-relaxed mb-8">
                 At Hotts Café, we believe a café is more than just a place to grab a cup of coffee. It is a space where community comes together. Whether you prefer something light and wholesome or a hearty meal to fuel your day, we have options to suit every appetite.
@@ -167,16 +167,16 @@ export default function Home() {
                <p className="text-xl md:text-2xl mb-12 max-w-2xl mx-auto font-medium text-white/90">
                  Connect, recharge, and enjoy the experience. We look forward to welcoming you soon.
                </p>
-               <div className="flex flex-wrap justify-center gap-10">
-                 <div className="flex items-center gap-4 bg-white/20 px-8 py-4 rounded-full backdrop-blur-md">
-                   <Clock className="w-8 h-8 text-accent" />
+            <div className="flex flex-wrap justify-center gap-10">
+                 <div className="flex items-center gap-4 bg-white/10 px-8 py-4 rounded-full backdrop-blur-md">
+                   <Clock className="w-8 h-8 text-secondary" />
                    <div className="text-left">
                      <p className="font-black">EARLY BIRDS</p>
                      <p className="text-sm opacity-80">5:00 AM - 2:30 PM</p>
                    </div>
                  </div>
                  <div className="flex items-center gap-4 bg-white/20 px-8 py-4 rounded-full backdrop-blur-md">
-                   <Phone className="w-8 h-8 text-secondary" />
+                   <Phone className="w-8 h-8 text-primary" />
                    <div className="text-left">
                      <p className="font-black">HOTLINE</p>
                      <p className="text-sm opacity-80">9369 6504</p>

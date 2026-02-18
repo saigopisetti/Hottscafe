@@ -22,14 +22,11 @@ export function Navbar() {
           {/* Logo */}
           <Link href="/">
             <a className="flex items-center gap-2 group">
-              <div className="bg-primary text-white p-2 rounded-full group-hover:bg-primary/90 transition-colors">
-                <Coffee className="h-6 w-6" />
-              </div>
               <div className="flex flex-col">
-                <span className="font-heading text-2xl font-bold text-neutral-900 tracking-tight leading-none">
+                <span className="font-heading text-3xl font-black text-primary tracking-tighter leading-none italic uppercase">
                   Hotts Café
                 </span>
-                <span className="text-[10px] uppercase tracking-widest text-neutral-500 font-medium leading-none mt-1">
+                <span className="text-[10px] uppercase tracking-[0.3em] text-neutral-500 font-bold leading-none mt-1">
                   Est. Hoppers Crossing
                 </span>
               </div>
@@ -103,8 +100,7 @@ export function Footer() {
           {/* Brand */}
           <div className="space-y-4">
             <div className="flex items-center gap-2">
-              <Coffee className="h-6 w-6 text-primary" />
-              <span className="font-heading text-2xl font-bold">Hotts Café</span>
+              <span className="font-heading text-2xl font-black text-primary italic uppercase">Hotts Café</span>
             </div>
             <p className="text-neutral-400 text-sm leading-relaxed max-w-xs">
               More than just a meal. It is a moment to connect, recharge, and enjoy.
