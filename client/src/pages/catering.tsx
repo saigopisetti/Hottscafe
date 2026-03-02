@@ -10,7 +10,7 @@ export default function Catering() {
         <div className="max-w-4xl mx-auto text-center mb-16">
           <span className="text-primary font-medium tracking-wider uppercase text-sm">Events & Functions</span>
           <h1 className="font-heading text-5xl md:text-6xl font-bold mt-4 mb-6 text-neutral-900">
-            Catering Services
+            Catering
           </h1>
           <p className="text-neutral-600 max-w-2xl mx-auto leading-relaxed text-lg">
             Corporate, Office & Business Catering. We provide fresh, delicious food for your meetings and events.
