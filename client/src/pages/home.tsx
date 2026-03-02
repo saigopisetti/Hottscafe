@@ -221,13 +221,12 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-[#201839] rounded-[2.5rem] sm:rounded-[5rem] p-12 sm:p-20 md:p-32 text-center text-white relative overflow-hidden shadow-3xl">
              <div className="relative z-10">
-               <h2 className="font-heading text-4xl sm:text-6xl md:text-7xl font-black mb-8 leading-[1.1] tracking-tighter text-[#e50039] uppercase">
-                 BE THERE FOR <br />
-                 THE EXPERIENCE.
+               <h2 className="font-heading text-3xl sm:text-5xl md:text-7xl font-black mb-6 sm:mb-8 leading-none">
+                 <span className="opacity-60">BE THERE.</span> <br />
+                 <span className="">AT HOTTS CAFÉ.</span>
                </h2>
-               <p className="text-lg sm:text-xl md:text-2xl mb-12 max-w-3xl mx-auto font-medium text-white/90 leading-relaxed">
-                 Be there for the community. Be there at Hotts Café. <br className="hidden sm:block" />
-                 We look forward to welcoming you soon.
+               <p className="text-lg sm:text-xl md:text-2xl mb-8 sm:mb-12 max-w-2xl mx-auto font-medium text-white/90">
+                 Connect, recharge, and enjoy the experience. We look forward to welcoming you soon.
                </p>
                
                <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
