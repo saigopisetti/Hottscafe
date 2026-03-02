@@ -90,6 +90,17 @@ export function Navbar() {
                 </a>
               </Link>
             ))}
+            <div className="pt-4 pb-2 border-t border-neutral-100 space-y-4">
+              <a href="tel:93696504" className="flex items-center gap-3 px-3 py-2 text-neutral-600 hover:text-primary transition-colors">
+                <Phone className="w-5 h-5 text-[#ef0000]" />
+                <span className="font-bold">9369 6504</span>
+              </a>
+              <Link href="/contact">
+                <Button className="w-full bg-[#ef0000] hover:bg-primary/90 text-white font-medium rounded-full h-12" onClick={() => setMobileMenuOpen(false)}>
+                  Contact Us
+                </Button>
+              </Link>
+            </div>
           </div>
         </div>
       )}

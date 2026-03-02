@@ -19,15 +19,15 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Coffee, Clock, ChefHat, Phone, Sparkles } from "lucide-react";
 import { cn } from "@/lib/utils";
-import slide1 from "../assets/catering-new-1.jpg";
-import slide2 from "../assets/catering-new-2.jpg";
-import slide3 from "../assets/catering-new-3.jpg";
+import slide1 from "../assets/gallery-1-new.png";
+import slide2 from "../assets/gallery-2-new.png";
+import slide3 from "../assets/gallery-3-new.png";
 
 export default function Home() {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="relative h-screen min-h-[700px] flex items-center overflow-hidden">
+      <section className="relative h-[90vh] min-h-[600px] flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
             src={australianCafeHero} 
