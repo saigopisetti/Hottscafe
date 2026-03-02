@@ -37,10 +37,10 @@ export function Navbar() {
 
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center gap-8">
-            <div className="flex items-center gap-2 px-4 py-2 bg-neutral-50 rounded-full border border-neutral-100">
-              <Phone className="w-4 h-4 text-[#ef0000]" />
+            <a href="tel:93696504" className="flex items-center gap-2 px-4 py-2 bg-neutral-50 rounded-full border border-neutral-100 hover:bg-neutral-100 transition-colors group">
+              <Phone className="w-4 h-4 text-[#ef0000] group-hover:scale-110 transition-transform" />
               <span className="text-sm font-bold text-[#201839]">9369 6504</span>
-            </div>
+            </a>
             {links.map((link) => (
               <Link key={link.href} href={link.href}>
                 <a
@@ -129,7 +129,7 @@ export function Footer() {
               </div>
               <div className="flex items-center gap-3 text-neutral-600 text-sm">
                 <Phone className="h-5 w-5 text-primary shrink-0" />
-                <span>9369 6504</span>
+                <a href="tel:93696504" className="hover:text-primary transition-colors">9369 6504</a>
               </div>
               <div className="flex items-center gap-3 text-neutral-600 text-sm">
                 <Mail className="h-5 w-5 text-primary shrink-0" />

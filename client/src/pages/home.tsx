@@ -256,13 +256,13 @@ export default function Home() {
                      <p className="text-xs sm:text-sm opacity-80">5:00 AM - 2:30 PM</p>
                    </div>
                  </div>
-                 <div className="flex items-center gap-4 bg-white/20 px-6 sm:px-8 py-3 sm:py-4 rounded-full backdrop-blur-md justify-center sm:justify-start">
-                   <Phone className="w-6 h-6 sm:w-8 sm:h-8 text-primary" />
+                 <a href="tel:93696504" className="flex items-center gap-4 bg-white/20 px-6 sm:px-8 py-3 sm:py-4 rounded-full backdrop-blur-md justify-center sm:justify-start hover:bg-white/30 transition-all group">
+                   <Phone className="w-6 h-6 sm:w-8 sm:h-8 text-primary group-hover:scale-110 transition-transform" />
                    <div className="text-left">
                      <p className="font-black text-sm sm:text-base uppercase tracking-wider">HOTLINE</p>
-                     <p className="text-xs sm:text-sm opacity-80">9369 6504</p>
+                     <p className="text-xs sm:text-sm opacity-80 font-bold">9369 6504</p>
                    </div>
-                 </div>
+                 </a>
               
                </div>
                <h2 className="font-heading text-3xl sm:text-4xl md:text-6xl text-secondary font-black mt-8 sm:m-8 leading-none">

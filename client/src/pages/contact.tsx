@@ -56,10 +56,10 @@ export default function Contact() {
                   <Phone className="h-5 w-5" />
                 </div>
                 <h3 className="font-black text-[#201839] uppercase text-sm tracking-widest">Phone & Email</h3>
-                <p className="text-black/60 text-sm leading-relaxed">
-                  Phone: 9369 6504<br />
-                  orders@hottscafe.com.au
-                </p>
+                <div className="text-black/60 text-sm leading-relaxed">
+                  Phone: <a href="tel:93696504" className="font-bold hover:text-primary transition-colors underline decoration-primary/30 underline-offset-4">9369 6504</a><br />
+                  <a href="mailto:orders@hottscafe.com.au" className="hover:text-primary transition-colors">orders@hottscafe.com.au</a>
+                </div>
               </div>
 
               <div className="space-y-3">
