@@ -78,7 +78,7 @@ export default function Catering() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.1 }}
-                className="font-heading text-5xl md:text-7xl font-black text-white mb-6 uppercase tracking-tight"
+                className="font-heading text-4xl sm:text-5xl md:text-7xl font-black text-white mb-6 uppercase tracking-tight leading-tight"
               >
                 {slides[currentSlide].title}
               </motion.h1>
@@ -105,18 +105,19 @@ export default function Catering() {
           </div>
         </section>
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-24">
-            <div className="grid md:grid-cols-2 gap-16 items-center mb-24">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-16 sm:mt-24">
+            <div className="flex flex-col lg:grid lg:grid-cols-2 gap-12 lg:gap-16 items-center mb-16 sm:mb-24 text-center lg:text-left">
               <motion.div
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
+                className="w-full"
               >
-                <h2 className="font-heading text-4xl font-black text-[#201839] mb-6">Professional Catering <br/><span className="text-primary italic">for every occasion.</span></h2>
-                <p className="text-black/60 text-lg leading-relaxed mb-8">
+                <h2 className="font-heading text-3xl sm:text-4xl font-black text-[#201839] mb-6">Professional Catering <br/><span className="text-primary italic">for every occasion.</span></h2>
+                <p className="text-black/60 text-base sm:text-lg leading-relaxed mb-8 max-w-xl mx-auto lg:mx-0">
                   Whether you're hosting a corporate meeting, a private function, or just need to feed a hungry crowd, Hotts Café provides high-quality catering solutions tailored to your needs.
                 </p>
-                <div className="space-y-4">
+                <div className="space-y-4 max-w-md mx-auto lg:mx-0 text-left">
                   {[
                     "Gourmet Sandwich & Wrap Platters",
                     "Hot Food & Finger Food Selections",

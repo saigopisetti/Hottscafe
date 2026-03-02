@@ -48,21 +48,21 @@ export default function Home() {
             <BadgeLocal className="mb-6 bg-primary text-white border-none px-6 drop-shadow-xl scale-110">
               <Sparkles className="w-3 h-3 mr-2" /> NEW VIBE, SAME FLAVOR
             </BadgeLocal>
-            <h1 className="font-heading text-6xl md:text-8xl font-black leading-none mb-6 text-white tracking-tighter uppercase drop-shadow-[0_4px_20px_rgba(0,0,0,0.9)]">
+            <h1 className="font-heading text-5xl sm:text-6xl md:text-8xl font-black leading-none mb-6 text-white tracking-tighter uppercase drop-shadow-[0_4px_20px_rgba(0,0,0,0.9)]">
               COFFEE <br />
               <span className="text-primary italic">with soul.</span>
             </h1>
-            <p className="text-lg md:text-2xl text-white mb-10 max-w-2xl mx-auto font-bold leading-relaxed drop-shadow-[0_2px_15px_rgba(0,0,0,0.9)]">
+            <p className="text-base sm:text-lg md:text-2xl text-white mb-10 max-w-2xl mx-auto font-bold leading-relaxed drop-shadow-[0_2px_15px_rgba(0,0,0,0.9)] px-4">
               We're turning up the volume on your morning. Hotts Café is where bold flavors meet vibrant community.
             </p>
-            <div className="flex flex-col sm:flex-row gap-6 justify-center">
+            <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center px-6">
               <Link href="/menu">
-                <Button size="lg" className="bg-primary hover:bg-primary/90 text-white rounded-full px-12 h-16 text-xl shadow-2xl hover:scale-105 transition-all cursor-pointer">
+                <Button size="lg" className="w-full sm:w-auto bg-primary hover:bg-primary/90 text-white rounded-full px-12 h-14 sm:h-16 text-lg sm:text-xl shadow-2xl hover:scale-105 transition-all cursor-pointer">
                   See the Menu
                 </Button>
               </Link>
               <Link href="/contact">
-                <Button size="lg" variant="outline" className="bg-white/10 hover:bg-white/20 text-white border-white/40 rounded-full px-12 h-16 text-xl backdrop-blur-md hover:scale-105 transition-all cursor-pointer">
+                <Button size="lg" variant="outline" className="w-full sm:w-auto bg-white/10 hover:bg-white/20 text-white border-white/40 rounded-full px-12 h-14 sm:h-16 text-lg sm:text-xl backdrop-blur-md hover:scale-105 transition-all cursor-pointer">
                   Visit Us
                 </Button>
               </Link>
@@ -72,21 +72,21 @@ export default function Home() {
       </section>
 
       {/* Intro Section - Not Just A Café. A Movement. */}
-      <section className="py-24 bg-white overflow-hidden">
+      <section className="py-16 sm:py-24 bg-white overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col lg:flex-row items-center gap-16">
+          <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
             <motion.div 
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              className="w-full lg:w-1/2 relative"
+              className="w-full lg:w-1/2 relative px-4 sm:px-0"
             >
-              <div className="relative group">
+              <div className="relative group max-w-[320px] sm:max-w-[400px] mx-auto lg:mx-0">
                 <div className="absolute -inset-4 bg-primary/5 rounded-[2.5rem] rotate-2 transition-transform group-hover:rotate-1"></div>
                 <img 
                   src={introSectionImg} 
                   alt="Barista pouring latte art" 
-                  className="relative rounded-[3rem] shadow-2xl w-full object-cover aspect-[3/4] border-8 border-white max-w-[400px] mx-auto"
+                  className="relative rounded-[3rem] shadow-2xl w-full object-cover aspect-[3/4] border-8 border-white"
                 />
               </div>
             </motion.div>
@@ -95,9 +95,9 @@ export default function Home() {
               initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              className="w-full lg:w-1/2"
+              className="w-full lg:w-1/2 text-center lg:text-left"
             >
-              <h2 className="font-heading text-5xl md:text-6xl font-black text-[#201839] mb-4 leading-[1.1]">
+              <h2 className="font-heading text-4xl sm:text-5xl md:text-6xl font-black text-[#201839] mb-4 leading-[1.1]">
                 Not Just A Café.<br />
                 <span className="relative inline-block">
                   A Movement.
@@ -105,11 +105,11 @@ export default function Home() {
                 </span>
               </h2>
               
-              <p className="text-black/70 text-lg md:text-xl leading-relaxed mb-10 max-w-xl">
+              <p className="text-black/70 text-base sm:text-lg md:text-xl leading-relaxed mb-10 max-w-xl mx-auto lg:mx-0">
                 At Hotts Café, we believe a café is more than just a place to grab a cup of coffee. It is a space where community comes together. Whether you prefer something light and wholesome or a hearty meal to fuel your day, we have options to suit every appetite.
               </p>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                 <div className="p-6 rounded-3xl bg-[#FFF5F6] border border-primary/5 group hover:bg-white hover:shadow-xl transition-all duration-300">
                   <div className="w-12 h-12 rounded-2xl bg-white shadow-sm flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                     <Coffee className="w-6 h-6 text-primary" />
@@ -137,17 +137,17 @@ export default function Home() {
 
 
       {/* Floating Menu Highlights */}
-      <section className="py-32 bg-background relative overflow-hidden">
+      <section className="py-16 sm:py-32 bg-background relative overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-20 bg-gradient-to-b from-white to-transparent"></div>
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="text-center mb-16">
-            <h2 className="font-heading text-5xl md:text-6xl font-black text-primary mb-4">
+          <div className="text-center mb-10 sm:mb-16">
+            <h2 className="font-heading text-4xl sm:text-5xl md:text-6xl font-black text-primary mb-4">
               POPULAR <span className="text-primary opacity-50 italic">PICKS</span>
             </h2>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 md:gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 sm:gap-4 md:gap-6">
             {[
               { img: burgerLot, title: "The Lot", price: "$15.50", color: "bg-primary" },
               { img: chickenParma, title: "Chicken Parma", price: "$18.50", color: "bg-secondary" },
@@ -222,39 +222,39 @@ export default function Home() {
       </section>
 
       {/* Vibrant CTA */}
-      <section className="py-32">
+      <section className="py-16 sm:py-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-primary rounded-[4rem] p-12 md:p-24 text-center text-white relative overflow-hidden shadow-3xl">
+          <div className="bg-primary rounded-[2.5rem] sm:rounded-[4rem] p-8 sm:p-12 md:p-24 text-center text-white relative overflow-hidden shadow-3xl">
              <div className="absolute inset-0 bg-white/10 mix-blend-overlay"></div>
              <div className="absolute -top-24 -right-24 w-64 h-64 bg-accent rounded-full blur-3xl opacity-50"></div>
              
              <div className="relative z-10">
-               <h2 className="font-heading text-5xl md:text-7xl text-secondary font-black mb-8 leading-none">
+               <h2 className="font-heading text-3xl sm:text-5xl md:text-7xl text-secondary font-black mb-6 sm:mb-8 leading-none">
                  <span className="opacity-60">BE THERE.</span> <br />
                  <span className="">AT HOTTS CAFÉ.</span>
                </h2>
-               <p className="text-xl md:text-2xl mb-12 max-w-2xl mx-auto font-medium text-white/90">
+               <p className="text-lg sm:text-xl md:text-2xl mb-8 sm:mb-12 max-w-2xl mx-auto font-medium text-white/90">
                  Connect, recharge, and enjoy the experience. We look forward to welcoming you soon.
                </p>
-            <div className="flex flex-wrap justify-center gap-10">
-                 <div className="flex items-center gap-4 bg-white/10 px-8 py-4 rounded-full backdrop-blur-md">
-                   <Clock className="w-8 h-8 text-secondary" />
+            <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-6 sm:gap-10">
+                 <div className="flex items-center gap-4 bg-white/10 px-6 sm:px-8 py-3 sm:py-4 rounded-full backdrop-blur-md justify-center sm:justify-start">
+                   <Clock className="w-6 h-6 sm:w-8 sm:h-8 text-secondary" />
                    <div className="text-left">
-                     <p className="font-black">EARLY BIRDS</p>
-                     <p className="text-sm opacity-80">5:00 AM - 2:30 PM</p>
+                     <p className="font-black text-sm sm:text-base uppercase tracking-wider">EARLY BIRDS</p>
+                     <p className="text-xs sm:text-sm opacity-80">5:00 AM - 2:30 PM</p>
                    </div>
                  </div>
-                 <div className="flex items-center gap-4 bg-white/20 px-8 py-4 rounded-full backdrop-blur-md">
-                   <Phone className="w-8 h-8 text-primary" />
+                 <div className="flex items-center gap-4 bg-white/20 px-6 sm:px-8 py-3 sm:py-4 rounded-full backdrop-blur-md justify-center sm:justify-start">
+                   <Phone className="w-6 h-6 sm:w-8 sm:h-8 text-primary" />
                    <div className="text-left">
-                     <p className="font-black">HOTLINE</p>
-                     <p className="text-sm opacity-80">9369 6504</p>
+                     <p className="font-black text-sm sm:text-base uppercase tracking-wider">HOTLINE</p>
+                     <p className="text-xs sm:text-sm opacity-80">9369 6504</p>
                    </div>
                  </div>
               
                </div>
-               <h2 className="font-heading text-4xl md:text-6xl text-secondary font-black m-8 leading-none">
-                  <span>Delivery at <span className="text-5xl">$3</span></span> <br />
+               <h2 className="font-heading text-3xl sm:text-4xl md:text-6xl text-secondary font-black mt-8 sm:m-8 leading-none">
+                  <span>Delivery at <span className="text-4xl sm:text-5xl">$3</span></span> <br />
                 </h2>
              </div>
           </div>

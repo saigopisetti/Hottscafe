@@ -17,7 +17,7 @@ export default function Contact() {
       <div className="bg-white text-black py-16 px-4 relative overflow-hidden border-b border-neutral-100">
         <div className="max-w-4xl mx-auto text-center relative z-10">
           <span className="text-primary font-bold tracking-widest uppercase text-xs mb-3 block">Get in Touch</span>
-          <h1 className="font-heading text-4xl md:text-5xl font-black text-[#201839] mb-4 uppercase tracking-tighter">
+          <h1 className="font-heading text-4xl sm:text-5xl font-black text-[#201839] mb-4 uppercase tracking-tighter leading-tight">
             Contact <span className="text-primary italic">Us</span>
           </h1>
           <p className="text-black/60 max-w-xl mx-auto leading-relaxed text-base md:text-lg">
@@ -101,7 +101,7 @@ export default function Contact() {
           </div>
 
           {/* Contact Form with Captcha */}
-          <div className="bg-neutral-50 rounded-[3rem] p-8 md:p-12 border border-neutral-100 shadow-sm">
+          <div className="bg-neutral-50 rounded-[2rem] sm:rounded-[3rem] p-6 sm:p-8 md:p-12 border border-neutral-100 shadow-sm">
             <h2 className="font-heading text-3xl font-black text-[#201839] mb-8 uppercase tracking-tight">
               Send a <span className="text-primary italic">Message</span>
             </h2>

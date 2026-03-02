@@ -26,28 +26,29 @@ export default function About() {
             animate={{ opacity: 1, y: 0 }}
             className="max-w-3xl mx-auto"
           >
-            <span className="text-primary font-bold tracking-widest uppercase text-xs mb-4 block">Our Story</span>
-            <h1 className="font-heading text-5xl md:text-7xl font-black text-white mb-6 uppercase tracking-tighter">
-              More Than Just <span className="text-primary italic text-6xl md:text-8xl">Coffee.</span>
+            <span className="text-primary font-bold tracking-widest uppercase text-[10px] sm:text-xs mb-3 sm:mb-4 block">Our Story</span>
+            <h1 className="font-heading text-4xl sm:text-5xl md:text-7xl font-black text-white mb-6 uppercase tracking-tighter leading-tight">
+              More Than Just <br className="sm:hidden" /> <span className="text-primary italic text-5xl sm:text-6xl md:text-8xl">Coffee.</span>
             </h1>
           </motion.div>
         </div>
       </section>
 
       {/* Philosophy Section */}
-      <section className="py-24 bg-white">
+      <section className="py-16 sm:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 gap-16 items-center">
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
+              className="text-center lg:text-left"
             >
-              <h2 className="font-heading text-4xl md:text-5xl font-black text-[#201839] mb-8 uppercase tracking-tight leading-none">
+              <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl font-black text-[#201839] mb-6 sm:mb-8 uppercase tracking-tight leading-none">
                 A Space Where <br />
                 <span className="text-primary italic">Community</span> Comes Together
               </h2>
-              <div className="space-y-6 text-black/70 text-lg leading-relaxed">
+              <div className="space-y-4 sm:space-y-6 text-black/70 text-base sm:text-lg leading-relaxed max-w-xl mx-auto lg:mx-0">
                 <p>
                   At Hotts Café, we believe a café is more than just a place to grab a cup of coffee. It is a space where community comes together.
                 </p>
@@ -57,26 +58,26 @@ export default function About() {
               </div>
             </motion.div>
             
-            <div className="grid grid-cols-2 gap-6">
-              <div className="p-8 bg-primary/5 rounded-[2rem] border border-primary/10 text-center">
-                <Coffee className="w-10 h-10 text-primary mx-auto mb-4" />
-                <h4 className="font-black text-[#201839] uppercase text-sm tracking-widest mb-2">Quality</h4>
-                <p className="text-xs text-black/60 font-medium">Brewed with passion using the finest beans.</p>
+            <div className="grid grid-cols-2 gap-4 sm:gap-6">
+              <div className="p-6 sm:p-8 bg-primary/5 rounded-[1.5rem] sm:rounded-[2rem] border border-primary/10 text-center">
+                <Coffee className="w-8 h-8 sm:w-10 sm:h-10 text-primary mx-auto mb-3 sm:mb-4" />
+                <h4 className="font-black text-[#201839] uppercase text-[10px] sm:text-sm tracking-widest mb-2">Quality</h4>
+                <p className="text-[10px] sm:text-xs text-black/60 font-medium leading-tight">Brewed with passion using the finest beans.</p>
               </div>
-              <div className="p-8 bg-secondary/5 rounded-[2rem] border border-secondary/10 text-center mt-8">
-                <Heart className="w-10 h-10 text-secondary mx-auto mb-4" />
-                <h4 className="font-black text-[#201839] uppercase text-sm tracking-widest mb-2">Passion</h4>
-                <p className="text-xs text-black/60 font-medium">Every meal prepared with care and love.</p>
+              <div className="p-6 sm:p-8 bg-secondary/5 rounded-[1.5rem] sm:rounded-[2rem] border border-secondary/10 text-center mt-4 sm:mt-8">
+                <Heart className="w-8 h-8 sm:w-10 sm:h-10 text-secondary mx-auto mb-3 sm:mb-4" />
+                <h4 className="font-black text-[#201839] uppercase text-[10px] sm:text-sm tracking-widest mb-2">Passion</h4>
+                <p className="text-[10px] sm:text-xs text-black/60 font-medium leading-tight">Every meal prepared with care and love.</p>
               </div>
-              <div className="p-8 bg-accent/5 rounded-[2rem] border border-accent/10 text-center">
-                <Users className="w-10 h-10 text-accent mx-auto mb-4" />
-                <h4 className="font-black text-[#201839] uppercase text-sm tracking-widest mb-2">Community</h4>
-                <p className="text-xs text-black/60 font-medium">A welcoming space for everyone to gather.</p>
+              <div className="p-6 sm:p-8 bg-accent/5 rounded-[1.5rem] sm:rounded-[2rem] border border-accent/10 text-center">
+                <Users className="w-8 h-8 sm:w-10 sm:h-10 text-accent mx-auto mb-3 sm:mb-4" />
+                <h4 className="font-black text-[#201839] uppercase text-[10px] sm:text-sm tracking-widest mb-2">Community</h4>
+                <p className="text-[10px] sm:text-xs text-black/60 font-medium leading-tight">A welcoming space for everyone to gather.</p>
               </div>
-              <div className="p-8 bg-primary/5 rounded-[2rem] border border-primary/10 text-center mt-8">
-                <Clock className="w-10 h-10 text-primary mx-auto mb-4" />
-                <h4 className="font-black text-[#201839] uppercase text-sm tracking-widest mb-2">Fresh</h4>
-                <p className="text-xs text-black/60 font-medium">Quality ingredients served daily from 5am.</p>
+              <div className="p-6 sm:p-8 bg-primary/5 rounded-[1.5rem] sm:rounded-[2rem] border border-primary/10 text-center mt-4 sm:mt-8">
+                <Clock className="w-8 h-8 sm:w-10 sm:h-10 text-primary mx-auto mb-3 sm:mb-4" />
+                <h4 className="font-black text-[#201839] uppercase text-[10px] sm:text-sm tracking-widest mb-2">Fresh</h4>
+                <p className="text-[10px] sm:text-xs text-black/60 font-medium leading-tight">Quality ingredients served daily from 5am.</p>
               </div>
             </div>
           </div>
@@ -91,9 +92,9 @@ export default function About() {
               initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              className="w-full lg:w-1/2"
+              className="w-full lg:w-1/2 px-4 sm:px-0"
             >
-              <div className="relative">
+              <div className="relative max-w-[500px] mx-auto lg:ml-auto">
                 <div className="absolute -inset-4 bg-secondary/5 rounded-[3rem] -rotate-2"></div>
                 <img 
                   src={experienceImg} 
@@ -107,15 +108,15 @@ export default function About() {
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              className="w-full lg:w-1/2"
+              className="w-full lg:w-1/2 text-center lg:text-left"
             >
-              <h2 className="font-heading text-4xl md:text-5xl font-black text-[#201839] mb-6 uppercase tracking-tight leading-none">
+              <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl font-black text-[#201839] mb-6 uppercase tracking-tight leading-none">
                 The <span className="text-secondary italic">Culinary</span> Craft
               </h2>
-              <p className="text-black/70 text-lg leading-relaxed mb-8">
+              <p className="text-black/70 text-base sm:text-lg leading-relaxed mb-8 max-w-xl mx-auto lg:mx-0">
                 Our kitchen is the heart of Hotts Café. We take pride in sourcing the freshest local ingredients to create dishes that don't just fill you up, but fuel your soul. From our signature steak sandwiches to our vibrant seasonal salads, every plate is a testament to our commitment to quality.
               </p>
-              <ul className="space-y-4">
+              <ul className="space-y-4 max-w-md mx-auto lg:mx-0 text-left">
                 {[
                   "Sourced from local Hoppers Crossing suppliers",
                   "Chef-prepared daily specials",
