@@ -266,7 +266,7 @@ export default function Home() {
 
 function BadgeLocal({ children, className }: any) {
   return (
-    <span className={cn("inline-flex items-center px-4 py-1.5 rounded-full text-xs font-bold tracking-widest uppercase border", className)}>
+    <span className="inline-flex items-center px-4 py-1.5 rounded-full text-xs font-bold tracking-widest uppercase border mb-4 text-primary border-primary/20 bg-[#e5003914]">
       {children}
     </span>
   );
