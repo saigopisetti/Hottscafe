@@ -13,7 +13,6 @@ export function Navbar() {
     { href: "/about", label: "About" },
     { href: "/menu", label: "Menu" },
     { href: "/catering", label: "Catering" },
-    { href: "/contact", label: "Contact" },
   ];
 
   useEffect(() => {
