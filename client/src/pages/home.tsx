@@ -15,6 +15,7 @@ import icedCoffee from "@/assets/iced-coffee-new-v2.png";
 import muffin from "@/assets/muffin.jpg";
 import cateringSnippet from "@/assets/catering-snippet.jpg";
 import { Link } from "wouter";
+import { Button } from "@/components/ui/button";
 import { ArrowRight, Coffee, Clock, ChefHat, Phone, Sparkles } from "lucide-react";
 import { cn } from "@/lib/utils";
 import slide1 from "../assets/catering-new-1.jpg";
