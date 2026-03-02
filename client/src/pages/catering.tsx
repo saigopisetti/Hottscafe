@@ -185,41 +185,70 @@ export default function Catering() {
           <section className="py-24 bg-neutral-50 rounded-[3rem] overflow-hidden mb-24 px-8">
             <div className="text-center mb-16">
               <Quote className="w-12 h-12 text-primary/20 mx-auto mb-6" />
-              <h2 className="font-heading text-4xl font-black text-[#201839] uppercase tracking-tighter">Client <span className="text-primary italic">Feedback</span></h2>
+              <h2 className="font-heading text-4xl font-black text-[#201839] uppercase tracking-tighter">Testimonials</h2>
             </div>
 
-            <div className="max-w-7xl mx-auto">
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                {[
-                  {
-                    text: "Hotts Café catered our office launch and the feedback was incredible. The platters were fresh and beautifully presented.",
-                    author: "Tech Solutions Hub"
-                  },
-                  {
-                    text: "Best corporate lunch we've had in years. The mix of hot food and fresh wraps was perfect for our diverse team.",
-                    author: "Logistics Victoria"
-                  },
-                  {
-                    text: "Reliable, professional, and delicious. They handled our last-minute event with grace and amazing flavor.",
-                    author: "Hoppers Health Clinic"
-                  }
-                ].map((item, i) => (
-                  <motion.div
-                    key={i}
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: i * 0.1 }}
-                    className="bg-white p-10 rounded-[2rem] shadow-lg border border-neutral-100 flex flex-col justify-between"
-                  >
-                    <p className="text-lg text-[#201839] italic mb-6 leading-relaxed">
-                      "{item.text}"
-                    </p>
-                    <div className="font-bold text-primary uppercase tracking-widest text-xs">
-                      {item.author}
+            <div className="max-w-7xl mx-auto relative">
+              <div className="overflow-hidden">
+                <motion.div 
+                  animate={{ 
+                    x: [0, -100 + "%"] 
+                  }}
+                  transition={{ 
+                    duration: 30, 
+                    ease: "linear", 
+                    repeat: Infinity 
+                  }}
+                  className="flex gap-8 w-max"
+                >
+                  {[
+                    {
+                      text: "Hotts Café catered our office launch and the feedback was incredible. The platters were fresh and beautifully presented.",
+                      author: "Tech Solutions Hub"
+                    },
+                    {
+                      text: "Best corporate lunch we've had in years. The mix of hot food and fresh wraps was perfect for our diverse team.",
+                      author: "Logistics Victoria"
+                    },
+                    {
+                      text: "Reliable, professional, and delicious. They handled our last-minute event with grace and amazing flavor.",
+                      author: "Hoppers Health Clinic"
+                    },
+                    {
+                      text: "The presentation was top-notch and the food was even better. Our clients were very impressed!",
+                      author: "Westside Real Estate"
+                    },
+                    {
+                      text: "Incredible service from start to finish. The team at Hotts really knows how to handle large corporate orders.",
+                      author: "Melbourne Finance Group"
+                    },
+                    // Duplicate for seamless loop
+                    {
+                      text: "Hotts Café catered our office launch and the feedback was incredible. The platters were fresh and beautifully presented.",
+                      author: "Tech Solutions Hub"
+                    },
+                    {
+                      text: "Best corporate lunch we've had in years. The mix of hot food and fresh wraps was perfect for our diverse team.",
+                      author: "Logistics Victoria"
+                    },
+                    {
+                      text: "Reliable, professional, and delicious. They handled our last-minute event with grace and amazing flavor.",
+                      author: "Hoppers Health Clinic"
+                    }
+                  ].map((item, i) => (
+                    <div
+                      key={i}
+                      className="bg-white p-10 rounded-[2rem] shadow-lg border border-neutral-100 flex flex-col justify-between w-[350px] md:w-[400px] shrink-0"
+                    >
+                      <p className="text-lg text-[#201839] italic mb-6 leading-relaxed">
+                        "{item.text}"
+                      </p>
+                      <div className="font-bold text-primary uppercase tracking-widest text-xs">
+                        {item.author}
+                      </div>
                     </div>
-                  </motion.div>
-                ))}
+                  ))}
+                </motion.div>
               </div>
             </div>
           </section>
