@@ -4,7 +4,7 @@ import australianCafeHero from "@/assets/australian-cafe-hero.png";
 import burgerLot from "@/assets/burger-lot.jpg";
 import chickenParma from "@/assets/chicken-parma.jpg";
 import steakSandwich from "@/assets/steak-sandwich-new.jpg";
-import cappuccino from "@/assets/cappuccino.jpg";
+import cappuccino from "@/assets/cappuccino-new-v2.png";
 import eggBaconRoll from "@/assets/egg-bacon-roll-new.png";
 import jamDonut from "@/assets/jam-donut.jpg";
 import { Link } from "wouter";
