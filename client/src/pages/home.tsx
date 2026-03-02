@@ -1,6 +1,6 @@
 import { Layout } from "@/components/layout";
 import { motion } from "framer-motion";
-import funkyHero from "@/assets/funky-cafe.png";
+import australianCafeHero from "@/assets/australian-cafe-hero.png";
 import breakfastImage from "@/assets/breakfast-plate.png";
 import coffeeImage from "@/assets/coffee-art.png";
 import burgerImage from "@/assets/burger-combo.png";
@@ -16,8 +16,8 @@ export default function Home() {
       <section className="relative h-[85vh] min-h-[700px] flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
-            src={funkyHero} 
-            alt="Hotts Cafe Funky Interior" 
+            src={australianCafeHero} 
+            alt="Hotts Cafe Modern Interior" 
             className="w-full h-full object-cover scale-105"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-background/90 via-background/40 to-transparent"></div>

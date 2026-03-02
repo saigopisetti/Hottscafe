@@ -23,7 +23,7 @@ export function Navbar() {
           <Link href="/">
             <a className="flex items-center gap-2 group">
               <div className="flex flex-col">
-                <span className="font-heading text-3xl font-bold text-black tracking-tighter leading-none">
+                <span className="font-heading text-2xl font-black text-primary">
                   Hotts Café
                 </span>
               </div>
