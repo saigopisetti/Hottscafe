@@ -66,10 +66,10 @@ export default function Menu() {
                         className="group relative"
                       >
                         <div className="flex justify-between items-end mb-2">
-                          <h3 className="font-black text-xl text-foreground group-hover:text-primary transition-colors leading-tight">
+                          <h3 className="font-medium text-lg text-foreground group-hover:text-primary transition-colors leading-tight">
                             {item.name}
                           </h3>
-                          <span className="font-black text-xl text-primary whitespace-nowrap ml-4">{item.price}</span>
+                          <span className="font-black text-lg text-primary whitespace-nowrap ml-4">{item.price}</span>
                         </div>
                         {item.description && (
                           <p className="text-black/60 text-sm leading-relaxed mb-3 font-medium">

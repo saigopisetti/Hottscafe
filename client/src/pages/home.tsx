@@ -156,7 +156,7 @@ export default function Home() {
                 </div>
                 <div className="p-4 flex-grow flex flex-col justify-between">
                   <div>
-                    <h3 className="font-heading text-lg md:text-xl font-black mb-1 group-hover:text-primary transition-colors leading-tight line-clamp-1">{item.title}</h3>
+                    <h3 className="font-heading text-base md:text-lg font-medium mb-1 group-hover:text-primary transition-colors leading-tight line-clamp-1">{item.title}</h3>
                   </div>
                   <Link href="/menu">
                     <Button variant="ghost" className="p-0 h-auto hover:bg-transparent text-primary text-xs font-black flex items-center gap-1 group/btn cursor-pointer mt-2">
