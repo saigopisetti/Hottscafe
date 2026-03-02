@@ -224,7 +224,7 @@ export default function Home() {
              <div className="absolute -top-24 -right-24 w-64 h-64 bg-accent rounded-full blur-3xl opacity-50"></div>
              
              <div className="relative z-10">
-               <h2 className="font-heading text-3xl sm:text-5xl md:text-7xl text-secondary font-black mb-6 sm:mb-8 leading-none">
+               <h2 className="font-heading text-3xl sm:text-5xl md:text-7xl font-black mb-6 sm:mb-8 leading-none text-[#e60039]">
                  <span className="opacity-60">BE THERE.</span> <br />
                  <span className="">AT HOTTS CAFÉ.</span>
                </h2>
