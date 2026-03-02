@@ -1,5 +1,5 @@
 import { Layout } from "@/components/layout";
-import { menuData } from "@/lib/menu-data";
+import { menuData } from "../lib/menu-data";
 import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { motion } from "framer-motion";

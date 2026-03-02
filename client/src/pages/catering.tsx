@@ -3,17 +3,17 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Phone, Mail, Clock, ChevronRight, ChevronLeft, Quote, CheckCircle } from "lucide-react";
 import { useState, useEffect } from "react";
-import slide1 from "@/assets/catering-new-1.jpg";
-import slide2 from "@/assets/catering-new-2.jpg";
-import slide3 from "@/assets/catering-new-3.jpg";
-import gallery1 from "@/assets/gallery-corp-1.jpg";
-import gallery2 from "@/assets/gallery-corp-2.jpg";
-import gallery3 from "@/assets/gallery-corp-3.jpg";
-import user1 from "@/assets/testimonial-user_1.jpg";
-import user2 from "@/assets/testimonial-user_2.jpg";
-import user3 from "@/assets/testimonial-user_3.jpg";
-import user4 from "@/assets/testimonial-user_4.jpg";
-import user5 from "@/assets/testimonial-user_5.jpg";
+import slide1 from "../assets/catering-new-1.jpg";
+import slide2 from "../assets/catering-new-2.jpg";
+import slide3 from "../assets/catering-new-3.jpg";
+import gallery1 from "../assets/gallery-corp-1.jpg";
+import gallery2 from "../assets/gallery-corp-2.jpg";
+import gallery3 from "../assets/gallery-corp-3.jpg";
+import user1 from "../assets/testimonial-user_1.jpg";
+import user2 from "../assets/testimonial-user_2.jpg";
+import user3 from "../assets/testimonial-user_3.jpg";
+import user4 from "../assets/testimonial-user_4.jpg";
+import user5 from "../assets/testimonial-user_5.jpg";
 
 export default function Catering() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -261,7 +261,7 @@ export default function Catering() {
                   ].map((item, i) => (
                     <div
                       key={i}
-                      className="bg-white p-10 pt-16 rounded-[2rem] shadow-lg border border-neutral-100 flex flex-col justify-between w-[350px] md:w-[450px] shrink-0 relative h-[350px]"
+                      className="bg-white p-10 pt-16 rounded-[2rem] shadow-lg border border-neutral-100 flex flex-col justify-between w-[350px] md:w-[450px] shrink-0 relative h-[350px] mx-4"
                     >
                       <div className="absolute -top-6 left-10 w-20 h-20 rounded-full border-4 border-white shadow-xl overflow-hidden z-20 bg-neutral-100">
                         <img src={item.img} className="w-full h-full object-cover" alt={item.author} />
@@ -269,7 +269,7 @@ export default function Catering() {
                       <p className="text-lg text-[#201839] italic mb-6 leading-relaxed line-clamp-4">
                         "{item.text}"
                       </p>
-                      <div className="font-bold text-primary uppercase tracking-widest text-xs">
+                      <div className="font-bold text-primary uppercase tracking-widest text-xs mt-auto">
                         {item.author}
                       </div>
                     </div>
