@@ -13,6 +13,7 @@ import hotDog from "@/assets/hot-dog.jpg";
 import hotChips from "@/assets/hot-chips.jpg";
 import icedCoffee from "@/assets/iced-coffee-new-v2.png";
 import muffin from "@/assets/muffin.jpg";
+import cateringSnippet from "@/assets/catering-snippet.jpg";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Coffee, Clock, ChefHat, Phone, Sparkles } from "lucide-react";
@@ -167,6 +168,38 @@ export default function Home() {
                 </div>
               </motion.div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Catering Snippet */}
+      <section className="py-24 bg-neutral-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-white rounded-[3rem] overflow-hidden shadow-xl border border-neutral-100 flex flex-col md:flex-row items-center">
+            <div className="w-full md:w-1/2 h-64 md:h-[400px]">
+              <img 
+                src={cateringSnippet} 
+                alt="Hotts Cafe Catering" 
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div className="w-full md:w-1/2 p-10 md:p-16 text-center md:text-left">
+              <Badge className="mb-4 bg-primary/10 text-primary border-primary/20">
+                EVENT CATERING
+              </Badge>
+              <h2 className="font-heading text-4xl md:text-5xl font-black text-[#201839] mb-6 leading-tight">
+                Feeding the <br />
+                <span className="text-primary italic">whole squad?</span>
+              </h2>
+              <p className="text-black/60 text-lg mb-8 max-w-md">
+                From office lunches to private functions, we bring the Hotts Café flavor to your event. Fresh platters, hot favorites, and more.
+              </p>
+              <Link href="/catering">
+                <Button size="lg" className="bg-primary hover:bg-primary/90 text-white rounded-full px-10 h-14 text-lg transition-all active:scale-95 cursor-pointer">
+                  Explore Catering
+                </Button>
+              </Link>
+            </div>
           </div>
         </div>
       </section>
