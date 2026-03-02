@@ -1,6 +1,6 @@
 import { Layout } from "@/components/layout";
 import { motion } from "framer-motion";
-import australianCafeHero from "@/assets/australian-cafe-hero-morning.png";
+import australianCafeHero from "@/assets/hero-coffee-serving.png";
 import introSectionImg from "@/assets/cappuccino-new.jpg";
 import burgerLot from "@/assets/burger-lot.jpg";
 import chickenParma from "@/assets/chicken-parma.jpg";
