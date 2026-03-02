@@ -208,7 +208,7 @@ export default function Home() {
                 From office lunches to private functions, we bring the Hotts Café flavor to your event. Fresh platters, hot favorites, and more.
               </p>
               <Link href="/catering">
-                <Button size="lg" className="bg-primary hover:bg-primary/90 text-white rounded-full px-10 h-14 text-lg transition-all active:scale-95 cursor-pointer">
+                <Button size="lg" className="hover:bg-primary/90 text-white rounded-full px-10 h-14 text-lg transition-all active:scale-95 cursor-pointer bg-[#ef0000]">
                   Explore Catering
                 </Button>
               </Link>
