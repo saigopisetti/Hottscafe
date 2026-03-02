@@ -37,6 +37,10 @@ export function Navbar() {
 
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center gap-8">
+            <div className="flex items-center gap-2 px-4 py-2 bg-neutral-50 rounded-full border border-neutral-100">
+              <Phone className="w-4 h-4 text-[#ef0000]" />
+              <span className="text-sm font-bold text-[#201839]">9369 6504</span>
+            </div>
             {links.map((link) => (
               <Link key={link.href} href={link.href}>
                 <a
