@@ -144,44 +144,61 @@ export default function Home() {
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 sm:gap-4 md:gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 max-w-5xl mx-auto">
             {[
-              { img: burgerLot, title: "The Lot", price: "$15.50", color: "bg-primary" },
-              { img: chickenParma, title: "Chicken Parma", price: "$18.50", color: "bg-secondary" },
-              { img: steakSandwich, title: "Steak Sandwich", price: "$16.50", color: "bg-accent" },
-              { img: cappuccino, title: "Cappuccino", price: "$4.80", color: "bg-primary" },
-              { img: eggBaconRoll, title: "Egg & Bacon Roll", price: "$9.50", color: "bg-secondary" },
-              { img: jamDonut, title: "Jam Donut", price: "$3.50", color: "bg-accent" },
-              { img: chickenSchnitzel, title: "Chicken Schnitzel", price: "$15.00", color: "bg-primary" },
-              { img: baconEggSandwich, title: "Bacon & Egg Sandwich", price: "$8.50", color: "bg-secondary" },
-              { img: hotDog, title: "Hot Dog", price: "$6.50", color: "bg-accent" },
-              { img: hotChips, title: "Hot Chips", price: "$5.00", color: "bg-primary" },
-              { img: icedCoffee, title: "Iced Coffee", price: "$7.50", color: "bg-secondary" },
-              { img: muffin, title: "Fresh Muffin", price: "$5.50", color: "bg-accent" }
-            ].map((item, idx) => (
+              { 
+                category: "Breakfast Classics",
+                items: [
+                  { title: "The Lot Burger", price: "$15.50", description: "Beef, egg, bacon, cheese, lettuce, tomato, onion & sauce" },
+                  { title: "Egg & Bacon Roll", price: "$9.50", description: "Double egg, double bacon on a toasted brioche roll" },
+                  { title: "Steak Sandwich", price: "$16.50", description: "Tender steak, lettuce, tomato, onion & secret sauce" }
+                ]
+              },
+              { 
+                category: "Local Favorites",
+                items: [
+                  { title: "Chicken Parma", price: "$18.50", description: "Hand-crumbed breast, napoli sauce & melted mozzarella" },
+                  { title: "Chicken Schnitzel", price: "$15.00", description: "Golden fried breast with your choice of sides" },
+                  { title: "Iced Coffee", price: "$7.50", description: "Double shot espresso, vanilla bean ice cream & whipped cream" }
+                ]
+              }
+            ].map((section, sIdx) => (
               <motion.div 
-                key={idx}
-                whileHover={{ y: -8, scale: 1.02 }}
-                className="bg-white rounded-3xl overflow-hidden shadow-xl group border border-foreground/5 flex flex-col"
+                key={sIdx}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: sIdx * 0.1 }}
+                className="space-y-6"
               >
-                <div className="aspect-square overflow-hidden relative">
-                  <img src={item.img} alt={item.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
-                  <div className={`absolute top-3 right-3 ${item.color} text-white text-[10px] md:text-xs font-black px-2 py-1 rounded-full shadow-lg`}>
-                    {item.price}
-                  </div>
+                <div className="flex items-center gap-4 mb-8">
+                  <div className="h-px bg-primary/20 flex-grow"></div>
+                  <h3 className="font-heading text-xl font-black text-[#201839] uppercase tracking-widest whitespace-nowrap italic">{section.category}</h3>
+                  <div className="h-px bg-primary/20 flex-grow"></div>
                 </div>
-                <div className="p-4 flex-grow flex flex-col justify-between">
-                  <div>
-                    <h3 className="font-heading text-base md:text-lg font-medium mb-1 group-hover:text-primary transition-colors leading-tight line-clamp-1">{item.title}</h3>
-                  </div>
-                  <Link href="/menu">
-                    <Button variant="ghost" className="p-0 h-auto hover:bg-transparent text-primary text-xs font-black flex items-center gap-1 group/btn cursor-pointer mt-2">
-                      MENU <ArrowRight className="w-3 h-3 group-hover/btn:translate-x-1 transition-transform" />
-                    </Button>
-                  </Link>
+                
+                <div className="space-y-8">
+                  {section.items.map((item, iIdx) => (
+                    <div key={iIdx} className="group cursor-default">
+                      <div className="flex justify-between items-baseline mb-1">
+                        <h4 className="font-heading text-xl font-bold text-[#201839] group-hover:text-primary transition-colors">{item.title}</h4>
+                        <div className="flex-grow mx-4 border-b border-dotted border-neutral-300"></div>
+                        <span className="font-black text-lg text-primary">{item.price}</span>
+                      </div>
+                      <p className="text-black/50 text-sm leading-relaxed max-w-md">{item.description}</p>
+                    </div>
+                  ))}
                 </div>
               </motion.div>
             ))}
+          </div>
+
+          <div className="mt-16 text-center">
+            <Link href="/menu">
+              <Button className="bg-[#ef0000] hover:bg-[#ef0000]/90 text-white rounded-full px-12 h-14 text-lg font-bold shadow-xl hover:scale-105 transition-all">
+                View Full Menu
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
