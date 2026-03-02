@@ -9,6 +9,11 @@ import slide3 from "@/assets/catering-new-3.jpg";
 import gallery1 from "@/assets/gallery-corp-1.jpg";
 import gallery2 from "@/assets/gallery-corp-2.jpg";
 import gallery3 from "@/assets/gallery-corp-3.jpg";
+import user1 from "@/assets/testimonial-user_1.jpg";
+import user2 from "@/assets/testimonial-user_2.jpg";
+import user3 from "@/assets/testimonial-user_3.jpg";
+import user4 from "@/assets/testimonial-user_4.jpg";
+import user5 from "@/assets/testimonial-user_5.jpg";
 
 export default function Catering() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -182,65 +187,86 @@ export default function Catering() {
           </section>
 
           {/* Testimonial Slider */}
-          <section className="py-24 bg-neutral-50 rounded-[3rem] overflow-hidden mb-24 px-8">
+          <section className="py-32 bg-neutral-50 rounded-[3rem] overflow-hidden mb-24 px-8">
             <div className="text-center mb-16">
               <Quote className="w-12 h-12 text-primary/20 mx-auto mb-6" />
               <h2 className="font-heading text-4xl font-black text-[#201839] uppercase tracking-tighter">Testimonials</h2>
             </div>
 
-            <div className="max-w-7xl mx-auto relative">
-              <div className="overflow-hidden">
+            <div className="max-w-7xl mx-auto relative h-[450px]">
+              <div className="overflow-hidden h-full">
                 <motion.div 
                   animate={{ 
-                    x: [0, -100 + "%"] 
+                    x: [0, -50 + "%"] 
                   }}
                   transition={{ 
-                    duration: 30, 
+                    duration: 40, 
                     ease: "linear", 
                     repeat: Infinity 
                   }}
-                  className="flex gap-8 w-max"
+                  className="flex gap-8 w-max h-full items-center"
                 >
                   {[
                     {
                       text: "Hotts Café catered our office launch and the feedback was incredible. The platters were fresh and beautifully presented.",
-                      author: "Tech Solutions Hub"
+                      author: "Tech Solutions Hub",
+                      img: user1
                     },
                     {
                       text: "Best corporate lunch we've had in years. The mix of hot food and fresh wraps was perfect for our diverse team.",
-                      author: "Logistics Victoria"
+                      author: "Logistics Victoria",
+                      img: user2
                     },
                     {
                       text: "Reliable, professional, and delicious. They handled our last-minute event with grace and amazing flavor.",
-                      author: "Hoppers Health Clinic"
+                      author: "Hoppers Health Clinic",
+                      img: user3
                     },
                     {
                       text: "The presentation was top-notch and the food was even better. Our clients were very impressed!",
-                      author: "Westside Real Estate"
+                      author: "Westside Real Estate",
+                      img: user4
                     },
                     {
                       text: "Incredible service from start to finish. The team at Hotts really knows how to handle large corporate orders.",
-                      author: "Melbourne Finance Group"
+                      author: "Melbourne Finance Group",
+                      img: user5
                     },
                     // Duplicate for seamless loop
                     {
                       text: "Hotts Café catered our office launch and the feedback was incredible. The platters were fresh and beautifully presented.",
-                      author: "Tech Solutions Hub"
+                      author: "Tech Solutions Hub",
+                      img: user1
                     },
                     {
                       text: "Best corporate lunch we've had in years. The mix of hot food and fresh wraps was perfect for our diverse team.",
-                      author: "Logistics Victoria"
+                      author: "Logistics Victoria",
+                      img: user2
                     },
                     {
                       text: "Reliable, professional, and delicious. They handled our last-minute event with grace and amazing flavor.",
-                      author: "Hoppers Health Clinic"
+                      author: "Hoppers Health Clinic",
+                      img: user3
+                    },
+                    {
+                      text: "The presentation was top-notch and the food was even better. Our clients were very impressed!",
+                      author: "Westside Real Estate",
+                      img: user4
+                    },
+                    {
+                      text: "Incredible service from start to finish. The team at Hotts really knows how to handle large corporate orders.",
+                      author: "Melbourne Finance Group",
+                      img: user5
                     }
                   ].map((item, i) => (
                     <div
                       key={i}
-                      className="bg-white p-10 rounded-[2rem] shadow-lg border border-neutral-100 flex flex-col justify-between w-[350px] md:w-[400px] shrink-0"
+                      className="bg-white p-10 pt-16 rounded-[2rem] shadow-lg border border-neutral-100 flex flex-col justify-between w-[350px] md:w-[450px] shrink-0 relative h-[350px]"
                     >
-                      <p className="text-lg text-[#201839] italic mb-6 leading-relaxed">
+                      <div className="absolute -top-6 left-10 w-20 h-20 rounded-full border-4 border-white shadow-xl overflow-hidden z-20 bg-neutral-100">
+                        <img src={item.img} className="w-full h-full object-cover" alt={item.author} />
+                      </div>
+                      <p className="text-lg text-[#201839] italic mb-6 leading-relaxed line-clamp-4">
                         "{item.text}"
                       </p>
                       <div className="font-bold text-primary uppercase tracking-widest text-xs">
