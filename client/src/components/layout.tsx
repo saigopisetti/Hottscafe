@@ -1,16 +1,12 @@
 import { Link, useLocation } from "wouter";
 import { Coffee, MapPin, Phone, Menu, X, Facebook, Mail } from "lucide-react";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 
 export function Navbar() {
   const [location] = useLocation();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [location]);
 
   const links = [
     { href: "/", label: "Home" },
