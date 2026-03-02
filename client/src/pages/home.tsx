@@ -11,7 +11,7 @@ import chickenSchnitzel from "@/assets/chicken-schnitzel.jpg";
 import baconEggSandwich from "@/assets/bacon-egg-sandwich.jpg";
 import hotDog from "@/assets/hot-dog.jpg";
 import hotChips from "@/assets/hot-chips.jpg";
-import icedCoffee from "@/assets/iced-coffee.jpg";
+import icedCoffee from "@/assets/iced-coffee-new-v2.png";
 import muffin from "@/assets/muffin.jpg";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
