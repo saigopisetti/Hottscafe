@@ -73,8 +73,8 @@ export default function Home() {
                  className="relative z-10"
                >
                  <img 
-                   src={coffeeImage} 
-                   alt="Funky Coffee" 
+                   src={cappuccino} 
+                   alt="Hotts Cafe Coffee" 
                    className="rounded-[3rem] shadow-2xl w-full object-cover h-[500px] border-8 border-accent/20"
                  />
                </motion.div>
