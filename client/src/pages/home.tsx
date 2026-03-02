@@ -52,12 +52,12 @@ export default function Home() {
               COFFEE <br />
               <span className="text-primary italic">with soul.</span>
             </h1>
-            <p className="text-base sm:text-lg md:text-2xl text-white mb-10 max-w-2xl mx-auto font-bold leading-relaxed drop-shadow-[0_2px_15px_rgba(0,0,0,0.9)] px-4">
+            {/* <p className="text-base sm:text-lg md:text-2xl text-white mb-10 max-w-2xl mx-auto font-bold leading-relaxed drop-shadow-[0_2px_15px_rgba(0,0,0,0.9)] px-4">
               We're turning up the volume on your morning. Hotts Café is where bold flavors meet vibrant community.
-            </p>
+            </p> */}
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center px-6">
               <Link href="/menu">
-                <Button size="lg" className="w-full sm:w-auto bg-primary hover:bg-primary/90 text-white rounded-full px-12 h-14 sm:h-16 text-lg sm:text-xl shadow-2xl hover:scale-105 transition-all cursor-pointer">
+                <Button size="lg" className="w-full sm:w-auto hover:bg-primary/90 text-white rounded-full px-12 h-14 sm:h-16 text-lg sm:text-xl shadow-2xl hover:scale-105 transition-all cursor-pointer bg-[#e50139]">
                   See the Menu
                 </Button>
               </Link>
