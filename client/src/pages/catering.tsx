@@ -181,13 +181,47 @@ export default function Catering() {
             </div>
           </section>
 
-          {/* Testimonial Snippet */}
-          <section className="bg-neutral-50 rounded-[3rem] p-12 md:p-20 mb-24 text-center">
-            <Quote className="w-12 h-12 text-primary/20 mx-auto mb-8" />
-            <p className="font-heading text-2xl md:text-3xl font-bold text-[#201839] mb-8 italic">
-              "Hotts Café catered our office launch and the feedback was incredible. The platters were fresh, beautifully presented, and delivered right on time."
-            </p>
-            <div className="font-bold text-primary uppercase tracking-widest text-sm">Local Business Client</div>
+          {/* Testimonial Slider */}
+          <section className="py-24 bg-neutral-50 rounded-[3rem] overflow-hidden mb-24 px-8">
+            <div className="text-center mb-16">
+              <Quote className="w-12 h-12 text-primary/20 mx-auto mb-6" />
+              <h2 className="font-heading text-4xl font-black text-[#201839] uppercase tracking-tighter">Client <span className="text-primary italic">Feedback</span></h2>
+            </div>
+
+            <div className="max-w-7xl mx-auto">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                {[
+                  {
+                    text: "Hotts Café catered our office launch and the feedback was incredible. The platters were fresh and beautifully presented.",
+                    author: "Tech Solutions Hub"
+                  },
+                  {
+                    text: "Best corporate lunch we've had in years. The mix of hot food and fresh wraps was perfect for our diverse team.",
+                    author: "Logistics Victoria"
+                  },
+                  {
+                    text: "Reliable, professional, and delicious. They handled our last-minute event with grace and amazing flavor.",
+                    author: "Hoppers Health Clinic"
+                  }
+                ].map((item, i) => (
+                  <motion.div
+                    key={i}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: i * 0.1 }}
+                    className="bg-white p-10 rounded-[2rem] shadow-lg border border-neutral-100 flex flex-col justify-between"
+                  >
+                    <p className="text-lg text-[#201839] italic mb-6 leading-relaxed">
+                      "{item.text}"
+                    </p>
+                    <div className="font-bold text-primary uppercase tracking-widest text-xs">
+                      {item.author}
+                    </div>
+                  </motion.div>
+                ))}
+              </div>
+            </div>
           </section>
 
           {/* Ready to Order Section */}
