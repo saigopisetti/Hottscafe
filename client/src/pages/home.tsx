@@ -14,7 +14,7 @@ import hotDog from "@/assets/hot-dog-new.jpg";
 import hotChips from "@/assets/hot-chips.jpg";
 import icedCoffee from "@/assets/iced-coffee-new-v2.png";
 import muffin from "@/assets/muffin.jpg";
-import cateringSnippet from "@/assets/catering-snippet.jpg";
+import cateringSnippet from "@/assets/catering-homepage-v2.png";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Coffee, Clock, ChefHat, Phone, Sparkles } from "lucide-react";
