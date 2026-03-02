@@ -106,26 +106,54 @@ export default function Contact() {
               Send a <span className="text-primary italic">Message</span>
             </h2>
             
-            <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
+            <form className="space-y-6" onSubmit={(e) => {
+              e.preventDefault();
+              const target = e.target as any;
+              const email = target.email.value;
+              const phone = target.phone.value;
+              
+              // Email validation
+              const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+              if (!emailRegex.test(email)) {
+                alert("Please enter a valid email address.");
+                return;
+              }
+
+              // Basic phone validation (at least 8 digits)
+              const phoneRegex = /^\d{8,15}$/;
+              const cleanPhone = phone.replace(/[\s\-\(\)]/g, "");
+              if (cleanPhone && !phoneRegex.test(cleanPhone)) {
+                alert("Please enter a valid phone number (at least 8 digits).");
+                return;
+              }
+
+              alert("Message sent! (Mockup)");
+            }}>
               <div className="grid sm:grid-cols-2 gap-6">
                 <div className="space-y-2">
                   <label className="text-xs font-black uppercase tracking-widest text-[#201839]">Name</label>
-                  <Input placeholder="Your name" className="rounded-xl border-neutral-200 focus:border-primary bg-white h-12" />
+                  <Input name="name" required placeholder="Your name" className="rounded-xl border-neutral-200 focus:border-primary bg-white h-12" />
                 </div>
                 <div className="space-y-2">
                   <label className="text-xs font-black uppercase tracking-widest text-[#201839]">Email</label>
-                  <Input type="email" placeholder="Your email" className="rounded-xl border-neutral-200 focus:border-primary bg-white h-12" />
+                  <Input name="email" type="email" required placeholder="Your email" className="rounded-xl border-neutral-200 focus:border-primary bg-white h-12" />
                 </div>
               </div>
-              
-              <div className="space-y-2">
-                <label className="text-xs font-black uppercase tracking-widest text-[#201839]">Subject</label>
-                <Input placeholder="What's this about?" className="rounded-xl border-neutral-200 focus:border-primary bg-white h-12" />
+
+              <div className="grid sm:grid-cols-2 gap-6">
+                <div className="space-y-2">
+                  <label className="text-xs font-black uppercase tracking-widest text-[#201839]">Phone Number</label>
+                  <Input name="phone" type="tel" placeholder="Your phone (optional)" className="rounded-xl border-neutral-200 focus:border-primary bg-white h-12" />
+                </div>
+                <div className="space-y-2">
+                  <label className="text-xs font-black uppercase tracking-widest text-[#201839]">Subject</label>
+                  <Input name="subject" required placeholder="What's this about?" className="rounded-xl border-neutral-200 focus:border-primary bg-white h-12" />
+                </div>
               </div>
 
               <div className="space-y-2">
                 <label className="text-xs font-black uppercase tracking-widest text-[#201839]">Message</label>
-                <Textarea placeholder="How can we help?" className="min-h-[150px] rounded-2xl border-neutral-200 focus:border-primary bg-white p-4" />
+                <Textarea name="message" required placeholder="How can we help?" className="min-h-[150px] rounded-2xl border-neutral-200 focus:border-primary bg-white p-4" />
               </div>
 
               {/* Mock Captcha */}
