@@ -70,55 +70,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Funky Intro Section */}
-      <section className="py-32 bg-white overflow-hidden">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 gap-20 items-center">
-            <div className="relative">
-               <motion.div 
-                 initial={{ rotate: -5 }}
-                 whileHover={{ rotate: 0 }}
-                 className="relative z-10"
-               >
-                 <img 
-                   src={cappuccino} 
-                   alt="Hotts Cafe Coffee" 
-                   className="rounded-[3rem] shadow-2xl w-full object-cover h-[500px] border-8 border-accent/20"
-                 />
-               </motion.div>
-               <div className="absolute -top-10 -right-10 w-40 h-40 bg-secondary rounded-full -z-10 animate-bounce"></div>
-               <div className="absolute -bottom-10 -left-10 w-60 h-60 bg-primary/20 rounded-full -z-10 blur-2xl"></div>
-            </div>
-            
-            <motion.div
-              initial={{ opacity: 0, x: 50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-            >
-              <h2 className="font-heading text-4xl md:text-5xl font-black mt-4 mb-6 text-[#201839] leading-tight">
-                Not Just A Café. <br />
-                <span className="text-secondary border-b-4 border-primary pb-1">A Movement.</span>
-              </h2>
-              <p className="text-black/60 text-base md:text-lg leading-relaxed mb-8">
-                At Hotts Café, we believe a café is more than just a place to grab a cup of coffee. It is a space where community comes together. Whether you prefer something light and wholesome or a hearty meal to fuel your day, we have options to suit every appetite.
-              </p>
-              
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-                <div className="p-6 bg-primary/5 rounded-3xl border border-accent/10 hover:border-accent/30 transition-colors">
-                  <Coffee className="w-8 h-8 text-accent mb-4" />
-                  <h4 className="font-black text-xl mb-2">Vibe Check</h4>
-                  <p className="text-sm text-black/60">The best beats and the boldest beans in Hoppers Crossing.</p>
-                </div>
-                <div className="p-6 bg-primary/4 rounded-3xl border border-primary/10 hover:border-primary/30 transition-colors">
-                  <ChefHat className="w-8 h-8 text-primary mb-4" />
-                  <h4 className="font-black text-xl mb-2">Soul Food</h4>
-                  <p className="text-sm text-black/60">Gourmet flavors that make your tastebuds dance.</p>
-                </div>
-              </div>
-            </motion.div>
-          </div>
-        </div>
-      </section>
 
       {/* Floating Menu Highlights */}
       <section className="py-32 bg-background relative overflow-hidden">

@@ -1,0 +1,144 @@
+import { Layout } from "@/components/layout";
+import { motion } from "framer-motion";
+import { Coffee, Heart, Users, Clock, MapPin, ChevronRight } from "lucide-react";
+import aboutHero from "@/assets/about-hero.jpg";
+import { Link } from "wouter";
+import { Button } from "@/components/ui/button";
+
+export default function About() {
+  return (
+    <Layout>
+      {/* Hero Section */}
+      <section className="relative h-[60vh] min-h-[500px] flex items-center overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <img 
+            src={aboutHero} 
+            alt="Hotts Cafe Community" 
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-black/40"></div>
+        </div>
+        
+        <div className="container max-w-7xl mx-auto px-4 relative z-10 text-center">
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="max-w-3xl mx-auto"
+          >
+            <span className="text-primary font-bold tracking-widest uppercase text-xs mb-4 block">Our Story</span>
+            <h1 className="font-heading text-5xl md:text-7xl font-black text-white mb-6 uppercase tracking-tighter">
+              More Than Just <span className="text-primary italic text-6xl md:text-8xl">Coffee.</span>
+            </h1>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Philosophy Section */}
+      <section className="py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-2 gap-16 items-center">
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+            >
+              <h2 className="font-heading text-4xl md:text-5xl font-black text-[#201839] mb-8 uppercase tracking-tight leading-none">
+                A Space Where <br />
+                <span className="text-primary italic">Community</span> Comes Together
+              </h2>
+              <div className="space-y-6 text-black/70 text-lg leading-relaxed">
+                <p>
+                  At Hotts Café, we believe a café is more than just a place to grab a cup of coffee. It is a space where community comes together.
+                </p>
+                <p>
+                  Start your morning with a freshly brewed coffee and a satisfying breakfast made with quality ingredients. Whether you prefer something light and wholesome or a hearty meal to fuel your day, we have options to suit every appetite.
+                </p>
+              </div>
+            </motion.div>
+            
+            <div className="grid grid-cols-2 gap-6">
+              <div className="p-8 bg-primary/5 rounded-[2rem] border border-primary/10 text-center">
+                <Coffee className="w-10 h-10 text-primary mx-auto mb-4" />
+                <h4 className="font-black text-[#201839] uppercase text-sm tracking-widest mb-2">Quality</h4>
+                <p className="text-xs text-black/60 font-medium">Brewed with passion using the finest beans.</p>
+              </div>
+              <div className="p-8 bg-secondary/5 rounded-[2rem] border border-secondary/10 text-center mt-8">
+                <Heart className="w-10 h-10 text-secondary mx-auto mb-4" />
+                <h4 className="font-black text-[#201839] uppercase text-sm tracking-widest mb-2">Passion</h4>
+                <p className="text-xs text-black/60 font-medium">Every meal prepared with care and love.</p>
+              </div>
+              <div className="p-8 bg-accent/5 rounded-[2rem] border border-accent/10 text-center">
+                <Users className="w-10 h-10 text-accent mx-auto mb-4" />
+                <h4 className="font-black text-[#201839] uppercase text-sm tracking-widest mb-2">Community</h4>
+                <p className="text-xs text-black/60 font-medium">A welcoming space for everyone to gather.</p>
+              </div>
+              <div className="p-8 bg-primary/5 rounded-[2rem] border border-primary/10 text-center mt-8">
+                <Clock className="w-10 h-10 text-primary mx-auto mb-4" />
+                <h4 className="font-black text-[#201839] uppercase text-sm tracking-widest mb-2">Fresh</h4>
+                <p className="text-xs text-black/60 font-medium">Quality ingredients served daily from 5am.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Experience Section */}
+      <section className="py-24 bg-neutral-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="max-w-4xl mx-auto"
+          >
+            <h2 className="font-heading text-4xl md:text-5xl font-black text-[#201839] mb-12 uppercase tracking-tight">
+              The <span className="text-primary italic">Lunchtime</span> Break
+            </h2>
+            <div className="grid md:grid-cols-2 gap-12 text-left">
+              <div className="bg-white p-10 rounded-[3rem] shadow-xl border border-neutral-100">
+                <p className="text-black/70 text-lg leading-relaxed">
+                  When lunchtime arrives, step away from the office and enjoy a relaxed setting where you can unwind, catch up with colleagues, or hold an informal meeting over a delicious meal.
+                </p>
+              </div>
+              <div className="bg-white p-10 rounded-[3rem] shadow-xl border border-neutral-100">
+                <p className="text-black/70 text-lg leading-relaxed">
+                  Our lunch menu offers fresh, flavourful dishes prepared with care and served promptly so you can make the most of your break. It is a moment to connect, recharge, and enjoy.
+                </p>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-32 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-[#201839] rounded-[4rem] p-12 md:p-24 text-center text-white relative overflow-hidden shadow-3xl">
+            <div className="absolute inset-0 bg-primary/10 mix-blend-overlay"></div>
+            <div className="relative z-10">
+              <h2 className="font-heading text-5xl md:text-7xl font-black mb-8 leading-none tracking-tighter uppercase">
+                Be There for <br />
+                <span className="text-primary italic">The Experience.</span>
+              </h2>
+              <p className="text-xl md:text-2xl mb-12 max-w-2xl mx-auto font-medium text-white/80">
+                Be there for the community. Be there at Hotts Café. We look forward to welcoming you soon.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-6 justify-center">
+                <Link href="/menu">
+                  <Button size="lg" className="bg-primary hover:bg-primary/90 text-white rounded-full px-12 h-16 text-xl shadow-2xl transition-all cursor-pointer">
+                    See the Menu
+                  </Button>
+                </Link>
+                <Link href="/contact">
+                  <Button size="lg" variant="outline" className="bg-white/10 hover:bg-white/20 text-white border-white/40 rounded-full px-12 h-16 text-xl backdrop-blur-md transition-all cursor-pointer">
+                    Visit Us
+                  </Button>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </Layout>
+  );
+}

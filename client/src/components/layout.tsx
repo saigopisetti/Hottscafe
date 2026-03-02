@@ -8,16 +8,18 @@ export function Navbar() {
   const [location] = useLocation();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [location]);
-
   const links = [
     { href: "/", label: "Home" },
+    { href: "/about", label: "About" },
     { href: "/menu", label: "Menu" },
     { href: "/catering", label: "Catering" },
     { href: "/contact", label: "Contact" },
   ];
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
+
 
   return (
     <nav className="sticky top-0 z-50 w-full bg-white/95 backdrop-blur-md border-b border-neutral-100 shadow-sm">
