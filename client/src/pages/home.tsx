@@ -70,7 +70,6 @@ export default function Home() {
           </motion.div>
         </div>
       </section>
-
       {/* Intro Section - Not Just A Café. A Movement. */}
       <section className="py-16 sm:py-24 bg-white overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -134,8 +133,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-
       {/* Floating Menu Highlights */}
       <section className="py-16 sm:py-32 bg-background relative overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-20 bg-gradient-to-b from-white to-transparent"></div>
@@ -188,7 +185,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* Catering Snippet */}
       <section className="py-24 bg-neutral-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -220,12 +216,11 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* Vibrant CTA */}
       <section className="py-16 sm:py-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-primary rounded-[2.5rem] sm:rounded-[4rem] p-8 sm:p-12 md:p-24 text-center text-white relative overflow-hidden shadow-3xl">
-             <div className="absolute inset-0 bg-white/10 mix-blend-overlay"></div>
+             <div className="absolute inset-0 mix-blend-overlay bg-[#991111]"></div>
              <div className="absolute -top-24 -right-24 w-64 h-64 bg-accent rounded-full blur-3xl opacity-50"></div>
              
              <div className="relative z-10">
