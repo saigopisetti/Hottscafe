@@ -37,10 +37,7 @@ export function Navbar() {
 
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center gap-8">
-            <a href="tel:93696504" className="flex items-center gap-2 px-4 py-2 bg-neutral-50 rounded-full border border-neutral-100 hover:bg-neutral-100 transition-colors group">
-              <Phone className="w-4 h-4 text-[#ef0000] group-hover:scale-110 transition-transform" />
-              <span className="text-sm font-bold text-[#201839]">9369 6504</span>
-            </a>
+            
             {links.map((link) => (
               <Link key={link.href} href={link.href}>
                 <a
@@ -48,21 +45,26 @@ export function Navbar() {
                     "text-sm font-medium transition-colors hover:text-primary relative py-1",
                     location === link.href
                       ? "text-primary after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-primary"
-                      : "text-neutral-600"
+                      : "text-black"
                   )}
                 >
                   {link.label}
                 </a>
               </Link>
             ))}
+            <a href="tel:93696504" className="flex items-center gap-2 px-4 py-2 bg-neutral-50 rounded-full border border-neutral-100 hover:bg-neutral-100 transition-colors group">
+              <Phone className="w-4 h-4 text-[#ef0000] group-hover:scale-110 transition-transform" />
+              <span className="text-sm font-bold text-[#201839]">9369 6504</span>
+            </a>
             <Link href="/contact">
-              <Button size="sm" className="hover:bg-primary/90 text-white font-medium px-6 rounded-full bg-[#ef0000]">Contact</Button>
+              <Button size="sm" className="hover:bg-primary/90 text-white font-medium px-6 rounded-full bg-[#ef0000]">Contact Us</Button>
             </Link>
+            
           </div>
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden p-2 text-neutral-600"
+            className="md:hidden p-2 text-black"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           >
             {mobileMenuOpen ? <X /> : <Menu />}
@@ -118,20 +120,20 @@ export function Footer() {
 
           {/* Contact */}
           <div className="space-y-4">
-            <h3 className="font-heading text-xl text-[#ef0000] font-light">Contact Us</h3>
+            <h3 className="font-heading text-xl text-[#000] font-light">Contact Us</h3>
             <div className="space-y-3">
-              <div className="flex items-start gap-3 text-neutral-600 text-sm">
+              <div className="flex items-start gap-3 text-black text-sm">
                 <MapPin className="h-5 w-5 text-primary shrink-0" />
                 <span>
                   Factory 10, 1–3 Kilmur Road,<br />
                   Hoppers Crossing (cnr Old Geelong Road)
                 </span>
               </div>
-              <div className="flex items-center gap-3 text-neutral-600 text-sm">
+              <div className="flex items-center gap-3 text-black text-sm">
                 <Phone className="h-5 w-5 text-primary shrink-0" />
                 <a href="tel:93696504" className="hover:text-primary transition-colors">9369 6504</a>
               </div>
-              <div className="flex items-center gap-3 text-neutral-600 text-sm">
+              <div className="flex items-center gap-3 text-black text-sm">
                 <Mail className="h-5 w-5 text-primary shrink-0" />
                 <span>orders@hottscafe.com.au</span>
               </div>
@@ -143,11 +145,11 @@ export function Footer() {
 
           {/* Hours */}
           <div className="space-y-4">
-             <h3 className="font-heading text-xl text-[#ef0000] font-light">Opening Hours</h3>
+             <h3 className="font-heading text-xl text-[#000] font-light">Opening Hours</h3>
              <ul className="space-y-2 text-neutral-600 text-sm">
                <li className="flex justify-between max-w-[200px]">
                  <span>Mon – Fri</span>
-                 <span className="text-neutral-500 font-bold">5.00am – 2.30pm</span>
+                 <span className="text-blackfont-bold">5.00am – 2.30pm</span>
                </li>
                <li className="pt-4 text-xs italic text-neutral-500">
                  Delivery available till 2pm ($3.00, Min $10)
