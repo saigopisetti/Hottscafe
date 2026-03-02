@@ -20,7 +20,7 @@ export default function Contact() {
           <h1 className="font-heading text-4xl sm:text-5xl font-black text-[#201839] mb-4 uppercase tracking-tighter leading-tight">
             Contact <span className="text-primary italic">Us</span>
           </h1>
-          <p className="text-black/60 max-w-xl mx-auto leading-relaxed text-base md:text-lg">
+          <p className="text-black max-w-xl mx-auto leading-relaxed text-base md:text-lg">
             We look forward to welcoming you soon. Find us in Hoppers Crossing for your daily dose of great coffee and food.
           </p>
         </div>
@@ -34,7 +34,7 @@ export default function Contact() {
               <h2 className="font-heading text-3xl font-black text-[#201839] mb-6 uppercase tracking-tight">
                 Visit <span className="text-primary italic">Hotts Café</span>
               </h2>
-              <p className="text-black/60 leading-relaxed mb-8 text-lg">
+              <p className="text-black leading-relaxed mb-8 text-lg">
                 Whether you're looking for a quick takeaway, a relaxed dine-in experience, or catering for your next office event, we're here to help.
               </p>
             </div>
@@ -45,7 +45,7 @@ export default function Contact() {
                   <MapPin className="h-5 w-5" />
                 </div>
                 <h3 className="font-black text-[#201839] uppercase text-sm tracking-widest">Address</h3>
-                <p className="text-black/60 text-sm leading-relaxed">
+                <p className="text-black text-sm leading-relaxed">
                   Factory 10, 1–3 Kilmur Road,<br />
                   Hoppers Crossing (cnr Old Geelong Road)
                 </p>
@@ -56,7 +56,7 @@ export default function Contact() {
                   <Phone className="h-5 w-5" />
                 </div>
                 <h3 className="font-black text-[#201839] uppercase text-sm tracking-widest">Phone & Email</h3>
-                <div className="text-black/60 text-sm leading-relaxed">
+                <div className="text-black text-sm leading-relaxed">
                   Phone: <a href="tel:93696504" className="font-bold hover:text-primary transition-colors underline decoration-primary/30 underline-offset-4">9369 6504</a><br />
                   <a href="mailto:orders@hottscafe.com.au" className="hover:text-primary transition-colors">orders@hottscafe.com.au</a>
                 </div>
@@ -67,7 +67,7 @@ export default function Contact() {
                   <Clock className="h-5 w-5" />
                 </div>
                 <h3 className="font-black text-[#201839] uppercase text-sm tracking-widest">Opening Hours</h3>
-                <p className="text-black/60 text-sm leading-relaxed">
+                <p className="text-black text-sm leading-relaxed">
                   Mon – Fri: 5.00am – 2.30pm<br />
                   <span className="text-primary text-xs font-bold uppercase">Delivery till 2pm</span>
                 </p>
@@ -78,7 +78,7 @@ export default function Contact() {
                   <Mail className="h-5 w-5" />
                 </div>
                 <h3 className="font-black text-[#201839] uppercase text-sm tracking-widest">Catering</h3>
-                <p className="text-black/60 text-sm leading-relaxed">
+                <p className="text-black text-sm leading-relaxed">
                   Corporate, Office & Business Catering Available
                 </p>
               </div>
