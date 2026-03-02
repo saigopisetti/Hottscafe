@@ -7,6 +7,12 @@ import steakSandwich from "@/assets/steak-sandwich-new.jpg";
 import cappuccino from "@/assets/cappuccino-new-v2.png";
 import eggBaconRoll from "@/assets/egg-bacon-roll-new.png";
 import jamDonut from "@/assets/jam-donut.jpg";
+import chickenSchnitzel from "@/assets/chicken-schnitzel.jpg";
+import baconEggSandwich from "@/assets/bacon-egg-sandwich.jpg";
+import hotDog from "@/assets/hot-dog.jpg";
+import hotChips from "@/assets/hot-chips.jpg";
+import icedCoffee from "@/assets/iced-coffee.jpg";
+import muffin from "@/assets/muffin.jpg";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Coffee, Clock, ChefHat, Phone, Sparkles } from "lucide-react";
@@ -130,7 +136,13 @@ export default function Home() {
               { img: steakSandwich, title: "Steak Sandwich", price: "$16.50", color: "bg-accent" },
               { img: cappuccino, title: "Cappuccino", price: "$4.80", color: "bg-primary" },
               { img: eggBaconRoll, title: "Egg & Bacon Roll", price: "$9.50", color: "bg-secondary" },
-              { img: jamDonut, title: "Jam Donut", price: "$3.50", color: "bg-accent" }
+              { img: jamDonut, title: "Jam Donut", price: "$3.50", color: "bg-accent" },
+              { img: chickenSchnitzel, title: "Chicken Schnitzel", price: "$15.00", color: "bg-primary" },
+              { img: baconEggSandwich, title: "Bacon & Egg Sandwich", price: "$8.50", color: "bg-secondary" },
+              { img: hotDog, title: "Hot Dog", price: "$6.50", color: "bg-accent" },
+              { img: hotChips, title: "Hot Chips", price: "$5.00", color: "bg-primary" },
+              { img: icedCoffee, title: "Iced Coffee", price: "$7.50", color: "bg-secondary" },
+              { img: muffin, title: "Fresh Muffin", price: "$5.50", color: "bg-accent" }
             ].map((item, idx) => (
               <motion.div 
                 key={idx}
