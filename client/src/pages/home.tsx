@@ -1,6 +1,7 @@
 import { Layout } from "@/components/layout";
 import { motion } from "framer-motion";
 import australianCafeHero from "@/assets/australian-cafe-hero-morning.png";
+import introSectionImg from "@/assets/image_1772433724592.png";
 import burgerLot from "@/assets/burger-lot.jpg";
 import chickenParma from "@/assets/chicken-parma.jpg";
 import steakSandwich from "@/assets/steak-sandwich-new.jpg";
@@ -67,6 +68,70 @@ export default function Home() {
               </Link>
             </div>
           </motion.div>
+        </div>
+      </section>
+
+      {/* Intro Section - Not Just A Café. A Movement. */}
+      <section className="py-24 bg-white overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col lg:flex-row items-center gap-16">
+            <motion.div 
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              className="w-full lg:w-1/2 relative"
+            >
+              <div className="relative group">
+                <div className="absolute -inset-4 bg-primary/5 rounded-[2.5rem] rotate-2 transition-transform group-hover:rotate-1"></div>
+                <img 
+                  src={introSectionImg} 
+                  alt="Barista pouring latte art" 
+                  className="relative rounded-[2rem] shadow-2xl w-full object-cover aspect-[4/3] border-8 border-white"
+                />
+              </div>
+            </motion.div>
+
+            <motion.div 
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              className="w-full lg:w-1/2"
+            >
+              <h2 className="font-heading text-5xl md:text-6xl font-black text-[#201839] mb-4 leading-[1.1]">
+                Not Just A Café.<br />
+                <span className="relative inline-block">
+                  A Movement.
+                  <span className="absolute -bottom-2 left-0 w-full h-1.5 bg-primary rounded-full"></span>
+                </span>
+              </h2>
+              
+              <p className="text-black/70 text-lg md:text-xl leading-relaxed mb-10 max-w-xl">
+                At Hotts Café, we believe a café is more than just a place to grab a cup of coffee. It is a space where community comes together. Whether you prefer something light and wholesome or a hearty meal to fuel your day, we have options to suit every appetite.
+              </p>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div className="p-6 rounded-3xl bg-[#FFF5F6] border border-primary/5 group hover:bg-white hover:shadow-xl transition-all duration-300">
+                  <div className="w-12 h-12 rounded-2xl bg-white shadow-sm flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                    <Coffee className="w-6 h-6 text-primary" />
+                  </div>
+                  <h3 className="font-heading text-xl font-bold text-[#201839] mb-2">Vibe Check</h3>
+                  <p className="text-black/60 text-sm leading-relaxed">
+                    The best beats and the boldest beans in Hoppers Crossing.
+                  </p>
+                </div>
+
+                <div className="p-6 rounded-3xl bg-[#FFF5F6] border border-primary/5 group hover:bg-white hover:shadow-xl transition-all duration-300">
+                  <div className="w-12 h-12 rounded-2xl bg-white shadow-sm flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                    <ChefHat className="w-6 h-6 text-primary" />
+                  </div>
+                  <h3 className="font-heading text-xl font-bold text-[#201839] mb-2">Soul Food</h3>
+                  <p className="text-black/60 text-sm leading-relaxed">
+                    Gourmet flavors that make your tastebuds dance.
+                  </p>
+                </div>
+              </div>
+            </motion.div>
+          </div>
         </div>
       </section>
 
