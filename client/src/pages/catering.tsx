@@ -9,9 +9,14 @@ import slide3 from "../assets/catering-slide-3-new.png";
 import slide4 from "../assets/catering-slide-4.png";
 import slide5 from "../assets/catering-slide-5.png";
 import slide6 from "../assets/catering-slide-6.png";
-import gallery1 from "../assets/gallery-corp-1.jpg";
-import gallery2 from "../assets/gallery-corp-2.jpg";
-import gallery3 from "../assets/gallery-corp-3.jpg";
+import gallery1 from "../assets/gallery-1-new.png";
+import gallery2 from "../assets/gallery-2-new.png";
+import gallery3 from "../assets/gallery-3-new.png";
+import gallery4 from "../assets/gallery-4-new.png";
+import gallery5 from "../assets/gallery-5-new.png";
+import gallery6 from "../assets/gallery-6-new.png";
+import gallery7 from "../assets/gallery-7-new.png";
+import gallery8 from "../assets/gallery-8-new.png";
 import user1 from "../assets/testimonial-user_1.jpg";
 import user2 from "../assets/testimonial-user_2.jpg";
 import user3 from "../assets/testimonial-user_3.jpg";
@@ -171,18 +176,14 @@ export default function Catering() {
             
             <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
               {[
-                { img: gallery1, label: "Corporate Lunch" },
-                { img: gallery2, label: "Team Building" },
-                { img: gallery3, label: "Event Setup" },
-                { img: slide1, label: "Fresh Platters" },
-                { img: slide2, label: "Gourmet Wraps" },
-                { img: slide3, label: "Sweet Treats" },
-                { img: "/src/assets/gallery-grid-food_1.jpg", label: "Executive Dining" },
-                { img: "/src/assets/gallery-grid-people_1.jpg", label: "Networking" },
-                { img: "/src/assets/gallery-grid-party_1.jpg", label: "Office Party" },
-                { img: "/src/assets/gallery-grid-food_2.jpg", label: "Boardroom Menu" },
-                { img: "/src/assets/gallery-grid-people_2.jpg", label: "Client Meeting" },
-                { img: "/src/assets/gallery-grid-party_2.jpg", label: "Celebration" }
+                { img: gallery1, label: "Gourmet Buffet" },
+                { img: gallery2, label: "Artisan Platters" },
+                { img: gallery3, label: "Corporate Lunch" },
+                { img: gallery4, label: "Event Networking" },
+                { img: gallery5, label: "Cocktail Party" },
+                { img: gallery6, label: "Grand Spread" },
+                { img: gallery7, label: "Seafood Apps" },
+                { img: gallery8, label: "Chef Crafted" }
               ].map((item, i) => (
                 <motion.div
                   key={i}
