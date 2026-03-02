@@ -3,9 +3,12 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Phone, Mail, Clock, ChevronRight, ChevronLeft, Quote, CheckCircle } from "lucide-react";
 import { useState, useEffect } from "react";
-import slide1 from "@/assets/catering-slide_1.jpg";
-import slide2 from "@/assets/catering-slide_2.jpg";
-import slide3 from "@/assets/catering-slide_3.jpg";
+import slide1 from "@/assets/catering-new-1.jpg";
+import slide2 from "@/assets/catering-new-2.jpg";
+import slide3 from "@/assets/catering-new-3.jpg";
+import gallery1 from "@/assets/gallery-corp-1.jpg";
+import gallery2 from "@/assets/gallery-corp-2.jpg";
+import gallery3 from "@/assets/gallery-corp-3.jpg";
 
 export default function Catering() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -98,42 +101,71 @@ export default function Catering() {
         </section>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-24">
-          <div className="grid md:grid-cols-2 gap-16 items-center mb-24">
-            <motion.div
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-            >
-              <h2 className="font-heading text-4xl font-black text-[#201839] mb-6">Professional Catering <br/><span className="text-primary italic">for every occasion.</span></h2>
-              <p className="text-black/60 text-lg leading-relaxed mb-8">
-                Whether you're hosting a corporate meeting, a private function, or just need to feed a hungry crowd, Hotts Café provides high-quality catering solutions tailored to your needs.
-              </p>
-              <div className="space-y-4">
-                {[
-                  "Gourmet Sandwich & Wrap Platters",
-                  "Hot Food & Finger Food Selections",
-                  "Fresh Salads & Fruit Platters",
-                  "Morning & Afternoon Tea Options"
-                ].map((item, i) => (
-                  <div key={i} className="flex items-center gap-3">
-                    <div className="w-5 h-5 rounded-full bg-primary/10 flex items-center justify-center">
-                      <ChevronRight className="w-3 h-3 text-primary" />
+            <div className="grid md:grid-cols-2 gap-16 items-center mb-24">
+              <motion.div
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+              >
+                <h2 className="font-heading text-4xl font-black text-[#201839] mb-6">Professional Catering <br/><span className="text-primary italic">for every occasion.</span></h2>
+                <p className="text-black/60 text-lg leading-relaxed mb-8">
+                  Whether you're hosting a corporate meeting, a private function, or just need to feed a hungry crowd, Hotts Café provides high-quality catering solutions tailored to your needs.
+                </p>
+                <div className="space-y-4">
+                  {[
+                    "Gourmet Sandwich & Wrap Platters",
+                    "Hot Food & Finger Food Selections",
+                    "Fresh Salads & Fruit Platters",
+                    "Morning & Afternoon Tea Options"
+                  ].map((item, i) => (
+                    <div key={i} className="flex items-center gap-3">
+                      <div className="w-5 h-5 rounded-full bg-primary/10 flex items-center justify-center">
+                        <ChevronRight className="w-3 h-3 text-primary" />
+                      </div>
+                      <span className="font-bold text-[#201839]">{item}</span>
                     </div>
-                    <span className="font-bold text-[#201839]">{item}</span>
-                  </div>
-                ))}
+                  ))}
+                </div>
+              </motion.div>
+              <div className="relative">
+                <img 
+                  src={slide2} 
+                  className="rounded-[2rem] shadow-2xl relative z-10 w-full aspect-[4/3] object-cover"
+                  alt="Catering Platter"
+                />
+                <div className="absolute -top-6 -right-6 w-32 h-32 bg-accent rounded-full -z-0 animate-pulse opacity-50" />
+                <div className="absolute -bottom-6 -left-6 w-48 h-48 bg-primary/10 rounded-full -z-0 blur-2xl" />
               </div>
-            </motion.div>
-            <div className="relative">
-              <img 
-                src={slide1} 
-                className="rounded-[2rem] shadow-2xl relative z-10"
-                alt="Catering Platter"
-              />
-              <div className="absolute -top-6 -right-6 w-32 h-32 bg-accent rounded-full -z-0 animate-pulse opacity-50" />
-              <div className="absolute -bottom-6 -left-6 w-48 h-48 bg-primary/10 rounded-full -z-0 blur-2xl" />
             </div>
-          </div>
+
+          {/* Gallery Section */}
+          <section className="mb-24">
+            <div className="text-center mb-12">
+              <h2 className="font-heading text-4xl font-black text-[#201839] mb-4 uppercase tracking-tight">Catering <span className="text-primary italic">In Action</span></h2>
+              <p className="text-black/60 text-lg max-w-2xl mx-auto">From focused boardroom lunches to vibrant team celebrations, we make every event special.</p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {[
+                { img: gallery1, label: "Corporate Lunches" },
+                { img: gallery2, label: "Office Celebrations" },
+                { img: gallery3, label: "Professional Events" }
+              ].map((item, i) => (
+                <motion.div
+                  key={i}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: i * 0.1 }}
+                  className="relative group h-80 rounded-[2rem] overflow-hidden shadow-xl"
+                >
+                  <img src={item.img} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt={item.label} />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-8">
+                    <p className="text-white font-bold text-lg uppercase tracking-wider">{item.label}</p>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+          </section>
 
           {/* Testimonial Snippet */}
           <section className="bg-neutral-50 rounded-[3rem] p-12 md:p-20 mb-24 text-center">
