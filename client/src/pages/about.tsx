@@ -2,6 +2,7 @@ import { Layout } from "@/components/layout";
 import { motion } from "framer-motion";
 import { Coffee, Heart, Users, Clock, MapPin, ChevronRight } from "lucide-react";
 import aboutHero from "@/assets/about-hero.jpg";
+import experienceImg from "@/assets/steak-sandwich-new.jpg";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 
@@ -78,6 +79,55 @@ export default function About() {
                 <p className="text-xs text-black/60 font-medium">Quality ingredients served daily from 5am.</p>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* NEW: The Culinary Craft Section */}
+      <section className="py-24 bg-white overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col lg:flex-row-reverse items-center gap-16">
+            <motion.div 
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              className="w-full lg:w-1/2"
+            >
+              <div className="relative">
+                <div className="absolute -inset-4 bg-secondary/5 rounded-[3rem] -rotate-2"></div>
+                <img 
+                  src={experienceImg} 
+                  alt="Hotts Cafe Signature Dishes" 
+                  className="relative rounded-[2.5rem] shadow-2xl w-full object-cover aspect-video border-8 border-white"
+                />
+              </div>
+            </motion.div>
+
+            <motion.div 
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              className="w-full lg:w-1/2"
+            >
+              <h2 className="font-heading text-4xl md:text-5xl font-black text-[#201839] mb-6 uppercase tracking-tight leading-none">
+                The <span className="text-secondary italic">Culinary</span> Craft
+              </h2>
+              <p className="text-black/70 text-lg leading-relaxed mb-8">
+                Our kitchen is the heart of Hotts Café. We take pride in sourcing the freshest local ingredients to create dishes that don't just fill you up, but fuel your soul. From our signature steak sandwiches to our vibrant seasonal salads, every plate is a testament to our commitment to quality.
+              </p>
+              <ul className="space-y-4">
+                {[
+                  "Sourced from local Hoppers Crossing suppliers",
+                  "Chef-prepared daily specials",
+                  "Bold flavors with a modern Australian twist"
+                ].map((item, i) => (
+                  <li key={i} className="flex items-center gap-3 text-black/80 font-medium">
+                    <div className="w-2 h-2 rounded-full bg-primary" />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </motion.div>
           </div>
         </div>
       </section>
