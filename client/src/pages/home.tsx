@@ -44,7 +44,7 @@ export default function Home() {
             <Badge className="mb-6 bg-primary text-white border-none px-6 drop-shadow-xl scale-110">
               <Sparkles className="w-3 h-3 mr-2" /> NEW VIBE, SAME FLAVOR
             </Badge>
-            <h1 className="font-heading text-6xl md:text-8xl font-black leading-tight mb-6 text-white tracking-tight uppercase drop-shadow-[0_4px_20px_rgba(0,0,0,0.9)]">
+            <h1 className="font-heading text-6xl md:text-8xl font-black leading-none mb-6 text-white tracking-tighter uppercase drop-shadow-[0_4px_20px_rgba(0,0,0,0.9)]">
               COFFEE <br />
               <span className="text-primary italic">with soul.</span>
             </h1>
