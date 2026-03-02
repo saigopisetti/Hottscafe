@@ -10,7 +10,7 @@ import eggBaconRoll from "@/assets/egg-bacon-roll-new.png";
 import jamDonut from "@/assets/jam-donut.jpg";
 import chickenSchnitzel from "@/assets/chicken-schnitzel.jpg";
 import baconEggSandwich from "@/assets/bacon-egg-sandwich.jpg";
-import hotDog from "@/assets/hot-dog.jpg";
+import hotDog from "@/assets/hot-dog-new.jpg";
 import hotChips from "@/assets/hot-chips.jpg";
 import icedCoffee from "@/assets/iced-coffee-new-v2.png";
 import muffin from "@/assets/muffin.jpg";
