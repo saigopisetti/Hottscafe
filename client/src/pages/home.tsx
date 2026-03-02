@@ -224,27 +224,38 @@ export default function Home() {
       {/* Vibrant CTA */}
       <section className="py-16 sm:py-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-[#201839] rounded-[2.5rem] sm:rounded-[4rem] p-8 sm:p-12 md:p-24 text-center text-white relative overflow-hidden shadow-3xl">
+          <div className="bg-primary rounded-[2.5rem] sm:rounded-[4rem] p-8 sm:p-12 md:p-24 text-center text-white relative overflow-hidden shadow-3xl">
+             <div className="absolute inset-0 bg-white/10 mix-blend-overlay"></div>
+             <div className="absolute -top-24 -right-24 w-64 h-64 bg-accent rounded-full blur-3xl opacity-50"></div>
+             
              <div className="relative z-10">
-               <h2 className="font-heading text-4xl sm:text-6xl md:text-7xl text-[#e50139] font-black mb-6 sm:mb-8 leading-tight tracking-tighter uppercase">
-                 BE THERE FOR <br />
-                 THE EXPERIENCE.
+               <h2 className="font-heading text-3xl sm:text-5xl md:text-7xl text-secondary font-black mb-6 sm:mb-8 leading-none">
+                 <span className="opacity-60">BE THERE.</span> <br />
+                 <span className="">AT HOTTS CAFÉ.</span>
                </h2>
-               <p className="text-lg sm:text-xl md:text-2xl mb-12 max-w-2xl mx-auto font-medium text-white/90">
-                 Be there for the community. Be there at Hotts Café. We look forward to welcoming you soon.
+               <p className="text-lg sm:text-xl md:text-2xl mb-8 sm:mb-12 max-w-2xl mx-auto font-medium text-white/90">
+                 Connect, recharge, and enjoy the experience. We look forward to welcoming you soon.
                </p>
-               <div className="flex flex-col sm:flex-row justify-center gap-4 sm:gap-6">
-                 <Link href="/menu">
-                   <Button size="lg" className="bg-[#e50139] hover:bg-[#e50139]/90 text-white rounded-full px-10 h-14 sm:h-16 text-lg font-bold transition-all hover:scale-105">
-                     See the Menu
-                   </Button>
-                 </Link>
-                 <Link href="/contact">
-                   <Button size="lg" variant="outline" className="bg-transparent hover:bg-white/10 text-white border-white/20 rounded-full px-10 h-14 sm:h-16 text-lg font-bold transition-all hover:scale-105">
-                     Visit Us
-                   </Button>
-                 </Link>
+            <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-6 sm:gap-10">
+                 <div className="flex items-center gap-4 bg-white/10 px-6 sm:px-8 py-3 sm:py-4 rounded-full backdrop-blur-md justify-center sm:justify-start">
+                   <Clock className="w-6 h-6 sm:w-8 sm:h-8 text-secondary" />
+                   <div className="text-left">
+                     <p className="font-black text-sm sm:text-base uppercase tracking-wider">EARLY BIRDS</p>
+                     <p className="text-xs sm:text-sm opacity-80">5:00 AM - 2:30 PM</p>
+                   </div>
+                 </div>
+                 <div className="flex items-center gap-4 bg-white/20 px-6 sm:px-8 py-3 sm:py-4 rounded-full backdrop-blur-md justify-center sm:justify-start">
+                   <Phone className="w-6 h-6 sm:w-8 sm:h-8 text-primary" />
+                   <div className="text-left">
+                     <p className="font-black text-sm sm:text-base uppercase tracking-wider">HOTLINE</p>
+                     <p className="text-xs sm:text-sm opacity-80">9369 6504</p>
+                   </div>
+                 </div>
+              
                </div>
+               <h2 className="font-heading text-3xl sm:text-4xl md:text-6xl text-secondary font-black mt-8 sm:m-8 leading-none">
+                  <span>Delivery at <span className="text-4xl sm:text-5xl">$3</span></span> <br />
+                </h2>
              </div>
           </div>
         </div>
