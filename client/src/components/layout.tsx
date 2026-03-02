@@ -97,7 +97,7 @@ export function Footer() {
           {/* Brand */}
           <div className="space-y-4">
             <div className="flex items-center gap-2">
-              <span className="font-heading text-2xl font-black text-primary italic">Hotts Café</span>
+              <span className="font-heading text-2xl font-black text-primary">Hotts Café</span>
             </div>
             <p className="text-neutral-900 text-sm leading-relaxed max-w-xs">
               More than just a meal. It is a moment to connect, recharge, and enjoy.

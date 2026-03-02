@@ -1,6 +1,6 @@
 import { Layout } from "@/components/layout";
 import { motion } from "framer-motion";
-import australianCafeHero from "@/assets/australian-cafe-hero.png";
+import australianCafeHero from "@/assets/australian-cafe-hero-v2.png";
 import burgerLot from "@/assets/burger-lot.jpg";
 import chickenParma from "@/assets/chicken-parma.jpg";
 import steakSandwich from "@/assets/steak-sandwich-new.jpg";
@@ -23,44 +23,42 @@ export default function Home() {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="relative h-[85vh] min-h-[700px] flex items-center overflow-hidden">
+      <section className="relative h-[70vh] min-h-[600px] flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
             src={australianCafeHero} 
             alt="Hotts Cafe Modern Interior" 
-            className="w-full h-full object-cover scale-105"
+            className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-background/90 via-background/40 to-transparent"></div>
-          {/* Animated blobs for vibe */}
-          <div className="absolute top-1/4 -left-20 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-pulse"></div>
-          <div className="absolute bottom-1/4 -right-20 w-96 h-96 bg-secondary/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
+          <div className="absolute inset-0 bg-black/40"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/20"></div>
         </div>
         
-        <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
           <motion.div 
-            initial={{ opacity: 0, x: -50 }}
-            animate={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className="max-w-3xl"
+            className="max-w-4xl mx-auto"
           >
-            <Badge className="mb-6 bg-accent/20 text-accent-primary border-accent animate-bounce">
+            <Badge className="mb-6 bg-primary text-white border-none px-6 drop-shadow-xl scale-110">
               <Sparkles className="w-3 h-3 mr-2" /> NEW VIBE, SAME FLAVOR
             </Badge>
-            <h1 className="font-heading text-5xl md:text-7xl font-black leading-tight mb-6 text-white tracking-tight uppercase">
+            <h1 className="font-heading text-6xl md:text-8xl font-black leading-tight mb-6 text-white tracking-tight uppercase drop-shadow-[0_4px_20px_rgba(0,0,0,0.9)]">
               COFFEE <br />
-              <span className="text-white italic">with soul.</span>
+              <span className="text-primary italic">with soul.</span>
             </h1>
-            <p className="text-lg md:text-xl text-white/90 mb-10 max-w-xl font-medium leading-relaxed">
+            <p className="text-lg md:text-2xl text-white mb-10 max-w-2xl mx-auto font-bold leading-relaxed drop-shadow-[0_2px_15px_rgba(0,0,0,0.9)]">
               We're turning up the volume on your morning. Hotts Café is where bold flavors meet vibrant community.
             </p>
-            <div className="flex flex-col sm:flex-row gap-6">
+            <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <Link href="/menu">
-                <Button size="lg" className="bg-primary hover:bg-primary/90 text-white rounded-full px-10 h-16 text-lg shadow-lg hover:shadow-primary/40 transition-all active:scale-95 cursor-pointer">
+                <Button size="lg" className="bg-primary hover:bg-primary/90 text-white rounded-full px-12 h-16 text-xl shadow-2xl hover:scale-105 transition-all cursor-pointer">
                   See the Menu
                 </Button>
               </Link>
               <Link href="/contact">
-                <Button size="lg" variant="outline" className="bg-secondary/10 hover:bg-secondary/20 text-secondary border-secondary/50 rounded-full px-10 h-16 text-lg backdrop-blur-md transition-all active:scale-95 cursor-pointer">
+                <Button size="lg" variant="outline" className="bg-white/10 hover:bg-white/20 text-white border-white/40 rounded-full px-12 h-16 text-xl backdrop-blur-md hover:scale-105 transition-all cursor-pointer">
                   Visit Us
                 </Button>
               </Link>
