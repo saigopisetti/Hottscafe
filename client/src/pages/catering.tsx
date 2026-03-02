@@ -17,6 +17,10 @@ import gallery5 from "../assets/gallery-5-new.png";
 import gallery6 from "../assets/gallery-6-new.png";
 import gallery7 from "../assets/gallery-7-new.png";
 import gallery8 from "../assets/gallery-8-new.png";
+import gallery9 from "../assets/gallery-9-new.png";
+import gallery10 from "../assets/gallery-10-new.png";
+import gallery11 from "../assets/gallery-11-new.png";
+import gallery12 from "../assets/gallery-12-new.png";
 import user1 from "../assets/testimonial-user_1.jpg";
 import user2 from "../assets/testimonial-user_2.jpg";
 import user3 from "../assets/testimonial-user_3.jpg";
@@ -183,7 +187,11 @@ export default function Catering() {
                 { img: gallery5, label: "Cocktail Party" },
                 { img: gallery6, label: "Grand Spread" },
                 { img: gallery7, label: "Seafood Apps" },
-                { img: gallery8, label: "Chef Crafted" }
+                { img: gallery8, label: "Chef Crafted" },
+                { img: gallery9, label: "Seasonal Salads" },
+                { img: gallery10, label: "Morning Tea" },
+                { img: gallery11, label: "Gourmet Sliders" },
+                { img: gallery12, label: "Boardroom Lunch" }
               ].map((item, i) => (
                 <motion.div
                   key={i}
