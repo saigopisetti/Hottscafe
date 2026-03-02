@@ -1,9 +1,12 @@
 import { Layout } from "@/components/layout";
 import { motion } from "framer-motion";
 import australianCafeHero from "@/assets/australian-cafe-hero.png";
-import breakfastImage from "@/assets/breakfast-plate.png";
-import coffeeImage from "@/assets/coffee-art.png";
-import burgerImage from "@/assets/burger-combo.png";
+import burgerLot from "@/assets/burger-lot.jpg";
+import chickenParma from "@/assets/chicken-parma.jpg";
+import steakSandwich from "@/assets/steak-sandwich.jpg";
+import cappuccino from "@/assets/cappuccino.jpg";
+import eggBaconRoll from "@/assets/egg-bacon-roll.jpg";
+import jamDonut from "@/assets/jam-donut.jpg";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Coffee, Clock, ChefHat, Phone, Sparkles } from "lucide-react";
@@ -120,29 +123,33 @@ export default function Home() {
             </h2>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-12">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 md:gap-6">
             {[
-              { img: breakfastImage, title: "Big Breaky", price: "$22.90", color: "bg-accent" },
-              { img: burgerImage, title: "The Lot", price: "$15.50", color: "bg-primary" },
-              { img: coffeeImage, title: "Neon Latte", price: "$4.80", color: "bg-secondary" }
+              { img: burgerLot, title: "The Lot", price: "$15.50", color: "bg-primary" },
+              { img: chickenParma, title: "Chicken Parma", price: "$18.50", color: "bg-secondary" },
+              { img: steakSandwich, title: "Steak Sandwich", price: "$16.50", color: "bg-accent" },
+              { img: cappuccino, title: "Cappuccino", price: "$4.80", color: "bg-primary" },
+              { img: eggBaconRoll, title: "Egg & Bacon Roll", price: "$9.50", color: "bg-secondary" },
+              { img: jamDonut, title: "Jam Donut", price: "$3.50", color: "bg-accent" }
             ].map((item, idx) => (
               <motion.div 
                 key={idx}
-                whileHover={{ y: -15, scale: 1.02 }}
-                className="bg-white rounded-[2.5rem] overflow-hidden shadow-2xl group border border-foreground/5"
+                whileHover={{ y: -8, scale: 1.02 }}
+                className="bg-white rounded-3xl overflow-hidden shadow-xl group border border-foreground/5 flex flex-col"
               >
-                <div className="h-72 overflow-hidden relative">
+                <div className="aspect-square overflow-hidden relative">
                   <img src={item.img} alt={item.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
-                  <div className={`absolute top-6 right-6 ${item.color} text-white font-black px-4 py-2 rounded-full shadow-lg`}>
+                  <div className={`absolute top-3 right-3 ${item.color} text-white text-[10px] md:text-xs font-black px-2 py-1 rounded-full shadow-lg`}>
                     {item.price}
                   </div>
                 </div>
-                <div className="p-10">
-                  <h3 className="font-heading text-3xl font-black mb-4 group-hover:text-primary transition-colors">{item.title}</h3>
-                  <p className="text-primary/60 mb-8 line-clamp-2">Fresh ingredients, bold flavors, and that classic Hotts twist.</p>
+                <div className="p-4 flex-grow flex flex-col justify-between">
+                  <div>
+                    <h3 className="font-heading text-lg md:text-xl font-black mb-1 group-hover:text-primary transition-colors leading-tight line-clamp-1">{item.title}</h3>
+                  </div>
                   <Link href="/menu">
-                    <Button variant="ghost" className="p-0 hover:bg-transparent text-primary font-black flex items-center gap-2 group/btn cursor-pointer">
-                      FULL MENU <ArrowRight className="w-5 h-5 group-hover/btn:translate-x-2 transition-transform" />
+                    <Button variant="ghost" className="p-0 h-auto hover:bg-transparent text-primary text-xs font-black flex items-center gap-1 group/btn cursor-pointer mt-2">
+                      MENU <ArrowRight className="w-3 h-3 group-hover/btn:translate-x-1 transition-transform" />
                     </Button>
                   </Link>
                 </div>
