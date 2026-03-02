@@ -27,7 +27,7 @@ export default function Menu() {
                   <TabsTrigger 
                     key={cat} 
                     value={cat}
-                    className="data-[state=active]:bg-primary data-[state=active]:text-white rounded-full px-5 py-2 transition-all text-xs font-bold uppercase tracking-wider text-black hover:text-primary data-[state=active]:hover:text-white whitespace-nowrap"
+                    className="data-[state=active]:bg-[#ef0000] data-[state=active]:text-white rounded-full px-5 py-2 transition-all text-xs font-bold uppercase tracking-wider text-black hover:text-[#ef0000] data-[state=active]:hover:text-white whitespace-nowrap"
                   >
                     {cat}
                   </TabsTrigger>

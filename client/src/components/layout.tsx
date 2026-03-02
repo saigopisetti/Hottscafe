@@ -53,9 +53,7 @@ export function Navbar() {
               </Link>
             ))}
             <Link href="/contact">
-              <Button size="sm" className="hover:bg-primary/90 text-white font-medium px-6 rounded-full bg-[#e50039]">
-                Visit Us
-              </Button>
+              <Button size="sm" className="hover:bg-primary/90 text-white font-medium px-6 rounded-full bg-[#ef0000]">Contact</Button>
             </Link>
           </div>
 
