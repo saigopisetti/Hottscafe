@@ -138,29 +138,43 @@ export default function Catering() {
               </div>
             </div>
 
-          {/* Gallery Section */}
-          <section className="mb-24">
-            <div className="text-center mb-12">
-              <h2 className="font-heading text-4xl font-black text-[#201839] mb-4 uppercase tracking-tight">Catering <span className="text-primary italic">In Action</span></h2>
-              <p className="text-black/60 text-lg max-w-2xl mx-auto">From focused boardroom lunches to vibrant team celebrations, we make every event special.</p>
+          {/* Sharp Edged Gallery Grid */}
+          <section className="mb-24 px-4 md:px-0">
+            <div className="text-center mb-16">
+              <h2 className="font-heading text-4xl md:text-5xl font-black text-[#201839] mb-4 uppercase tracking-tighter">Catering <span className="text-primary italic">Excellence</span></h2>
+              <p className="text-black/60 text-lg max-w-2xl mx-auto">A visual journey through our most successful corporate events and gourmet presentations.</p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
               {[
-                { img: gallery1, label: "Corporate Lunches" },
-                { img: gallery2, label: "Office Celebrations" },
-                { img: gallery3, label: "Professional Events" }
+                { img: gallery1, label: "Corporate Lunch" },
+                { img: gallery2, label: "Team Building" },
+                { img: gallery3, label: "Event Setup" },
+                { img: slide1, label: "Fresh Platters" },
+                { img: slide2, label: "Gourmet Wraps" },
+                { img: slide3, label: "Sweet Treats" },
+                { img: "/src/assets/gallery-grid-food_1.jpg", label: "Executive Dining" },
+                { img: "/src/assets/gallery-grid-people_1.jpg", label: "Networking" },
+                { img: "/src/assets/gallery-grid-party_1.jpg", label: "Office Party" },
+                { img: "/src/assets/gallery-grid-food_2.jpg", label: "Boardroom Menu" },
+                { img: "/src/assets/gallery-grid-people_2.jpg", label: "Client Meeting" },
+                { img: "/src/assets/gallery-grid-party_2.jpg", label: "Celebration" }
               ].map((item, i) => (
                 <motion.div
                   key={i}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
                   viewport={{ once: true }}
-                  transition={{ delay: i * 0.1 }}
-                  className="relative group h-80 rounded-[2rem] overflow-hidden shadow-xl"
+                  transition={{ delay: i * 0.05 }}
+                  className="relative group aspect-square overflow-hidden bg-neutral-200"
                 >
-                  <img src={item.img} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt={item.label} />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-8">
-                    <p className="text-white font-bold text-lg uppercase tracking-wider">{item.label}</p>
+                  <img 
+                    src={item.img} 
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" 
+                    alt={item.label} 
+                  />
+                  <div className="absolute inset-0 bg-primary/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-4">
+                    <p className="text-white font-black text-center text-xs md:text-sm uppercase tracking-widest">{item.label}</p>
                   </div>
                 </motion.div>
               ))}
