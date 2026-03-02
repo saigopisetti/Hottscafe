@@ -6,6 +6,9 @@ import { useState, useEffect } from "react";
 import slide1 from "../assets/catering-new-1.jpg";
 import slide2 from "../assets/catering-new-2.jpg";
 import slide3 from "../assets/catering-new-3.jpg";
+import slide4 from "../assets/catering-slide-4.png";
+import slide5 from "../assets/catering-slide-5.png";
+import slide6 from "../assets/catering-slide-6.png";
 import gallery1 from "../assets/gallery-corp-1.jpg";
 import gallery2 from "../assets/gallery-corp-2.jpg";
 import gallery3 from "../assets/gallery-corp-3.jpg";
@@ -32,6 +35,21 @@ export default function Catering() {
       url: slide3,
       title: "Fresh Platters",
       desc: "Beautifully presented and delivered to your door."
+    },
+    {
+      url: slide4,
+      title: "Gourmet Canapes",
+      desc: "Elegant finger foods for sophisticated gatherings."
+    },
+    {
+      url: slide5,
+      title: "Event Spreads",
+      desc: "Comprehensive menus for large corporate functions."
+    },
+    {
+      url: slide6,
+      title: "Dessert Towers",
+      desc: "Sweet finishes and seasonal fruit arrangements."
     }
   ];
 

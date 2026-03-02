@@ -120,7 +120,7 @@ export function Footer() {
 
           {/* Contact */}
           <div className="space-y-4">
-            <h3 className="font-heading text-xl text-[#000] font-light">Contact Us</h3>
+            <h3 className="font-heading text-xl text-[#ef0000] font-light">Contact Us</h3>
             <div className="space-y-3">
               <div className="flex items-start gap-3 text-black text-sm">
                 <MapPin className="h-5 w-5 text-primary shrink-0" />
@@ -145,13 +145,13 @@ export function Footer() {
 
           {/* Hours */}
           <div className="space-y-4">
-             <h3 className="font-heading text-xl text-[#000] font-light">Opening Hours</h3>
-             <ul className="space-y-2 text-neutral-600 text-sm">
+             <h3 className="font-heading text-xl text-[#ef0000] font-light">Opening Hours</h3>
+             <ul className="space-y-2 text-black text-sm">
                <li className="flex justify-between max-w-[200px]">
                  <span>Mon – Fri</span>
                  <span className="text-blackfont-bold">5.00am – 2.30pm</span>
                </li>
-               <li className="pt-4 text-xs italic text-neutral-500">
+               <li className="pt-4 text-xs italic text-neutral-900">
                  Delivery available till 2pm ($3.00, Min $10)
                </li>
              </ul>
