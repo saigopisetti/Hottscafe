@@ -186,8 +186,8 @@ export default function Home() {
                 EVENT CATERING
               </Badge>
               <h2 className="font-heading text-4xl md:text-5xl font-black text-[#201839] mb-6 leading-tight">
-                Feeding the <br />
-                <span className="text-primary italic">whole squad?</span>
+                Catering for <br />
+                <span className="text-primary italic">your next event</span>
               </h2>
               <p className="text-black/60 text-lg mb-8 max-w-md">
                 From office lunches to private functions, we bring the Hotts Café flavor to your event. Fresh platters, hot favorites, and more.
