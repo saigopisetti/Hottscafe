@@ -219,38 +219,29 @@ export default function Home() {
       {/* Vibrant CTA */}
       <section className="py-16 sm:py-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-primary rounded-[2.5rem] sm:rounded-[4rem] p-8 sm:p-12 md:p-24 text-center text-white relative overflow-hidden shadow-3xl">
-             <div className="absolute inset-0 mix-blend-overlay bg-[#0028ff]"></div>
-             <div className="absolute -top-24 -right-24 w-64 h-64 bg-accent rounded-full blur-3xl opacity-50"></div>
-             
+          <div className="bg-[#201839] rounded-[2.5rem] sm:rounded-[5rem] p-12 sm:p-20 md:p-32 text-center text-white relative overflow-hidden shadow-3xl">
              <div className="relative z-10">
-               <h2 className="font-heading text-3xl sm:text-5xl md:text-7xl font-black mb-6 sm:mb-8 leading-none text-[#e60039]">
-                 <span className="opacity-60">BE THERE.</span> <br />
-                 <span className="">AT HOTTS CAFÉ.</span>
+               <h2 className="font-heading text-4xl sm:text-6xl md:text-7xl font-black mb-8 leading-[1.1] tracking-tighter text-[#e50039] uppercase">
+                 BE THERE FOR <br />
+                 THE EXPERIENCE.
                </h2>
-               <p className="text-lg sm:text-xl md:text-2xl mb-8 sm:mb-12 max-w-2xl mx-auto font-medium text-white/90">
-                 Connect, recharge, and enjoy the experience. We look forward to welcoming you soon.
+               <p className="text-lg sm:text-xl md:text-2xl mb-12 max-w-3xl mx-auto font-medium text-white/90 leading-relaxed">
+                 Be there for the community. Be there at Hotts Café. <br className="hidden sm:block" />
+                 We look forward to welcoming you soon.
                </p>
-            <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-6 sm:gap-10">
-                 <div className="flex items-center gap-4 bg-white/10 px-6 sm:px-8 py-3 sm:py-4 rounded-full backdrop-blur-md justify-center sm:justify-start">
-                   <Clock className="w-6 h-6 sm:w-8 sm:h-8 text-secondary" />
-                   <div className="text-left">
-                     <p className="font-black text-sm sm:text-base uppercase tracking-wider">EARLY BIRDS</p>
-                     <p className="text-xs sm:text-sm opacity-80">5:00 AM - 2:30 PM</p>
-                   </div>
-                 </div>
-                 <div className="flex items-center gap-4 bg-white/20 px-6 sm:px-8 py-3 sm:py-4 rounded-full backdrop-blur-md justify-center sm:justify-start">
-                   <Phone className="w-6 h-6 sm:w-8 sm:h-8 text-primary" />
-                   <div className="text-left">
-                     <p className="font-black text-sm sm:text-base uppercase tracking-wider">HOTLINE</p>
-                     <p className="text-xs sm:text-sm opacity-80">9369 6504</p>
-                   </div>
-                 </div>
-              
+               
+               <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
+                 <Link href="/menu">
+                   <Button size="lg" className="bg-[#e50039] hover:bg-[#e50039]/90 text-white rounded-full px-12 h-16 text-xl font-bold shadow-2xl transition-all hover:scale-105 cursor-pointer border-none">
+                     See the Menu
+                   </Button>
+                 </Link>
+                 <Link href="/contact">
+                   <Button size="lg" variant="outline" className="bg-transparent hover:bg-white/5 text-white border-white/20 rounded-full px-12 h-16 text-xl font-bold transition-all hover:scale-105 cursor-pointer">
+                     Visit Us
+                   </Button>
+                 </Link>
                </div>
-               <h2 className="font-heading text-3xl sm:text-4xl md:text-6xl text-secondary font-black mt-8 sm:m-8 leading-none">
-                  <span>Delivery at <span className="text-4xl sm:text-5xl">$3</span></span> <br />
-                </h2>
              </div>
           </div>
         </div>
