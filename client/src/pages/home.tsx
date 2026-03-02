@@ -14,6 +14,9 @@ import hotChips from "@/assets/hot-chips.jpg";
 import icedCoffee from "@/assets/iced-coffee-new-v2.png";
 import muffin from "@/assets/muffin.jpg";
 import cateringSnippet from "@/assets/catering-snippet.jpg";
+import { Link } from "wouter";
+import { ArrowRight, Coffee, Clock, ChefHat, Phone, Sparkles } from "lucide-react";
+import { cn } from "@/lib/utils";
 import slide1 from "../assets/catering-new-1.jpg";
 import slide2 from "../assets/catering-new-2.jpg";
 import slide3 from "../assets/catering-new-3.jpg";
@@ -40,9 +43,9 @@ export default function Home() {
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="max-w-4xl mx-auto"
           >
-            <Badge className="mb-6 bg-primary text-white border-none px-6 drop-shadow-xl scale-110">
+            <BadgeLocal className="mb-6 bg-primary text-white border-none px-6 drop-shadow-xl scale-110">
               <Sparkles className="w-3 h-3 mr-2" /> NEW VIBE, SAME FLAVOR
-            </Badge>
+            </BadgeLocal>
             <h1 className="font-heading text-6xl md:text-8xl font-black leading-none mb-6 text-white tracking-tighter uppercase drop-shadow-[0_4px_20px_rgba(0,0,0,0.9)]">
               COFFEE <br />
               <span className="text-primary italic">with soul.</span>
@@ -181,9 +184,9 @@ export default function Home() {
               />
             </div>
             <div className="w-full md:w-1/2 p-10 md:p-16 text-center md:text-left">
-              <Badge className="mb-4 bg-primary/10 text-primary border-primary/20">
+              <BadgeLocal className="mb-4 bg-primary/10 text-primary border-primary/20">
                 EVENT CATERING
-              </Badge>
+              </BadgeLocal>
               <h2 className="font-heading text-4xl md:text-5xl font-black text-[#201839] mb-6 leading-tight">
                 Catering for <br />
                 <span className="text-primary italic">your next event</span>
@@ -244,7 +247,7 @@ export default function Home() {
   );
 }
 
-function Badge({ children, className }: any) {
+function BadgeLocal({ children, className }: any) {
   return (
     <span className={cn("inline-flex items-center px-4 py-1.5 rounded-full text-xs font-bold tracking-widest uppercase border", className)}>
       {children}
