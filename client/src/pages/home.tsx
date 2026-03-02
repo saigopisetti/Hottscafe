@@ -1,6 +1,6 @@
 import { Layout } from "@/components/layout";
 import { motion } from "framer-motion";
-import australianCafeHero from "@/assets/australian-cafe-hero-v2.png";
+import australianCafeHero from "@/assets/australian-cafe-hero-morning.png";
 import burgerLot from "@/assets/burger-lot.jpg";
 import chickenParma from "@/assets/chicken-parma.jpg";
 import steakSandwich from "@/assets/steak-sandwich-new.jpg";
@@ -23,15 +23,15 @@ export default function Home() {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="relative h-[70vh] min-h-[600px] flex items-center overflow-hidden">
+      <section className="relative h-screen min-h-[700px] flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
             src={australianCafeHero} 
             alt="Hotts Cafe Modern Interior" 
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-black/40"></div>
-          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/20"></div>
+          <div className="absolute inset-0 bg-black/30"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/20"></div>
         </div>
         
         <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
