@@ -19,10 +19,10 @@ export default function Menu() {
           </h1>
         </div>
 
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-7xl mx-auto">
           <Tabs defaultValue={defaultCategory} className="w-full">
-            <div className="flex justify-start md:justify-center mb-12 overflow-x-auto pb-4 no-scrollbar">
-              <TabsList className="flex h-auto p-1.5 bg-white/80 backdrop-blur-md rounded-full border border-neutral-200 shadow-lg gap-1">
+            <div className="flex justify-start lg:justify-center mb-12 overflow-x-auto pb-4 no-scrollbar -mx-4 px-4">
+              <TabsList className="flex h-auto p-1.5 bg-white/80 backdrop-blur-md rounded-full border border-neutral-200 shadow-lg gap-1 w-max min-w-full lg:min-w-0">
                 {categories.map((cat) => (
                   <TabsTrigger 
                     key={cat} 
