@@ -95,7 +95,7 @@ export default function Contact() {
                 loading="lazy" 
                 referrerPolicy="no-referrer-when-downgrade"
                 title="Hotts Cafe Location"
-                className="grayscale hover:grayscale-0 transition-all duration-700"
+                className="grayscale-0 hover:grayscale-50 transition-all duration-700"
               />
             </div>
           </div>
