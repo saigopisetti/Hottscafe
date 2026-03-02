@@ -16,9 +16,9 @@ export default function Contact() {
     <Layout>
       <div className="bg-white text-black py-16 px-4 relative overflow-hidden border-b border-neutral-100">
         <div className="max-w-4xl mx-auto text-center relative z-10">
-          <span className="text-primary font-bold tracking-widest uppercase text-xs mb-3 block">Get in Touch</span>
+          <span className="text-[#201839] opacity-60 font-bold tracking-widest uppercase text-xs mb-3 block">Get in Touch</span>
           <h1 className="font-heading text-4xl md:text-5xl font-black text-[#201839] mb-4 uppercase tracking-tighter">
-            Contact <span className="text-primary italic">Us</span>
+            Contact <span className="opacity-40 italic">Us</span>
           </h1>
           <p className="text-black/60 max-w-xl mx-auto leading-relaxed text-base md:text-lg">
             We look forward to welcoming you soon. Find us in Hoppers Crossing for your daily dose of great coffee and food.
@@ -32,7 +32,7 @@ export default function Contact() {
           <div className="space-y-10">
             <div>
               <h2 className="font-heading text-3xl font-black text-[#201839] mb-6 uppercase tracking-tight">
-                Visit <span className="text-primary italic">Hotts Café</span>
+                Visit <span className="text-[#201839] opacity-50 italic">Hotts Café</span>
               </h2>
               <p className="text-black/60 leading-relaxed mb-8 text-lg">
                 Whether you're looking for a quick takeaway, a relaxed dine-in experience, or catering for your next office event, we're here to help.
@@ -41,7 +41,7 @@ export default function Contact() {
 
             <div className="grid sm:grid-cols-2 gap-8">
               <div className="space-y-3">
-                <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary">
+                <div className="w-10 h-10 bg-[#201839]/5 rounded-full flex items-center justify-center text-[#201839]">
                   <MapPin className="h-5 w-5" />
                 </div>
                 <h3 className="font-black text-[#201839] uppercase text-sm tracking-widest">Address</h3>
@@ -52,7 +52,7 @@ export default function Contact() {
               </div>
 
               <div className="space-y-3">
-                <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary">
+                <div className="w-10 h-10 bg-[#201839]/5 rounded-full flex items-center justify-center text-[#201839]">
                   <Phone className="h-5 w-5" />
                 </div>
                 <h3 className="font-black text-[#201839] uppercase text-sm tracking-widest">Phone & Email</h3>
@@ -63,18 +63,18 @@ export default function Contact() {
               </div>
 
               <div className="space-y-3">
-                <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary">
+                <div className="w-10 h-10 bg-[#201839]/5 rounded-full flex items-center justify-center text-[#201839]">
                   <Clock className="h-5 w-5" />
                 </div>
                 <h3 className="font-black text-[#201839] uppercase text-sm tracking-widest">Opening Hours</h3>
                 <p className="text-black/60 text-sm leading-relaxed">
                   Mon – Fri: 5.00am – 2.30pm<br />
-                  <span className="text-primary text-xs font-bold uppercase">Delivery till 2pm</span>
+                  <span className="text-[#201839] text-xs font-bold uppercase opacity-60">Delivery till 2pm</span>
                 </p>
               </div>
 
               <div className="space-y-3">
-                <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary">
+                <div className="w-10 h-10 bg-[#201839]/5 rounded-full flex items-center justify-center text-[#201839]">
                   <Mail className="h-5 w-5" />
                 </div>
                 <h3 className="font-black text-[#201839] uppercase text-sm tracking-widest">Catering</h3>
@@ -103,7 +103,7 @@ export default function Contact() {
           {/* Contact Form with Captcha */}
           <div className="bg-neutral-50 rounded-[3rem] p-8 md:p-12 border border-neutral-100 shadow-sm">
             <h2 className="font-heading text-3xl font-black text-[#201839] mb-8 uppercase tracking-tight">
-              Send a <span className="text-primary italic">Message</span>
+              Send a <span className="text-[#201839] opacity-50 italic">Message</span>
             </h2>
             
             <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
@@ -132,10 +132,10 @@ export default function Contact() {
               <div className="p-6 bg-white rounded-2xl border border-neutral-200 space-y-4">
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-3">
-                    <ShieldCheck className="w-5 h-5 text-primary" />
+                    <ShieldCheck className="w-5 h-5 text-[#201839]" />
                     <span className="text-xs font-bold uppercase tracking-widest text-black/60">Security Check</span>
                   </div>
-                  <div className="bg-neutral-100 px-4 py-2 rounded font-heading font-black tracking-[0.5em] text-primary select-none italic text-lg">
+                  <div className="bg-neutral-100 px-4 py-2 rounded font-heading font-black tracking-[0.5em] text-[#201839] select-none italic text-lg">
                     {mockCaptcha}
                   </div>
                 </div>
@@ -148,14 +148,14 @@ export default function Contact() {
                       setIsVerified(e.target.value.toUpperCase() === mockCaptcha);
                     }}
                     placeholder="Type code here" 
-                    className="rounded-lg border-neutral-100 bg-neutral-50 h-10 text-center font-bold tracking-widest" 
+                    className="rounded-lg border-neutral-100 bg-neutral-50 h-10 text-center font-bold tracking-widest focus:border-[#201839]" 
                   />
                 </div>
               </div>
 
               <Button 
                 disabled={!isVerified}
-                className="w-full bg-[#201839] hover:bg-primary text-white rounded-full h-14 text-lg font-black transition-all group disabled:opacity-50"
+                className="w-full bg-[#201839] hover:bg-[#201839]/90 text-white rounded-full h-14 text-lg font-black transition-all group disabled:opacity-50"
               >
                 {isVerified ? "Send Message" : "Verify to Send"}
                 <Send className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
