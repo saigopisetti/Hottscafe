@@ -86,7 +86,7 @@ export default function Home() {
                 <img 
                   src={introSectionImg} 
                   alt="Barista pouring latte art" 
-                  className="relative rounded-[2rem] shadow-2xl w-full object-cover aspect-[4/3] border-8 border-white"
+                  className="relative rounded-[3rem] shadow-2xl w-full object-cover aspect-[3/4] border-8 border-white max-w-[400px] mx-auto"
                 />
               </div>
             </motion.div>
