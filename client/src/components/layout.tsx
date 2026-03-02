@@ -29,7 +29,7 @@ export function Navbar() {
           <Link href="/">
             <a className="flex items-center gap-2 group">
               <div className="flex flex-col">
-                <span className="font-heading text-2xl font-black text-primary">
+                <span className="font-heading text-2xl font-black text-[#ef0000]">
                   Hotts Café
                 </span>
               </div>
@@ -68,7 +68,6 @@ export function Navbar() {
           </button>
         </div>
       </div>
-
       {/* Mobile Nav */}
       {mobileMenuOpen && (
         <div className="md:hidden bg-white border-b border-neutral-100 absolute w-full left-0 animate-in slide-in-from-top-5">
@@ -103,7 +102,7 @@ export function Footer() {
           {/* Brand */}
           <div className="space-y-4">
             <div className="flex items-center gap-2">
-              <span className="font-heading text-2xl font-black text-primary">Hotts Café</span>
+              <span className="font-heading text-2xl font-black text-[#ef0000]">Hotts Café</span>
             </div>
             <p className="text-neutral-900 text-sm leading-relaxed max-w-xs">
               More than just a meal. It is a moment to connect, recharge, and enjoy.
@@ -118,7 +117,7 @@ export function Footer() {
 
           {/* Contact */}
           <div className="space-y-4">
-            <h3 className="font-heading text-xl text-primary">Contact Us</h3>
+            <h3 className="font-heading text-xl text-[#ef0000] font-light">Contact Us</h3>
             <div className="space-y-3">
               <div className="flex items-start gap-3 text-neutral-600 text-sm">
                 <MapPin className="h-5 w-5 text-primary shrink-0" />
@@ -143,7 +142,7 @@ export function Footer() {
 
           {/* Hours */}
           <div className="space-y-4">
-             <h3 className="font-heading text-xl text-primary">Opening Hours</h3>
+             <h3 className="font-heading text-xl text-[#ef0000] font-light">Opening Hours</h3>
              <ul className="space-y-2 text-neutral-600 text-sm">
                <li className="flex justify-between max-w-[200px]">
                  <span>Mon – Fri</span>

@@ -28,12 +28,11 @@ export default function About() {
           >
             <span className="text-primary font-bold tracking-widest uppercase text-[10px] sm:text-xs mb-3 sm:mb-4 block">Our Story</span>
             <h1 className="font-heading text-4xl sm:text-5xl md:text-7xl font-black text-white mb-6 uppercase tracking-tighter leading-tight">
-              More Than Just <br className="sm:hidden" /> <span className="text-primary italic text-5xl sm:text-6xl md:text-8xl">Coffee.</span>
+              More Than Just <br className="sm:hidden" /> <span className="italic text-5xl sm:text-6xl md:text-8xl text-[#ef0000]">Coffee.</span>
             </h1>
           </motion.div>
         </div>
       </section>
-
       {/* Philosophy Section */}
       <section className="py-16 sm:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -46,7 +45,7 @@ export default function About() {
             >
               <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl font-black text-[#201839] mb-6 sm:mb-8 uppercase tracking-tight leading-none">
                 A Space Where <br />
-                <span className="text-primary italic">Community</span> Comes Together
+                <span className="italic text-[#ef0000]">Community</span> Comes Together
               </h2>
               <div className="space-y-4 sm:space-y-6 text-black/70 text-base sm:text-lg leading-relaxed max-w-xl mx-auto lg:mx-0">
                 <p>
@@ -83,7 +82,6 @@ export default function About() {
           </div>
         </div>
       </section>
-
       {/* NEW: The Culinary Craft Section */}
       <section className="py-24 bg-white overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -132,7 +130,6 @@ export default function About() {
           </div>
         </div>
       </section>
-
       {/* Experience Section */}
       <section className="py-24 bg-neutral-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -160,7 +157,6 @@ export default function About() {
           </motion.div>
         </div>
       </section>
-
       {/* CTA Section */}
       <section className="py-32 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
