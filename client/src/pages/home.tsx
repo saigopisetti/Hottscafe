@@ -5,7 +5,7 @@ import burgerLot from "@/assets/burger-lot.jpg";
 import chickenParma from "@/assets/chicken-parma.jpg";
 import steakSandwich from "@/assets/steak-sandwich-new.jpg";
 import cappuccino from "@/assets/cappuccino.jpg";
-import eggBaconRoll from "@/assets/egg-bacon-roll.jpg";
+import eggBaconRoll from "@/assets/egg-bacon-roll-new.png";
 import jamDonut from "@/assets/jam-donut.jpg";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
