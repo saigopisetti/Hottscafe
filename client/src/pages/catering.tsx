@@ -144,18 +144,23 @@ export default function Catering() {
                 <p className="text-black/60 text-base sm:text-lg leading-relaxed mb-8 max-w-xl mx-auto lg:mx-0">
                   Whether you're hosting a corporate meeting, a private function, or just need to feed a hungry crowd, Hotts Café provides high-quality catering solutions tailored to your needs.
                 </p>
-                <div className="space-y-4 max-w-md mx-auto lg:mx-0 text-left">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl mx-auto lg:mx-0">
                   {[
-                    "Gourmet Sandwich & Wrap Platters",
-                    "Hot Food & Finger Food Selections",
-                    "Fresh Salads & Fruit Platters",
-                    "Morning & Afternoon Tea Options"
+                    { title: "Gourmet Platters", desc: "Sandwich & Wrap selections" },
+                    { title: "Hot Food", desc: "Premium Finger Food variety" },
+                    { title: "Fresh Salads", desc: "Seasonal Fruit & Green platters" },
+                    { title: "Tea Options", desc: "Morning & Afternoon treats" }
                   ].map((item, i) => (
-                    <div key={i} className="flex items-center gap-3">
-                      <div className="w-5 h-5 rounded-full bg-primary/10 flex items-center justify-center">
-                        <ChevronRight className="w-3 h-3 text-primary" />
+                    <div key={i} className="group p-4 rounded-2xl bg-neutral-50 border border-neutral-100 hover:bg-white hover:shadow-xl hover:border-primary/10 transition-all duration-300">
+                      <div className="flex items-center gap-4">
+                        <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center group-hover:scale-110 transition-transform">
+                          <CheckCircle className="w-5 h-5 text-primary" />
+                        </div>
+                        <div className="text-left">
+                          <p className="font-bold text-[#201839] leading-tight">{item.title}</p>
+                          <p className="text-xs text-black/50 mt-0.5">{item.desc}</p>
+                        </div>
                       </div>
-                      <span className="font-bold text-[#201839]">{item}</span>
                     </div>
                   ))}
                 </div>
