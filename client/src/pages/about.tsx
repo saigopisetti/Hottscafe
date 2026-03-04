@@ -114,18 +114,27 @@ export default function About() {
               <p className="text-black/70 text-base sm:text-lg leading-relaxed mb-8 max-w-xl mx-auto lg:mx-0">
                 Our kitchen is the heart of Hotts Café. We take pride in sourcing the freshest local ingredients to create dishes that don't just fill you up, but fuel your soul. From our signature steak sandwiches to our vibrant seasonal salads, every plate is a testament to our commitment to quality.
               </p>
-              <ul className="space-y-4 max-w-md mx-auto lg:mx-0 text-left">
+              <div className="grid grid-cols-1 gap-4 max-w-md mx-auto lg:mx-0">
                 {[
-                  "Sourced from local Hoppers Crossing suppliers",
-                  "Chef-prepared daily specials",
-                  "Bold flavors with a modern Australian twist"
+                  { title: "Local Sourcing", desc: "Premium Hoppers Crossing suppliers", icon: MapPin },
+                  { title: "Chef Prepared", desc: "Daily specials made with soul", icon: Coffee },
+                  { title: "Modern Twist", desc: "Bold Australian flavors", icon: Heart }
                 ].map((item, i) => (
-                  <li key={i} className="flex items-center gap-3 text-black/80 font-medium">
-                    <div className="w-2 h-2 rounded-full bg-primary" />
-                    {item}
-                  </li>
+                  <motion.div 
+                    key={i}
+                    whileHover={{ x: 10 }}
+                    className="group flex items-center gap-4 p-4 rounded-2xl bg-neutral-50 border border-neutral-100 hover:bg-white hover:shadow-xl hover:border-primary/10 transition-all duration-300"
+                  >
+                    <div className="w-12 h-12 rounded-xl bg-white shadow-sm flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-all duration-300">
+                      <item.icon className="w-6 h-6 text-primary group-hover:text-white transition-colors" />
+                    </div>
+                    <div className="text-left">
+                      <p className="font-bold text-[#201839] leading-tight">{item.title}</p>
+                      <p className="text-sm text-black/50 mt-1">{item.desc}</p>
+                    </div>
+                  </motion.div>
                 ))}
-              </ul>
+              </div>
             </motion.div>
           </div>
         </div>
