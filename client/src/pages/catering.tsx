@@ -149,7 +149,9 @@ export default function Catering() {
                     { title: "Gourmet Platters", desc: "Sandwich & Wrap selections" },
                     { title: "Hot Food", desc: "Premium Finger Food variety" },
                     { title: "Fresh Salads", desc: "Seasonal Fruit & Green platters" },
-                    { title: "Tea Options", desc: "Morning & Afternoon treats" }
+                    { title: "Tea Options", desc: "Morning & Afternoon treats" },
+                    { title: "300+ Capacity", desc: "Large scale event specialist" },
+                    { title: "Custom Menus", desc: "Tailored to your requirements" }
                   ].map((item, i) => (
                     <div key={i} className="group p-4 rounded-2xl bg-neutral-50 border border-neutral-100 hover:bg-white hover:shadow-xl hover:border-primary/10 transition-all duration-300">
                       <div className="flex items-center gap-4">
