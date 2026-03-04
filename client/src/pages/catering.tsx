@@ -1,7 +1,7 @@
 import { Layout } from "@/components/layout";
 import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { Phone, Mail, Clock, ChevronRight, ChevronLeft, Quote, CheckCircle, Leaf } from "lucide-react";
+import { Phone, Mail, Clock, ChevronRight, ChevronLeft, Quote, CheckCircle, Leaf, Flame, Utensils } from "lucide-react";
 import { useState, useEffect } from "react";
 import slide1 from "../assets/catering-slide-1-v3.png";
 import slide2 from "../assets/catering-slide-2-v3.png";
@@ -146,8 +146,8 @@ export default function Catering() {
                 </p>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl mx-auto lg:mx-0">
                   {[
-                    { title: "Gourmet Platters", desc: "Sandwich & Wrap selections", icon: CheckCircle },
-                    { title: "Hot Food", desc: "Premium Finger Food variety", icon: CheckCircle },
+                    { title: "Gourmet Platters", desc: "Sandwich & Wrap selections", icon: Flame },
+                    { title: "Hot Food", desc: "Premium Finger Food variety", icon: Utensils },
                     { title: "Fresh Salads", desc: "Seasonal Fruit & Green platters", icon: Leaf },
                     { title: "Tea Options", desc: "Morning & Afternoon treats", icon: Leaf },
                     { title: "300+ Capacity", desc: "Large scale event specialist", icon: CheckCircle },
