@@ -142,6 +142,61 @@ export default function About() {
           </div>
         </div>
       </section>
+      {/* Caffeine Boost & Quick Bites Section */}
+      <section className="py-24 bg-white overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
+            <motion.div 
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              className="w-full lg:w-1/2 relative"
+            >
+              <div className="relative group max-w-[500px] mx-auto lg:mr-auto">
+                <div className="absolute -inset-4 bg-primary/5 rounded-[3rem] rotate-2"></div>
+                <img 
+                  src="/src/assets/about-quick-bites.png" 
+                  alt="Quick Bites and Espresso" 
+                  className="relative rounded-[3rem] shadow-2xl w-full object-cover aspect-[16/9] border-8 border-white"
+                />
+              </div>
+            </motion.div>
+
+            <motion.div 
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              className="w-full lg:w-1/2 text-center lg:text-left"
+            >
+              <h2 className="font-heading text-4xl sm:text-5xl font-black text-[#201839] mb-6 leading-tight">
+                The Afternoon <span className="text-primary italic">Fuel.</span>
+              </h2>
+              
+              <div className="relative mb-8">
+                <div className="absolute -left-4 -top-4 text-primary/10">
+                  <Quote className="w-12 h-12 fill-current" />
+                </div>
+                <div className="bg-neutral-50 p-8 rounded-[2.5rem] border-2 border-primary/5 shadow-inner relative overflow-hidden">
+                  <div className="absolute top-0 right-0 w-24 h-24 bg-primary/5 rounded-full -mr-12 -mt-12 blur-2xl" />
+                  <p className="text-[#201839] text-xl font-medium leading-relaxed italic relative z-10">
+                    "When the mid-day slump hits, our Caffeine Boost and Quick Bites are designed to recharge your focus. From a punchy double-shot espresso to gourmet mini-sliders, we provide the perfect high-energy pause."
+                  </p>
+                  <div className="absolute -bottom-2 right-12 w-6 h-6 bg-neutral-50 border-r-2 border-b-2 border-primary/5 rotate-45" />
+                </div>
+              </div>
+
+              <div className="flex flex-wrap justify-center lg:justify-start gap-3">
+                {["Double Espresso", "Artisan Sliders", "Savory Bites"].map((item, i) => (
+                  <span key={i} className="px-5 py-2 rounded-full bg-neutral-100 text-[#201839] font-bold text-xs uppercase tracking-wider">
+                    {item}
+                  </span>
+                ))}
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
       {/* Experience Section */}
       <section className="py-24 bg-neutral-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -154,16 +209,22 @@ export default function About() {
             <h2 className="font-heading text-4xl md:text-5xl font-black text-[#201839] mb-12 uppercase tracking-tight">
               The <span className="text-primary italic">Lunchtime</span> Break
             </h2>
-            <div className="grid md:grid-cols-2 gap-12 text-left">
-              <div className="bg-white p-10 rounded-[3rem] shadow-xl border border-neutral-100">
-                <p className="text-black/70 text-lg leading-relaxed">
-                  When lunchtime arrives, step away from the office and enjoy a relaxed setting where you can unwind, catch up with colleagues, or hold an informal meeting over a delicious meal.
-                </p>
+            <div className="grid md:grid-cols-2 gap-8 text-left">
+              <div className="relative">
+                <div className="bg-white p-10 rounded-[2.5rem] shadow-xl border border-neutral-100 relative z-10">
+                  <p className="text-[#201839] text-lg leading-relaxed italic">
+                    "When lunchtime arrives, step away from the office and enjoy a relaxed setting where you can unwind, catch up with colleagues, or hold an informal meeting over a delicious meal."
+                  </p>
+                  <div className="absolute -bottom-2 left-12 w-6 h-6 bg-white border-l border-b border-neutral-100 rotate-45" />
+                </div>
               </div>
-              <div className="bg-white p-10 rounded-[3rem] shadow-xl border border-neutral-100">
-                <p className="text-black/70 text-lg leading-relaxed">
-                  Our lunch menu offers fresh, flavourful dishes prepared with care and served promptly so you can make the most of your break. It is a moment to connect, recharge, and enjoy.
-                </p>
+              <div className="relative">
+                <div className="bg-white p-10 rounded-[2.5rem] shadow-xl border border-neutral-100 relative z-10">
+                  <p className="text-[#201839] text-lg leading-relaxed italic">
+                    "Our lunch menu offers fresh, flavourful dishes prepared with care and served promptly so you can make the most of your break. It is a moment to connect, recharge, and enjoy."
+                  </p>
+                  <div className="absolute -bottom-2 left-12 w-6 h-6 bg-white border-l border-b border-neutral-100 rotate-45" />
+                </div>
               </div>
             </div>
           </motion.div>
