@@ -1,8 +1,8 @@
 import { Layout } from "@/components/layout";
 import { motion } from "framer-motion";
 import { Coffee, Heart, Users, Clock, MapPin, ChevronRight } from "lucide-react";
-import aboutHero from "@/assets/about-hero-v2.png";
-import experienceImg from "@/assets/steak-sandwich-new.jpg";
+import aboutHero from "@/assets/about-hero-v3.png";
+import experienceImg from "@/assets/experience-v3.png";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 
