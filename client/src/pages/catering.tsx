@@ -146,7 +146,7 @@ export default function Catering() {
                 </p>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl mx-auto lg:mx-0">
                   {[
-                    { title: "Gourmet Platters", desc: "Sandwich & Wrap selections", icon: Flame },
+                    { title: "Gourmet Platters", desc: "Sandwich & Wrap selections", icon: Utensils },
                     { title: "Hot Food", desc: "Premium Finger Food variety", icon: Utensils },
                     { title: "Fresh Salads", desc: "Seasonal Fruit & Green platters", icon: Leaf },
                     { title: "Tea Options", desc: "Morning & Afternoon treats", icon: Leaf },
