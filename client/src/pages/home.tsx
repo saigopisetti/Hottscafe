@@ -17,7 +17,7 @@ import muffin from "@/assets/muffin.jpg";
 import cateringSnippet from "@/assets/catering-homepage-v3.png";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Coffee, Clock, ChefHat, Phone, Sparkles } from "lucide-react";
+import { ArrowRight, Coffee, Clock, ChefHat, Phone, Sparkles, Quote } from "lucide-react";
 import { cn } from "@/lib/utils";
 import slide1 from "../assets/gallery-1-new.png";
 import slide2 from "../assets/gallery-2-new.png";
@@ -133,6 +133,65 @@ export default function Home() {
           </div>
         </div>
       </section>
+      {/* Quick Bites & Caffeine Boost Section */}
+      <section className="py-24 bg-white overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col lg:flex-row-reverse items-center gap-12 lg:gap-16">
+            <motion.div 
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              className="w-full lg:w-1/2 relative"
+            >
+              <div className="relative group max-w-[500px] mx-auto lg:ml-auto">
+                <div className="absolute -inset-4 bg-primary/5 rounded-[3rem] -rotate-2"></div>
+                <img 
+                  src="/src/assets/quick-bites-v3.png" 
+                  alt="Quick Bites and Espresso" 
+                  className="relative rounded-[3rem] shadow-2xl w-full object-cover aspect-[16/9] border-8 border-white"
+                />
+              </div>
+            </motion.div>
+
+            <motion.div 
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              className="w-full lg:w-1/2 text-center lg:text-left"
+            >
+              <BadgeLocal className="mb-4 bg-primary text-white border-none px-6">
+                LUNCH BREAK BOOST
+              </BadgeLocal>
+              <h2 className="font-heading text-4xl sm:text-5xl font-black text-[#201839] mb-6 leading-tight">
+                Fuel Your Afternoon.<br />
+                <span className="text-primary italic">Quick & Bold.</span>
+              </h2>
+              
+              <div className="relative mb-10">
+                <div className="absolute -left-4 -top-4 text-primary/10">
+                  <Quote className="w-12 h-12 fill-current" />
+                </div>
+                <div className="bg-neutral-50 p-8 rounded-[2.5rem] border-2 border-primary/5 shadow-inner relative overflow-hidden">
+                  <div className="absolute top-0 right-0 w-24 h-24 bg-primary/5 rounded-full -mr-12 -mt-12 blur-2xl" />
+                  <p className="text-[#201839] text-xl font-medium leading-relaxed italic relative z-10">
+                    "In a rush? Our Quick Bites are crafted for the high-paced lunch break. Pair an artisan slider or savory tart with a double-shot caffeine boost to power through your day without compromising on gourmet flavor."
+                  </p>
+                  <div className="absolute -bottom-2 right-12 w-6 h-6 bg-neutral-50 border-r-2 border-b-2 border-primary/5 rotate-45" />
+                </div>
+              </div>
+
+              <div className="flex flex-wrap justify-center lg:justify-start gap-4">
+                {["Double Espresso", "Mini Wagyu Sliders", "Artisan Savory Tarts"].map((item, i) => (
+                  <span key={i} className="px-6 py-2 rounded-full bg-neutral-100 text-[#201839] font-bold text-sm uppercase tracking-wider">
+                    {item}
+                  </span>
+                ))}
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
       {/* Floating Menu Highlights */}
       <section className="py-16 sm:py-32 bg-background relative overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-20 bg-gradient-to-b from-white to-transparent"></div>
