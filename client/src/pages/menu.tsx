@@ -3,10 +3,20 @@ import { menuData } from "../lib/menu-data";
 import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { motion } from "framer-motion";
+import { useState, useEffect } from "react";
 
 export default function Menu() {
   const categories = menuData.map(c => c.title);
-  const defaultCategory = categories[0];
+  const searchParams = new URLSearchParams(window.location.search);
+  const initialCategory = searchParams.get('category') || categories[0];
+  const [activeCategory, setActiveCategory] = useState(initialCategory);
+
+  useEffect(() => {
+    const categoryFromUrl = new URLSearchParams(window.location.search).get('category');
+    if (categoryFromUrl) {
+      setActiveCategory(categoryFromUrl);
+    }
+  }, [window.location.search]);
 
   return (
     <Layout>
@@ -20,7 +30,7 @@ export default function Menu() {
         </div>
 
         <div className="max-w-7xl mx-auto px-4">
-          <Tabs defaultValue={defaultCategory} className="w-full">
+          <Tabs value={activeCategory} onValueChange={setActiveCategory} className="w-full">
             <div className="mb-12 overflow-x-auto pb-4 no-scrollbar">
               <TabsList className="flex h-auto p-1.5 bg-white/80 backdrop-blur-md rounded-full border border-neutral-200 shadow-lg gap-1 w-fit mx-auto min-w-max">
                 {categories.map((cat) => (

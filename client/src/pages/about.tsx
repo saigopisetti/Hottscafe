@@ -3,6 +3,10 @@ import { motion } from "framer-motion";
 import { Coffee, Heart, Users, Clock, MapPin, ChevronRight, Quote } from "lucide-react";
 import aboutHero from "@/assets/about-hero-v3.png";
 import experienceImg from "@/assets/experience-v3.png";
+import burgerLot from "@/assets/burger-lot-v3.png";
+import chickenParma from "@/assets/chicken-parma-v3.png";
+import steakSandwich from "@/assets/steak-sandwich-v3.png";
+import saladImg from "@/assets/gallery-9-new.png";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 
@@ -197,37 +201,95 @@ export default function About() {
         </div>
       </section>
 
-      {/* Experience Section */}
-      <section className="py-24 bg-neutral-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="max-w-4xl mx-auto"
-          >
-            <h2 className="font-heading text-4xl md:text-5xl font-black text-[#201839] mb-12 uppercase tracking-tight">
+      {/* Experience Section - Lunch Highlights */}
+      <section className="py-24 bg-neutral-50 overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="font-heading text-4xl md:text-5xl font-black text-[#201839] mb-4 uppercase tracking-tight">
               The <span className="text-primary italic">Lunchtime</span> Break
             </h2>
-            <div className="grid md:grid-cols-2 gap-8 text-left">
-              <div className="relative">
-                <div className="bg-white p-10 rounded-[2.5rem] shadow-xl border border-neutral-100 relative z-10">
-                  <p className="text-[#201839] text-lg leading-relaxed italic">
-                    "When lunchtime arrives, step away from the office and enjoy a relaxed setting where you can unwind, catch up with colleagues, or hold an informal meeting over a delicious meal."
-                  </p>
-                  <div className="absolute -bottom-2 left-12 w-6 h-6 bg-white border-l border-b border-neutral-100 rotate-45" />
-                </div>
-              </div>
-              <div className="relative">
-                <div className="bg-white p-10 rounded-[2.5rem] shadow-xl border border-neutral-100 relative z-10">
-                  <p className="text-[#201839] text-lg leading-relaxed italic">
-                    "Our lunch menu offers fresh, flavourful dishes prepared with care and served promptly so you can make the most of your break. It is a moment to connect, recharge, and enjoy."
-                  </p>
-                  <div className="absolute -bottom-2 left-12 w-6 h-6 bg-white border-l border-b border-neutral-100 rotate-45" />
-                </div>
+            <p className="text-black/60 text-lg max-w-2xl mx-auto">
+              Our lunch menu offers fresh, flavourful dishes prepared with care. Connect, recharge, and enjoy these local favorites.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            {[
+              { 
+                title: "The Lot Burger", 
+                category: "Burgers", 
+                img: burgerLot,
+                link: "/menu?category=Burgers"
+              },
+              { 
+                title: "Chicken Parma", 
+                category: "Favorites", 
+                img: chickenParma,
+                link: "/menu?category=Favorites"
+              },
+              { 
+                title: "Steak Sandwich", 
+                category: "Sandwiches", 
+                img: steakSandwich,
+                link: "/menu?category=Sandwiches"
+              },
+              { 
+                title: "Seasonal Salad", 
+                category: "Salads", 
+                img: saladImg,
+                link: "/menu?category=Salads"
+              }
+            ].map((item, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.1 }}
+                className="group relative"
+              >
+                <Link href={item.link}>
+                  <a className="block">
+                    <div className="relative aspect-square overflow-hidden rounded-[2.5rem] shadow-xl border-4 border-white transition-all duration-500 group-hover:shadow-2xl group-hover:-translate-y-2">
+                      <img 
+                        src={item.img} 
+                        alt={item.title} 
+                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-[#201839]/90 via-transparent to-transparent opacity-60 group-hover:opacity-80 transition-opacity" />
+                      <div className="absolute bottom-6 left-6 right-6">
+                        <p className="text-primary font-black text-xs uppercase tracking-widest mb-1 italic">
+                          {item.category}
+                        </p>
+                        <h3 className="text-white font-heading text-xl font-black leading-tight">
+                          {item.title}
+                        </h3>
+                      </div>
+                    </div>
+                  </a>
+                </Link>
+              </motion.div>
+            ))}
+          </div>
+
+          <div className="mt-16 flex flex-col md:flex-row gap-8 justify-center items-center">
+            <div className="relative max-w-md">
+              <div className="bg-white p-8 rounded-[2rem] shadow-lg border border-neutral-100 relative z-10">
+                <p className="text-[#201839] text-base leading-relaxed italic">
+                  "When lunchtime arrives, step away from the office and enjoy a relaxed setting where you can unwind, catch up with colleagues, or hold an informal meeting over a delicious meal."
+                </p>
+                <div className="absolute -bottom-2 left-12 w-4 h-4 bg-white border-l border-b border-neutral-100 rotate-45" />
               </div>
             </div>
-          </motion.div>
+            <div className="relative max-w-md">
+              <div className="bg-white p-8 rounded-[2rem] shadow-lg border border-neutral-100 relative z-10">
+                <p className="text-[#201839] text-base leading-relaxed italic">
+                  "Our lunch menu offers fresh, flavourful dishes prepared with care and served promptly so you can make the most of your break. It is a moment to connect, recharge, and enjoy."
+                </p>
+                <div className="absolute -bottom-2 left-12 w-4 h-4 bg-white border-l border-b border-neutral-100 rotate-45" />
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       {/* CTA Section */}
