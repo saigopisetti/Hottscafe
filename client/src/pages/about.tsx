@@ -114,23 +114,26 @@ export default function About() {
               <p className="text-black/70 text-base sm:text-lg leading-relaxed mb-8 max-w-xl mx-auto lg:mx-0">
                 Our kitchen is the heart of Hotts Café. We take pride in sourcing the freshest local ingredients to create dishes that don't just fill you up, but fuel your soul. From our signature steak sandwiches to our vibrant seasonal salads, every plate is a testament to our commitment to quality.
               </p>
-              <div className="grid grid-cols-1 gap-4 max-w-md mx-auto lg:mx-0">
+              <div className="grid grid-cols-1 gap-6 w-full">
                 {[
-                  { title: "Local Sourcing", desc: "Premium Hoppers Crossing suppliers", icon: MapPin },
-                  { title: "Chef Prepared", desc: "Daily specials made with soul", icon: Coffee },
-                  { title: "Modern Twist", desc: "Bold Australian flavors", icon: Heart }
+                  { title: "Local Sourcing", desc: "We take pride in sourcing the freshest local ingredients from Hoppers Crossing suppliers to create dishes that fuel your soul.", icon: MapPin },
+                  { title: "Chef Prepared", desc: "Every plate is a testament to our commitment to quality, with daily specials prepared with passion and professional craft.", icon: Coffee },
+                  { title: "Modern Twist", desc: "Experience bold Australian flavors reimagined with a modern culinary perspective that makes every bite memorable.", icon: Heart }
                 ].map((item, i) => (
                   <motion.div 
                     key={i}
-                    whileHover={{ x: 10 }}
-                    className="group flex items-center gap-4 p-4 rounded-2xl bg-neutral-50 border border-neutral-100 hover:bg-white hover:shadow-xl hover:border-primary/10 transition-all duration-300"
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: i * 0.1 }}
+                    className="group flex flex-col md:flex-row items-center gap-8 p-10 rounded-[3rem] bg-neutral-50 border border-neutral-100 hover:bg-white hover:shadow-2xl hover:border-primary/10 transition-all duration-500 w-full"
                   >
-                    <div className="w-12 h-12 rounded-xl bg-white shadow-sm flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-all duration-300">
-                      <item.icon className="w-6 h-6 text-primary group-hover:text-white transition-colors" />
+                    <div className="w-20 h-20 shrink-0 rounded-[2rem] bg-white shadow-sm flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-all duration-500">
+                      <item.icon className="w-10 h-10 text-primary group-hover:text-white transition-colors" />
                     </div>
-                    <div className="text-left">
-                      <p className="font-bold text-[#201839] leading-tight">{item.title}</p>
-                      <p className="text-sm text-black/50 mt-1">{item.desc}</p>
+                    <div className="text-center md:text-left">
+                      <h3 className="font-heading text-2xl font-black text-[#201839] mb-3 uppercase tracking-tight">{item.title}</h3>
+                      <p className="text-lg text-black/60 leading-relaxed max-w-2xl">{item.desc}</p>
                     </div>
                   </motion.div>
                 ))}
