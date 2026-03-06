@@ -135,10 +135,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-
-
-
       {/* Caffeine Boost & Quick Bites Section */}
       <section className="py-24 bg-white overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -204,7 +200,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* Experience Section - Lunch Highlights */}
       <section className="py-24 bg-neutral-50 overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -279,10 +274,6 @@ export default function Home() {
           
         </div>
       </section>
-
-      
-
-
       {/* Floating Menu Highlights */}
       <section className="py-16 sm:py-32 bg-background relative overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-20 bg-gradient-to-b from-white to-transparent"></div>
@@ -383,13 +374,12 @@ export default function Home() {
           </div>
         </div>
       </section>
-      
-      {/* Vibrant CTA */}     
+      {/* Vibrant CTA */}
       <section className="py-16 sm:py-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-[#201839] rounded-[2.5rem] sm:rounded-[4rem] p-8 sm:p-12 md:p-24 text-center text-white relative overflow-hidden shadow-3xl">
              <div className="absolute inset-0 bg-primary/10 opacity-90"></div>
-             <div className="absolute -top-24 -right-24 w-64 h-64 bg-accent rounded-full blur-3xl opacity-50"></div>
+             <div className="absolute -top-24 -right-24 w-64 h-64 rounded-full blur-3xl opacity-50 bg-[#ffcc3300]"></div>
              
              <div className="relative z-10">
                <h2 className="font-heading text-3xl sm:text-5xl md:text-7xl text-secondary font-black mb-6 sm:mb-8 leading-none">
