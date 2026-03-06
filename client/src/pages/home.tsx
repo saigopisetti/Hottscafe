@@ -19,8 +19,7 @@ import saladImg from "@/assets/gallery-9-new.png";
 import cateringSnippet from "@/assets/catering-homepage-v3.png";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Clock, Phone, Sparkles, Quote } from "lucide-react";
-import { Coffee, CookingPot } from "@phosphor-icons/react";
+import { ArrowRight, Coffee, ChefHat, Clock, Phone, Sparkles, Quote } from "lucide-react";
 import { cn } from "@/lib/utils";
 import slide1 from "../assets/gallery-1-new.png";
 import slide2 from "../assets/gallery-2-new.png";
@@ -114,7 +113,7 @@ export default function Home() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                 <div className="p-6 rounded-3xl bg-[#FFF5F6] border border-primary/5 group hover:bg-white hover:shadow-xl transition-all duration-300">
                   <div className="w-12 h-12 rounded-2xl bg-white shadow-sm flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                    <Coffee className="w-6 h-6 text-primary" weight="duotone" />
+                    <span className="text-3xl">☕</span>
                   </div>
                   <h3 className="font-heading text-xl font-bold text-[#201839] mb-2">Vibe Check</h3>
                   <p className="text-black/60 text-sm leading-relaxed">
@@ -124,7 +123,7 @@ export default function Home() {
 
                 <div className="p-6 rounded-3xl bg-[#FFF5F6] border border-primary/5 group hover:bg-white hover:shadow-xl transition-all duration-300">
                   <div className="w-12 h-12 rounded-2xl bg-white shadow-sm flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                    <CookingPot className="w-6 h-6 text-primary" weight="duotone" />
+                    <span className="text-3xl">🍳</span>
                   </div>
                   <h3 className="font-heading text-xl font-bold text-[#201839] mb-2">Soul Food</h3>
                   <p className="text-black/60 text-sm leading-relaxed">
