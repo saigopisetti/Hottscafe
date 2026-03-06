@@ -87,7 +87,7 @@ export default function Contact() {
             {/* Google Maps Integration */}
             <div className="rounded-[2rem] overflow-hidden shadow-xl border border-neutral-100 h-[350px] relative group">
               <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3148.97123456789!2d144.700123456789!3d-37.890123456789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzfCsDUzJzI0LjQiUyAxNDTCsDQyJzAwLjQiRQ!5e0!3m2!1sen!2sau!4v1234567890123!5m2!1sen!2sau" 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3149.202353724814!2d144.7262243!3d-37.8726309!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad688ef6a4c83e1%3A0xb20cb398f60b1c2f!2sHotts%20Cafe!5e0!3m2!1sen!2sau!4v1709712000000!5m2!1sen!2sau" 
                 width="100%" 
                 height="100%" 
                 style={{ border: 0 }} 

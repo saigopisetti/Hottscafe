@@ -209,6 +209,31 @@ export default function About() {
 
            
           </div>
+
+
+
+          {/* <div className="mt-16 flex flex-col md:flex-row gap-8 justify-center items-center">
+            <div className="relative max-w-md">
+              <div className="bg-white p-8 rounded-[2rem] shadow-lg border border-neutral-100 relative z-10">
+                <p className="text-[#201839] text-base leading-relaxed italic">
+                  "When lunchtime arrives, step away from the office and enjoy a relaxed setting where you can unwind, catch up with colleagues, or hold an informal meeting over a delicious meal."
+                </p>
+                <div className="absolute -bottom-2 left-12 w-4 h-4 bg-white border-l border-b border-neutral-100 rotate-45" />
+              </div>
+            </div>
+            <div className="relative max-w-md">
+              <div className="bg-white p-8 rounded-[2rem] shadow-lg border border-neutral-100 relative z-10">
+                <p className="text-[#201839] text-base leading-relaxed italic">
+                  "Our lunch menu offers fresh, flavourful dishes prepared with care and served promptly so you can make the most of your break. It is a moment to connect, recharge, and enjoy."
+                </p>
+                <div className="absolute -bottom-2 left-12 w-4 h-4 bg-white border-l border-b border-neutral-100 rotate-45" />
+              </div>
+            </div>
+          </div> */}
+
+
+
+          
         </div>
       </section>
       {/* CTA Section */}
