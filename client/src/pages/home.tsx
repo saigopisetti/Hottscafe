@@ -110,24 +110,24 @@ export default function Home() {
                 At Hotts Café, we believe a café is more than just a place to grab a cup of coffee. It is a space where community comes together. Whether you prefer something light and wholesome or a hearty meal to fuel your day, we have options to suit every appetite.
               </p>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
-                <div className="p-6 rounded-3xl bg-[#FFF5F6] border border-primary/5 group hover:bg-white hover:shadow-xl transition-all duration-300">
-                  <div className="w-12 h-12 rounded-2xl bg-white shadow-sm flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                    <span className="text-3xl">☕</span>
+              <div className="grid grid-cols-2 gap-4 sm:gap-6 mt-8">
+                <div className="p-4 sm:p-6 rounded-3xl bg-[#FFF5F6] border border-primary/5 group hover:bg-white hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center">
+                  <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-white shadow-sm flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                    <span className="text-3xl sm:text-4xl">☕</span>
                   </div>
-                  <h3 className="font-heading text-xl font-bold text-[#201839] mb-2">Vibe Check</h3>
-                  <p className="text-black/60 text-sm leading-relaxed">
-                    The best beats and the boldest beans in Hoppers Crossing.
+                  <h3 className="font-heading text-lg sm:text-xl font-bold text-[#201839] mb-1 sm:mb-2 uppercase tracking-tight">Vibe Check</h3>
+                  <p className="text-black/60 text-[10px] sm:text-sm leading-tight sm:leading-relaxed">
+                    The best beats & boldest beans.
                   </p>
                 </div>
 
-                <div className="p-6 rounded-3xl bg-[#FFF5F6] border border-primary/5 group hover:bg-white hover:shadow-xl transition-all duration-300">
-                  <div className="w-12 h-12 rounded-2xl bg-white shadow-sm flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                    <span className="text-3xl">🍔</span>
+                <div className="p-4 sm:p-6 rounded-3xl bg-[#FFF5F6] border border-primary/5 group hover:bg-white hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center">
+                  <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-white shadow-sm flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                    <span className="text-3xl sm:text-4xl">🍔</span>
                   </div>
-                  <h3 className="font-heading text-xl font-bold text-[#201839] mb-2">Gourmet Bites</h3>
-                  <p className="text-black/60 text-sm leading-relaxed">
-                    Signature burgers and quick bites that make your tastebuds dance.
+                  <h3 className="font-heading text-lg sm:text-xl font-bold text-[#201839] mb-1 sm:mb-2 uppercase tracking-tight">Gourmet Bites</h3>
+                  <p className="text-black/60 text-[10px] sm:text-sm leading-tight sm:leading-relaxed">
+                    Signature burgers & quick fuel.
                   </p>
                 </div>
               </div>
