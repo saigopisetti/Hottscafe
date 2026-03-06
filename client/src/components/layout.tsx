@@ -129,8 +129,15 @@ export function Footer() {
                <a href="#" className="text-primary hover:text-[#201839] transition-colors" title="Instagram">
                   <Instagram className="h-5 w-5" />
                </a>
-               <a href="#" className="text-primary hover:text-[#201839] transition-colors" title="Order on Uber Eats">
-                  <ShoppingBag className="h-5 w-5" />
+               <a 
+                 href="https://www.ubereats.com/au/store/hotts-cafe/QoOdDWzaUXi-cK0VFzzgxw?diningMode=DELIVERY" 
+                 target="_blank" 
+                 rel="noopener noreferrer"
+                 className="text-primary hover:text-[#201839] transition-colors flex items-center gap-1.5 group" 
+                 title="Order on Uber Eats"
+               >
+                  <svg viewBox="0 0 24 24" className="h-5 w-5 fill-current" xmlns="http://www.w3.org/2000/svg"><path d="M22.023 12.564c-.015.361-.314.653-.675.653h-3.342c-.225 0-.414-.15-.47-.367l-.76-2.906a.488.488 0 0 0-.47-.367h-3.341c-.226 0-.414.15-.47.367l-.76 2.906a.488.488 0 0 1-.47.367H8.323c-.361 0-.66-.292-.675-.653l-.262-6.521c-.015-.361.277-.668.638-.668h13.36c.362 0 .653.307.638.668l-.262 6.521h-.337zM2.652 13.217c-.361 0-.653.307-.638.668l.262 6.521c.015.361.314.653.675.653h3.342c.225 0 .414-.15.47-.367l.76-2.906a.488.488 0 0 1 .47-.367h3.341c.226 0 .414.15.47.367l.76 2.906a.488.488 0 0 0 .47.367h3.342c.361 0 .66-.292.675-.653l.262-6.521c.015-.361-.277-.668-.638-.668H3.29c-.361 0-.653.307-.638.668h.337z"/></svg>
+                  <span className="text-[10px] font-black uppercase tracking-tighter hidden sm:inline group-hover:underline">Uber Eats</span>
                </a>
             </div>
           </div>
