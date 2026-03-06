@@ -1,7 +1,7 @@
 import { Layout } from "@/components/layout";
 import { motion } from "framer-motion";
 import { Coffee, Heart, Users, Clock, MapPin, ChevronRight, Quote } from "lucide-react";
-import aboutHero from "@/assets/about-hero-v3.png";
+import aboutHero from "@/assets/cafe-people-ambience.png";
 import experienceImg from "@/assets/experience-v3.png";
 import quickBitesImg from "@/assets/quick-bites-v3.png";
 
@@ -102,12 +102,12 @@ export default function About() {
               viewport={{ once: true }}
               className="w-full lg:w-1/2 px-4 sm:px-0"
             >
-              <div className="relative max-w-[500px] mx-auto lg:ml-auto">
+              <div className="relative max-w-full mx-auto lg:ml-auto">
                 <div className="absolute -inset-4 bg-secondary/5 rounded-[3rem] -rotate-2"></div>
                 <img 
                   src={experienceImg} 
                   alt="Hotts Cafe Signature Dishes" 
-                  className="relative rounded-[2.5rem] shadow-2xl w-full object-cover aspect-video border-8 border-white"
+                  className="relative rounded-[2.5rem] shadow-2xl w-full object-cover aspect-[4/5] lg:aspect-[3/4] border-8 border-white"
                 />
               </div>
             </motion.div>
@@ -162,12 +162,12 @@ export default function About() {
               viewport={{ once: true }}
               className="w-full lg:w-1/2 relative"
             >
-              <div className="relative group max-w-[500px] mx-auto lg:ml-auto">
+              <div className="relative group max-w-full mx-auto lg:ml-auto">
                 <div className="absolute -inset-4 bg-primary/5 rounded-[3rem] -rotate-2"></div>
                 <img 
                   src={quickBitesImg} 
                   alt="Quick Bites and Espresso" 
-                  className="relative rounded-[3rem] shadow-2xl w-full object-cover aspect-[16/9] border-8 border-white"
+                  className="relative rounded-[3rem] shadow-2xl w-full object-cover aspect-[4/5] lg:aspect-[3/4] border-8 border-white"
                 />
               </div>
             </motion.div>
