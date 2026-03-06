@@ -123,10 +123,22 @@ export function Footer() {
               Be there for the experience. Be there for the community.
             </p>
             <div className="flex gap-4 pt-2">
-               <a href="#" className="text-primary hover:text-[#201839] transition-colors" title="Facebook">
+               <a 
+                 href="https://www.facebook.com/p/Hotts-Cafe-100063674346035/" 
+                 target="_blank" 
+                 rel="noopener noreferrer"
+                 className="text-primary hover:text-[#201839] transition-colors" 
+                 title="Facebook"
+               >
                   <Facebook className="h-5 w-5" />
                </a>
-               <a href="#" className="text-primary hover:text-[#201839] transition-colors" title="Instagram">
+               <a 
+                 href="https://www.instagram.com/hottscafe/?hl=en" 
+                 target="_blank" 
+                 rel="noopener noreferrer"
+                 className="text-primary hover:text-[#201839] transition-colors" 
+                 title="Instagram"
+               >
                   <Instagram className="h-5 w-5" />
                </a>
                <a 
