@@ -82,12 +82,12 @@ export default function Home() {
               viewport={{ once: true }}
               className="w-full lg:w-1/2 relative px-4 sm:px-0"
             >
-              <div className="relative group max-w-full mx-auto lg:mx-0">
+              <div className="relative group max-w-[420px] mx-auto lg:mx-0">
                 <div className="absolute -inset-4 bg-primary/5 rounded-[2.5rem] rotate-2 transition-transform group-hover:rotate-1"></div>
                 <img 
                   src={introSectionImg} 
                   alt="Barista pouring latte art" 
-                  className="relative rounded-[3rem] shadow-2xl w-full object-cover aspect-[4/5] lg:aspect-[3/4] border-8 border-white"
+                  className="relative rounded-[3rem] shadow-2xl w-full object-cover aspect-[2/3] border-8 border-white"
                 />
               </div>
             </motion.div>
@@ -143,21 +143,6 @@ export default function Home() {
       <section className="py-24 bg-white overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
-            <motion.div 
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              className="w-full lg:w-1/2 relative"
-            >
-              <div className="relative group max-w-full mx-auto lg:mr-auto">
-                <div className="absolute -inset-4 bg-primary/5 rounded-[3rem] rotate-2"></div>
-                <img 
-                  src={australianCafeBites}
-                  alt="Quick Bites and Espresso" 
-                  className="relative rounded-[3rem] shadow-2xl w-full object-cover aspect-[4/5] lg:aspect-[3/4] border-8 border-white"
-                />
-              </div>
-            </motion.div>
 
             <motion.div 
               initial={{ opacity: 0, x: 30 }}
@@ -190,6 +175,24 @@ export default function Home() {
                 ))}
               </div>
             </motion.div>
+            
+            <motion.div 
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              className="w-full lg:w-1/2 relative"
+            >
+              <div className="relative group max-w-[420px] mx-auto lg:mr-auto">
+                <div className="absolute -inset-4 bg-primary/5 rounded-[3rem] rotate-2"></div>
+                <img 
+                  src={australianCafeBites}
+                  alt="Quick Bites and Espresso" 
+                  className="relative rounded-[3rem] shadow-2xl w-full object-cover aspect-[2/3] border-8 border-white"
+                />
+              </div>
+            </motion.div>
+
+
           </div>
         </div>
       </section>
