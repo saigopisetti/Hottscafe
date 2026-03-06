@@ -149,12 +149,12 @@ export default function Home() {
               viewport={{ once: true }}
               className="w-full lg:w-1/2 relative"
             >
-              <div className="relative group max-w-[500px] mx-auto lg:mr-auto">
+              <div className="relative group max-w-full mx-auto lg:mr-auto">
                 <div className="absolute -inset-4 bg-primary/5 rounded-[3rem] rotate-2"></div>
                 <img 
                   src={australianCafeBites}
                   alt="Quick Bites and Espresso" 
-                  className="relative rounded-[3rem] shadow-2xl w-full object-cover aspect-[16/9] border-8 border-white"
+                  className="relative rounded-[3rem] shadow-2xl w-full object-cover aspect-[4/5] lg:aspect-[3/4] border-8 border-white"
                 />
               </div>
             </motion.div>
