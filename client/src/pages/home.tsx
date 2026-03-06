@@ -82,12 +82,12 @@ export default function Home() {
               viewport={{ once: true }}
               className="w-full lg:w-1/2 relative px-4 sm:px-0"
             >
-              <div className="relative group max-w-[320px] sm:max-w-[400px] mx-auto lg:mx-0">
+              <div className="relative group max-w-full mx-auto lg:mx-0">
                 <div className="absolute -inset-4 bg-primary/5 rounded-[2.5rem] rotate-2 transition-transform group-hover:rotate-1"></div>
                 <img 
                   src={introSectionImg} 
                   alt="Barista pouring latte art" 
-                  className="relative rounded-[3rem] shadow-2xl w-full object-cover aspect-[3/4] border-8 border-white"
+                  className="relative rounded-[3rem] shadow-2xl w-full object-cover aspect-[4/5] lg:aspect-[3/4] border-8 border-white"
                 />
               </div>
             </motion.div>
