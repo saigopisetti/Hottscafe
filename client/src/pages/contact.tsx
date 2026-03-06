@@ -1,6 +1,6 @@
 import { Layout } from "@/components/layout";
-import { MapPin, Phone, Mail, Clock, ShieldCheck, Send } from "lucide-react";
-import { useState } from "react";
+import { MapPin, Phone, Mail, Clock, ShieldCheck, Send, RefreshCw } from "lucide-react";
+import { useState, useEffect, useCallback } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -8,9 +8,22 @@ import { Textarea } from "@/components/ui/textarea";
 export default function Contact() {
   const [captchaValue, setCaptchaValue] = useState("");
   const [isVerified, setIsVerified] = useState(false);
-  
-  // Simple Mock Captcha
-  const mockCaptcha = "HT7K2";
+  const [mockCaptcha, setMockCaptcha] = useState("");
+
+  const generateCaptcha = useCallback(() => {
+    const chars = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789"; // Removed similar looking chars (I, O, 0, 1)
+    let result = "";
+    for (let i = 0; i < 5; i++) {
+      result += chars.charAt(Math.floor(Math.random() * chars.length));
+    }
+    setMockCaptcha(result);
+    setCaptchaValue("");
+    setIsVerified(false);
+  }, []);
+
+  useEffect(() => {
+    generateCaptcha();
+  }, [generateCaptcha]);
 
   return (
     <Layout>
@@ -163,8 +176,18 @@ export default function Contact() {
                     <ShieldCheck className="w-5 h-5 text-primary" />
                     <span className="text-xs font-bold uppercase tracking-widest text-black/60">Security Check</span>
                   </div>
-                  <div className="bg-neutral-100 px-4 py-2 rounded font-heading font-black tracking-[0.5em] text-primary select-none italic text-lg">
-                    {mockCaptcha}
+                  <div className="flex items-center gap-3">
+                    <div className="bg-neutral-100 px-4 py-2 rounded font-heading font-black tracking-[0.5em] text-primary select-none italic text-lg shadow-inner">
+                      {mockCaptcha}
+                    </div>
+                    <button 
+                      type="button"
+                      onClick={generateCaptcha}
+                      className="p-2 hover:bg-neutral-100 rounded-full transition-colors text-black/40 hover:text-primary"
+                      title="Refresh Captcha"
+                    >
+                      <RefreshCw className="w-4 h-4" />
+                    </button>
                   </div>
                 </div>
                 <div className="space-y-2">
@@ -172,11 +195,12 @@ export default function Contact() {
                   <Input 
                     value={captchaValue}
                     onChange={(e) => {
-                      setCaptchaValue(e.target.value);
-                      setIsVerified(e.target.value.toUpperCase() === mockCaptcha);
+                      const val = e.target.value.toUpperCase();
+                      setCaptchaValue(val);
+                      setIsVerified(val === mockCaptcha);
                     }}
                     placeholder="Type code here" 
-                    className="rounded-lg border-neutral-100 bg-neutral-50 h-10 text-center font-bold tracking-widest" 
+                    className="rounded-lg border-neutral-100 bg-neutral-50 h-10 text-center font-bold tracking-widest uppercase" 
                   />
                 </div>
               </div>
