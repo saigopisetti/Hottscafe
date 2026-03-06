@@ -1,5 +1,5 @@
 import { Link, useLocation } from "wouter";
-import { Coffee, MapPin, Phone, Menu, X, Facebook, Mail } from "lucide-react";
+import { Coffee, MapPin, Phone, Menu, X, Facebook, Mail, Instagram, ShoppingBag } from "lucide-react";
 import { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
@@ -123,8 +123,14 @@ export function Footer() {
               Be there for the experience. Be there for the community.
             </p>
             <div className="flex gap-4 pt-2">
-               <a href="#" className="text-primary hover:text-black transition-colors">
+               <a href="#" className="text-primary hover:text-[#201839] transition-colors" title="Facebook">
                   <Facebook className="h-5 w-5" />
+               </a>
+               <a href="#" className="text-primary hover:text-[#201839] transition-colors" title="Instagram">
+                  <Instagram className="h-5 w-5" />
+               </a>
+               <a href="#" className="text-primary hover:text-[#201839] transition-colors" title="Order on Uber Eats">
+                  <ShoppingBag className="h-5 w-5" />
                </a>
             </div>
           </div>
