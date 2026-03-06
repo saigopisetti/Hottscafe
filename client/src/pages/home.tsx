@@ -19,7 +19,7 @@ import saladImg from "@/assets/gallery-9-new.png";
 import cateringSnippet from "@/assets/catering-homepage-v3.png";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Coffee, Clock, ChefHat, Phone, Sparkles, Quote } from "lucide-react";
+import { ArrowRight, Coffee, Clock, ChefHat, Phone, Sparkles, Quote, Mail } from "lucide-react";
 import { cn } from "@/lib/utils";
 import slide1 from "../assets/gallery-1-new.png";
 import slide2 from "../assets/gallery-2-new.png";
