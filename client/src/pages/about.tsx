@@ -3,9 +3,18 @@ import { motion } from "framer-motion";
 import { Coffee, Heart, Users, Clock, MapPin, ChevronRight, Quote } from "lucide-react";
 import aboutHero from "@/assets/about-hero-v3.png";
 import experienceImg from "@/assets/experience-v3.png";
+import quickBitesImg from "@/assets/quick-bites-v3.png";
 
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
+
+function BadgeLocal({ children, className }: any) {
+  return (
+    <span className={`inline-flex items-center px-4 py-1.5 rounded-full text-xs font-bold tracking-widest uppercase border mb-4 text-primary border-primary/20 bg-[#e5003914] ${className}`}>
+      {children}
+    </span>
+  );
+}
 
 export default function About() {
   return (
@@ -156,7 +165,7 @@ export default function About() {
               <div className="relative group max-w-[500px] mx-auto lg:ml-auto">
                 <div className="absolute -inset-4 bg-primary/5 rounded-[3rem] -rotate-2"></div>
                 <img 
-                  src="/src/assets/quick-bites-v3.png" 
+                  src={quickBitesImg} 
                   alt="Quick Bites and Espresso" 
                   className="relative rounded-[3rem] shadow-2xl w-full object-cover aspect-[16/9] border-8 border-white"
                 />
