@@ -183,12 +183,20 @@ export default function About() {
                 </div>
               </div>
 
-              <div className="flex flex-wrap justify-center lg:justify-start gap-4">
+              <div className="flex flex-wrap justify-center lg:justify-start gap-4 mb-8">
                 {["Double Espresso", "Mini Wagyu Sliders", "Artisan Savory Tarts"].map((item, i) => (
                   <span key={i} className="px-6 py-2 rounded-full bg-neutral-100 text-[#201839] font-bold text-sm uppercase tracking-wider">
                     {item}
                   </span>
                 ))}
+              </div>
+
+              <div className="flex justify-center lg:justify-start">
+                <Link href="/menu">
+                  <Button size="lg" className="bg-[#ef0000] hover:bg-[#ef0000]/90 text-white rounded-full px-10 h-14 text-lg shadow-xl hover:scale-105 transition-all cursor-pointer">
+                    View Full Menu
+                  </Button>
+                </Link>
               </div>
             </motion.div>
             <motion.div 
