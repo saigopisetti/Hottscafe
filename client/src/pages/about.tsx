@@ -3,10 +3,7 @@ import { motion } from "framer-motion";
 import { Coffee, Heart, Users, Clock, MapPin, ChevronRight, Quote } from "lucide-react";
 import aboutHero from "@/assets/about-hero-v3.png";
 import experienceImg from "@/assets/experience-v3.png";
-import burgerLot from "@/assets/burger-lot-v3.png";
-import chickenParma from "@/assets/chicken-parma-v3.png";
-import steakSandwich from "@/assets/steak-sandwich-v3.png";
-import saladImg from "@/assets/gallery-9-new.png";
+
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 
@@ -146,20 +143,20 @@ export default function About() {
           </div>
         </div>
       </section>
-      {/* Caffeine Boost & Quick Bites Section */}
+      {/* Quick Bites & Caffeine Boost Section */}
       <section className="py-24 bg-white overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
+          <div className="flex flex-col lg:flex-row-reverse items-center gap-12 lg:gap-16">
             <motion.div 
-              initial={{ opacity: 0, x: -30 }}
+              initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               className="w-full lg:w-1/2 relative"
             >
-              <div className="relative group max-w-[500px] mx-auto lg:mr-auto">
-                <div className="absolute -inset-4 bg-primary/5 rounded-[3rem] rotate-2"></div>
+              <div className="relative group max-w-[500px] mx-auto lg:ml-auto">
+                <div className="absolute -inset-4 bg-primary/5 rounded-[3rem] -rotate-2"></div>
                 <img 
-                  src="/src/assets/about-quick-bites.png" 
+                  src="/src/assets/quick-bites-v3.png" 
                   alt="Quick Bites and Espresso" 
                   className="relative rounded-[3rem] shadow-2xl w-full object-cover aspect-[16/9] border-8 border-white"
                 />
@@ -167,128 +164,40 @@ export default function About() {
             </motion.div>
 
             <motion.div 
-              initial={{ opacity: 0, x: 30 }}
+              initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               className="w-full lg:w-1/2 text-center lg:text-left"
             >
+              <BadgeLocal className="mb-4 bg-primary text-white border-none px-6">
+                LUNCH BREAK BOOST
+              </BadgeLocal>
               <h2 className="font-heading text-4xl sm:text-5xl font-black text-[#201839] mb-6 leading-tight">
-                The Afternoon <span className="text-primary italic">Fuel.</span>
+                Fuel Your Afternoon.<br />
+                <span className="text-primary italic">Quick & Bold.</span>
               </h2>
-              
-              <div className="relative mb-8">
+
+              <div className="relative mb-10">
                 <div className="absolute -left-4 -top-4 text-primary/10">
                   <Quote className="w-12 h-12 fill-current" />
                 </div>
                 <div className="bg-neutral-50 p-8 rounded-[2.5rem] border-2 border-primary/5 shadow-inner relative overflow-hidden">
                   <div className="absolute top-0 right-0 w-24 h-24 bg-primary/5 rounded-full -mr-12 -mt-12 blur-2xl" />
                   <p className="text-[#201839] text-xl font-medium leading-relaxed italic relative z-10">
-                    "When the mid-day slump hits, our Caffeine Boost and Quick Bites are designed to recharge your focus. From a punchy double-shot espresso to gourmet mini-sliders, we provide the perfect high-energy pause."
+                    "In a rush? Our Quick Bites are crafted for the high-paced lunch break. Pair an artisan slider or savory tart with a double-shot caffeine boost to power through your day without compromising on gourmet flavor."
                   </p>
                   <div className="absolute -bottom-2 right-12 w-6 h-6 bg-neutral-50 border-r-2 border-b-2 border-primary/5 rotate-45" />
                 </div>
               </div>
 
-              <div className="flex flex-wrap justify-center lg:justify-start gap-3">
-                {["Double Espresso", "Artisan Sliders", "Savory Bites"].map((item, i) => (
-                  <span key={i} className="px-5 py-2 rounded-full bg-neutral-100 text-[#201839] font-bold text-xs uppercase tracking-wider">
+              <div className="flex flex-wrap justify-center lg:justify-start gap-4">
+                {["Double Espresso", "Mini Wagyu Sliders", "Artisan Savory Tarts"].map((item, i) => (
+                  <span key={i} className="px-6 py-2 rounded-full bg-neutral-100 text-[#201839] font-bold text-sm uppercase tracking-wider">
                     {item}
                   </span>
                 ))}
               </div>
             </motion.div>
-          </div>
-        </div>
-      </section>
-
-      {/* Experience Section - Lunch Highlights */}
-      <section className="py-24 bg-neutral-50 overflow-hidden">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="font-heading text-4xl md:text-5xl font-black text-[#201839] mb-4 uppercase tracking-tight">
-              The <span className="text-primary italic">Lunchtime</span> Break
-            </h2>
-            <p className="text-black/60 text-lg max-w-2xl mx-auto">
-              Our lunch menu offers fresh, flavourful dishes prepared with care. Connect, recharge, and enjoy these local favorites.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {[
-              { 
-                title: "The Lot Burger", 
-                category: "Burgers", 
-                img: burgerLot,
-                link: "/menu?category=Burgers"
-              },
-              { 
-                title: "Chicken Parma", 
-                category: "Favorites", 
-                img: chickenParma,
-                link: "/menu?category=Favorites"
-              },
-              { 
-                title: "Steak Sandwich", 
-                category: "Sandwiches", 
-                img: steakSandwich,
-                link: "/menu?category=Sandwiches"
-              },
-              { 
-                title: "Seasonal Salad", 
-                category: "Salads", 
-                img: saladImg,
-                link: "/menu?category=Salads"
-              }
-            ].map((item, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.1 }}
-                className="group relative"
-              >
-                <Link href={item.link}>
-                  <a className="block">
-                    <div className="relative aspect-square overflow-hidden rounded-[2.5rem] shadow-xl border-4 border-white transition-all duration-500 group-hover:shadow-2xl group-hover:-translate-y-2">
-                      <img 
-                        src={item.img} 
-                        alt={item.title} 
-                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-[#201839]/90 via-transparent to-transparent opacity-60 group-hover:opacity-80 transition-opacity" />
-                      <div className="absolute bottom-6 left-6 right-6">
-                        <p className="text-primary font-black text-xs uppercase tracking-widest mb-1 italic">
-                          {item.category}
-                        </p>
-                        <h3 className="text-white font-heading text-xl font-black leading-tight">
-                          {item.title}
-                        </h3>
-                      </div>
-                    </div>
-                  </a>
-                </Link>
-              </motion.div>
-            ))}
-          </div>
-
-          <div className="mt-16 flex flex-col md:flex-row gap-8 justify-center items-center">
-            <div className="relative max-w-md">
-              <div className="bg-white p-8 rounded-[2rem] shadow-lg border border-neutral-100 relative z-10">
-                <p className="text-[#201839] text-base leading-relaxed italic">
-                  "When lunchtime arrives, step away from the office and enjoy a relaxed setting where you can unwind, catch up with colleagues, or hold an informal meeting over a delicious meal."
-                </p>
-                <div className="absolute -bottom-2 left-12 w-4 h-4 bg-white border-l border-b border-neutral-100 rotate-45" />
-              </div>
-            </div>
-            <div className="relative max-w-md">
-              <div className="bg-white p-8 rounded-[2rem] shadow-lg border border-neutral-100 relative z-10">
-                <p className="text-[#201839] text-base leading-relaxed italic">
-                  "Our lunch menu offers fresh, flavourful dishes prepared with care and served promptly so you can make the most of your break. It is a moment to connect, recharge, and enjoy."
-                </p>
-                <div className="absolute -bottom-2 left-12 w-4 h-4 bg-white border-l border-b border-neutral-100 rotate-45" />
-              </div>
-            </div>
           </div>
         </div>
       </section>
