@@ -3,24 +3,24 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Phone, Mail, Clock, ChevronRight, ChevronLeft, Quote, CheckCircle, Leaf, Flame, Utensils } from "lucide-react";
 import { useState, useEffect } from "react";
-import slide1 from "../assets/catering-slide-1-v3.png";
-import slide2 from "../assets/catering-slide-2-v3.png";
+import slide1 from "../assets/corporate-event.png";
+import slide2 from "../assets/gallery/patie-fire.png";
 import slide3 from "../assets/catering-slide-3-new.png";
-import slide4 from "../assets/catering-slide-4.png";
+import slide4 from "../assets/multi-meat-tasty.png";
 import slide5 from "../assets/catering-slide-5.png";
 import slide6 from "../assets/catering-slide-6.png";
-import gallery1 from "../assets/gallery-1-new.png";
-import gallery2 from "../assets/gallery-2-new.png";
-import gallery3 from "../assets/gallery-3-new.png";
-import gallery4 from "../assets/gallery-4-new.png";
-import gallery5 from "../assets/gallery-5-new.png";
-import gallery6 from "../assets/gallery-6-new.png";
-import gallery7 from "../assets/gallery-7-new.png";
-import gallery8 from "../assets/gallery-8-new.png";
+import gallery1 from "../assets/gallery/catering-intellect.png";
+import gallery2 from "../assets/gallery/diverse-event-catering.png";
+import gallery3 from "../assets/gallery/food-catering.png";
+import gallery4 from "../assets/gallery/corporate-event.png";
+import gallery5 from "../assets/gallery/party-crunches.png";
+import gallery6 from "../assets/gallery/catering-banquet.png";
+import gallery7 from "../assets/gallery/catering-arrangement.png";
+import gallery8 from "../assets/gallery/chef-food-ready.webp";
 import gallery9 from "../assets/gallery-9-new.png";
-import gallery10 from "../assets/gallery-10-new.png";
-import gallery11 from "../assets/gallery-11-new.png";
-import gallery12 from "../assets/gallery-12-new.png";
+import gallery10 from "../assets/gallery/tea-party.png";
+import gallery11 from "../assets/gallery/burger-row.png";
+import gallery12 from "../assets/gallery/board-room.png";
 import user1 from "../assets/testimonial-user_1.jpg";
 import user2 from "../assets/testimonial-user_2.jpg";
 import user3 from "../assets/testimonial-user_3.jpg";
@@ -47,8 +47,8 @@ export default function Catering() {
     },
     {
       url: slide4,
-      title: "Gourmet Canapes",
-      desc: "Elegant finger foods for sophisticated gatherings."
+      title: "Gourmet Choices",
+      desc: "Elegant fine choice of dishes for sophisticated gatherings."
     },
     {
       url: slide5,
@@ -193,7 +193,7 @@ export default function Catering() {
                 { img: gallery4, label: "Event Networking" },
                 { img: gallery5, label: "Cocktail Party" },
                 { img: gallery6, label: "Grand Spread" },
-                { img: gallery7, label: "Seafood Apps" },
+                { img: gallery7, label: "Seafood Studio" },
                 { img: gallery8, label: "Chef Crafted" },
                 { img: gallery9, label: "Seasonal Salads" },
                 { img: gallery10, label: "Morning Tea" },
@@ -222,7 +222,7 @@ export default function Catering() {
           </section>
 
           {/* Testimonial Slider */}
-          <section className="py-32 bg-neutral-50 rounded-[3rem] overflow-hidden mb-24 px-8">
+          {/* <section className="py-32 bg-neutral-50 rounded-[3rem] overflow-hidden mb-24 px-8">
             <div className="text-center mb-16">
               <Quote className="w-12 h-12 text-primary/20 mx-auto mb-6" />
               <h2 className="font-heading text-4xl font-black text-[#201839] uppercase tracking-tighter">Testimonials</h2>
@@ -312,7 +312,7 @@ export default function Catering() {
                 </motion.div>
               </div>
             </div>
-          </section>
+          </section> */}
 
           {/* Ready to Order Section */}
           <section className="relative overflow-hidden rounded-[3rem] bg-[#201839] p-12 md:p-24 text-center text-white">
