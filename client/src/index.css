@@ -43,8 +43,8 @@
   --popover: 222 47% 13%;
   --popover-foreground: 210 40% 98%;
  
-  /* Signature Red from photo (Hex approx #d32f2f -> HSL 0, 64%, 51%) */
-  --primary: 345 100% 45%; 
+  /* Signature Red - Adjusted to be more Lite Red/Vibrant Red and less Pink */
+  --primary: 0 100% 50%; 
   --primary-foreground: 0 0% 100%;
  
   /* Supporting Teal/Electric Blue for depth */
