@@ -26,6 +26,8 @@ export default function About() {
             src={aboutHero} 
             alt="Hotts Cafe Community" 
             className="w-full h-full object-cover"
+            loading="eager"
+            fetchPriority="high"
           />
           <div className="absolute inset-0 bg-black/40"></div>
         </div>
@@ -108,6 +110,7 @@ export default function About() {
                   src={experienceImg} 
                   alt="Hotts Cafe Signature Dishes" 
                   className="relative rounded-[2.5rem] shadow-2xl w-full object-cover aspect-[4/5] lg:aspect-[3/4] border-8 border-white"
+                  loading="lazy"
                 />
               </div>
             </motion.div>
@@ -211,6 +214,7 @@ export default function About() {
                   src={quickBitesImg} 
                   alt="Quick Bites and Espresso" 
                   className="relative rounded-[3rem] shadow-2xl w-full object-cover aspect-[4/5] lg:aspect-[3/4] border-8 border-white"
+                  loading="lazy"
                 />
               </div>
             </motion.div>

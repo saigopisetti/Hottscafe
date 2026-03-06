@@ -35,6 +35,8 @@ export default function Home() {
             src={australianCafeHero} 
             alt="Hotts Cafe Modern Interior" 
             className="w-full h-full object-cover"
+            loading="eager"
+            fetchPriority="high"
           />
           <div className="absolute inset-0 bg-black/30"></div>
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/20"></div>
@@ -88,6 +90,7 @@ export default function Home() {
                   src={introSectionImg} 
                   alt="Barista pouring latte art" 
                   className="relative rounded-[3rem] shadow-2xl w-full object-cover aspect-[2/3] border-8 border-white"
+                  loading="lazy"
                 />
               </div>
             </motion.div>
@@ -192,6 +195,7 @@ export default function Home() {
                   src={australianCafeBites}
                   alt="Quick Bites and Espresso" 
                   className="relative rounded-[3rem] shadow-2xl w-full object-cover aspect-[2/3] border-8 border-white"
+                  loading="lazy"
                 />
               </div>
             </motion.div>
