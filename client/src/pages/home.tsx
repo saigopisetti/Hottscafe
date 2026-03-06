@@ -1,7 +1,8 @@
 import { Layout } from "@/components/layout";
 import { motion } from "framer-motion";
 import australianCafeHero from "@/assets/coffee-chef-banner.png";
-import introSectionImg from "@/assets/cappuccino-v3.png";
+import australianCafeBites from "@/assets/egg-bacon-roll-new.png";
+import introSectionImg from "@/assets/cappuccino.jpg";
 import burgerLot from "@/assets/burger-lot-v3.png";
 import chickenParma from "@/assets/chicken-parma-v3.png";
 import steakSandwich from "@/assets/steak-sandwich-v3.png";
@@ -151,7 +152,7 @@ export default function Home() {
               <div className="relative group max-w-[500px] mx-auto lg:mr-auto">
                 <div className="absolute -inset-4 bg-primary/5 rounded-[3rem] rotate-2"></div>
                 <img 
-                  src="/src/assets/about-quick-bites.png" 
+                  src={australianCafeBites}
                   alt="Quick Bites and Espresso" 
                   className="relative rounded-[3rem] shadow-2xl w-full object-cover aspect-[16/9] border-8 border-white"
                 />
