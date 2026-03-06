@@ -57,7 +57,7 @@ export function Navbar() {
               <span className="text-sm font-bold text-[#201839]">9369 6504</span>
             </a>
             <Link href="/contact">
-              <Button size="sm" className="hover:bg-primary/90 text-white font-medium px-6 rounded-full bg-[#ef0000]">Contact Us</Button>
+              <Button size="sm" className="hover:bg-primary/90 text-white font-medium px-6 rounded-full bg-[#ef0000] cursor-pointer">Contact Us</Button>
             </Link>
             
           </div>
@@ -96,7 +96,7 @@ export function Navbar() {
                 <span className="font-bold">9369 6504</span>
               </a>
               <Link href="/contact">
-                <Button className="w-full bg-[#ef0000] hover:bg-primary/90 text-white font-medium rounded-full h-12" onClick={() => setMobileMenuOpen(false)}>
+                <Button className="w-full bg-[#ef0000] hover:bg-primary/90 text-white font-medium rounded-full h-12 cursor-pointer" onClick={() => setMobileMenuOpen(false)}>
                   Contact Us
                 </Button>
               </Link>
