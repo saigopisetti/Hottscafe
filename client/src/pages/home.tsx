@@ -59,7 +59,7 @@ export default function Home() {
             </p> */}
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center px-6">
               <Link href="/menu">
-                <Button size="lg" className="w-full sm:w-auto hover:bg-primary/90 text-white rounded-full px-12 h-14 sm:h-16 text-lg sm:text-xl shadow-2xl hover:scale-105 transition-all cursor-pointer bg-[#ef0000]">
+                <Button size="lg" className="w-full sm:w-auto hover:bg-primary/90 text-white rounded-full px-12 h-14 sm:h-16 text-lg sm:text-xl shadow-2xl hover:scale-105 transition-all cursor-pointer bg-[#ff0000] border-none">
                   See the Menu
                 </Button>
               </Link>
