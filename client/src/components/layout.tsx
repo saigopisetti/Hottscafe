@@ -171,7 +171,7 @@ export function Footer() {
               </div>
               <div className="flex items-center gap-3 text-black text-sm">
                 <Mail className="h-5 w-5 text-primary shrink-0" />
-                <span>orders@hottscafe.com.au</span>
+                <a href="mailto:orders@hottscafe.com.au" className="hover:text-primary transition-colors underline decoration-primary/30 underline-offset-4">orders@hottscafe.com.au</a>
               </div>
               {/* <div className="text-neutral-400 text-sm pl-8">
                 orders@hottscafe.com.au
