@@ -9,6 +9,7 @@ import slide3 from "../assets/catering-slide-3-new.png";
 import slide4 from "../assets/multi-meat-tasty.png";
 import slide5 from "../assets/catering-slide-5.png";
 import slide6 from "../assets/catering-slide-6.png";
+import mainPost from "../assets/gallery/food-in-kitchen.png";
 import gallery1 from "../assets/gallery/catering-intellect.png";
 import gallery2 from "../assets/gallery/diverse-event-catering.png";
 import gallery3 from "../assets/gallery/food-catering.png";
@@ -20,7 +21,7 @@ import gallery8 from "../assets/gallery/chef-food-ready.webp";
 import gallery9 from "../assets/gallery-9-new.png";
 import gallery10 from "../assets/gallery/tea-party.png";
 import gallery11 from "../assets/gallery/burger-row.png";
-import gallery12 from "../assets/gallery/board-room.png";
+import gallery12 from "../assets/gallery-12-new.png";
 import user1 from "../assets/testimonial-user_1.jpg";
 import user2 from "../assets/testimonial-user_2.jpg";
 import user3 from "../assets/testimonial-user_3.jpg";
@@ -169,7 +170,7 @@ export default function Catering() {
               </motion.div>
               <div className="relative">
                 <img 
-                  src={slide2} 
+                  src={mainPost} 
                   className="rounded-[2rem] shadow-2xl relative z-10 w-full aspect-[4/3] object-cover"
                   alt="Catering Platter"
                 />
