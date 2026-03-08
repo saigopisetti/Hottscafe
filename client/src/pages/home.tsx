@@ -16,7 +16,7 @@ import hotChips from "@/assets/hot-chips.jpg";
 import icedCoffee from "@/assets/iced-coffee-v3.png";
 import muffin from "@/assets/muffin.jpg";
 import saladImg from "@/assets/gallery-9-new.png";
-import cateringSnippet from "@/assets/corporate-catering-spread.png";
+import cateringSnippet from "@/assets/catering-menu-spread.png";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Coffee, Clock, ChefHat, Phone, Sparkles, Quote, Mail } from "lucide-react";
