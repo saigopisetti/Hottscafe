@@ -62,14 +62,14 @@ export default function Home() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4, duration: 0.8 }}
-              className="font-heading text-2xl sm:text-3xl md:text-5xl font-black leading-tight mb-8 text-white tracking-tighter uppercase"
+              className="font-heading text-xl sm:text-3xl md:text-5xl font-black leading-tight mb-8 text-white tracking-tighter uppercase"
               style={{
                 textShadow: "0 8px 32px rgba(0,0,0,0.8), 0 2px 8px rgba(255,0,0,0.3)"
               }}
             >
-              CRAFT <br className="hidden sm:block" />COFFEE. <br />
+              CRAFT COFFEE. <br />
               <span className="italic text-[#ff4444] drop-shadow-[0_4px_16px_rgba(255,0,0,0.5)]">FRESH FLAVOURS.</span> <br />
-              EVERYDAY <br className="hidden sm:block" />COMFORT.
+              EVERYDAY COMFORT.
             </motion.h1>
             {/* <p className="text-base sm:text-lg md:text-2xl text-white mb-10 max-w-2xl mx-auto font-bold leading-relaxed drop-shadow-[0_2px_15px_rgba(0,0,0,0.9)] px-4">
               We're turning up the volume on your morning. Hotts Café is where bold flavors meet vibrant community.
