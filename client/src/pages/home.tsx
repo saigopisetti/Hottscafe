@@ -62,7 +62,7 @@ export default function Home() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4, duration: 0.8 }}
-              className="font-heading text-2xl sm:text-3xl md:text-5xl font-black leading-tight mb-8 text-white tracking-tighter uppercase"
+              className="font-heading text-xl sm:text-3xl md:text-5xl font-black leading-tight mb-8 text-white tracking-tighter uppercase"
               style={{
                 textShadow: "0 8px 32px rgba(0,0,0,0.8), 0 2px 8px rgba(255,0,0,0.3)"
               }}
