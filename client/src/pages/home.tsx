@@ -1,6 +1,6 @@
 import { Layout } from "@/components/layout";
 import { motion } from "framer-motion";
-import australianCafeHero from "@/assets/hero-cafe-banner-v2_1.png";
+import australianCafeHero from "@/assets/gallery/calebrate-coffee.png";
 import australianCafeBites from "@/assets/egg-bacon-roll-new.png";
 import introSectionImg from "@/assets/cappuccino.jpg";
 import burgerLot from "@/assets/burger-lot-v3.png";
