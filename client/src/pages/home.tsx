@@ -76,12 +76,12 @@ export default function Home() {
             </p> */}
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center px-6">
               <Link href="/menu">
-                <Button size="lg" className="w-full sm:w-auto hover:bg-primary/90 text-white rounded-full px-12 h-14 sm:h-16 text-lg sm:text-xl shadow-2xl hover:scale-105 transition-all cursor-pointer bg-[#ff0000] border-none">
+                <Button size="lg" className="w-full sm:w-auto hover:bg-primary/90 text-white rounded-full px-8 sm:px-12 h-12 sm:h-16 text-base sm:text-xl shadow-2xl hover:scale-105 transition-all cursor-pointer bg-[#ff0000] border-none">
                   See the Menu
                 </Button>
               </Link>
               <Link href="/contact">
-                <Button size="lg" variant="outline" className="w-full sm:w-auto bg-white/10 hover:bg-white/20 text-white border-white/40 rounded-full px-12 h-14 sm:h-16 text-lg sm:text-xl backdrop-blur-md hover:scale-105 transition-all cursor-pointer">
+                <Button size="lg" variant="outline" className="w-full sm:w-auto bg-white/10 hover:bg-white/20 text-white border-white/40 rounded-full px-8 sm:px-12 h-12 sm:h-16 text-base sm:text-xl backdrop-blur-md hover:scale-105 transition-all cursor-pointer">
                   Visit Us
                 </Button>
               </Link>
