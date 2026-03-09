@@ -1,6 +1,6 @@
 import { Layout } from "@/components/layout";
 import { motion } from "framer-motion";
-import australianCafeHero from "@/assets/coffee-chef-banner.png";
+import australianCafeHero from "@/assets/hero-cafe-banner.png";
 import australianCafeBites from "@/assets/egg-bacon-roll-new.png";
 import introSectionImg from "@/assets/cappuccino.jpg";
 import burgerLot from "@/assets/burger-lot-v3.png";
@@ -49,14 +49,28 @@ export default function Home() {
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="max-w-4xl mx-auto"
           >
-            <BadgeLocal className="mb-6 bg-primary text-white border-none px-6 drop-shadow-xl scale-110">
-              <Sparkles className="w-3 h-3 mr-2" /> NEW VIBE, SAME FLAVOR
-            </BadgeLocal>
-            <h1 className="font-heading text-3xl sm:text-4xl md:text-6xl font-black leading-none mb-6 text-white tracking-tighter uppercase drop-shadow-[0_4px_20px_rgba(0,0,0,0.9)]">
-              CRAFT COFFEE. <br />
-              <span className="italic text-[#ef0000]">FRESH FLAVOURS.</span> <br />
-              EVERYDAY COMFORT.
-            </h1>
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.2, duration: 0.6 }}
+            >
+              <BadgeLocal className="mb-8 bg-primary text-white border-none px-6 drop-shadow-xl scale-110 inline-flex">
+                <Sparkles className="w-3 h-3 mr-2" /> NEW VIBE, SAME FLAVOR
+              </BadgeLocal>
+            </motion.div>
+            <motion.h1 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.4, duration: 0.8 }}
+              className="font-heading text-3xl sm:text-4xl md:text-6xl font-black leading-tight mb-8 text-white tracking-tighter uppercase"
+              style={{
+                textShadow: "0 8px 32px rgba(0,0,0,0.8), 0 2px 8px rgba(255,0,0,0.3)"
+              }}
+            >
+              CRAFT <br className="hidden sm:block" />COFFEE. <br />
+              <span className="italic text-[#ff4444] drop-shadow-[0_4px_16px_rgba(255,0,0,0.5)]">FRESH FLAVOURS.</span> <br />
+              EVERYDAY <br className="hidden sm:block" />COMFORT.
+            </motion.h1>
             {/* <p className="text-base sm:text-lg md:text-2xl text-white mb-10 max-w-2xl mx-auto font-bold leading-relaxed drop-shadow-[0_2px_15px_rgba(0,0,0,0.9)] px-4">
               We're turning up the volume on your morning. Hotts Café is where bold flavors meet vibrant community.
             </p> */}
