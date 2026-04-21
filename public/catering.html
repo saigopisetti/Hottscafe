@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catering | Hotts Café — Professional Event Catering</title>
+  <meta name="description" content="Hotts Café offers professional catering for corporate events, private functions, and office lunches in Hoppers Crossing and Melbourne.">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/catering.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="nav-logo">Hotts Café</a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="menu.html" class="nav-link">Menu</a>
+        <a href="catering.html" class="nav-link">Catering</a>
+      </div>
+      <div class="nav-actions">
+        <a href="tel:93696504" class="phone-badge"><i class="fas fa-phone"></i><span>9369 6504</span></a>
+        <a href="contact.html" class="btn btn-primary btn-sm">Contact Us</a>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu"><i class="fas fa-bars"></i></button>
+      </div>
+    </div>
+  </nav>
+  <div class="mobile-nav" id="mobileNav">
+    <a href="index.html" class="mobile-nav-link">Home</a>
+    <a href="about.html" class="mobile-nav-link">About</a>
+    <a href="menu.html" class="mobile-nav-link">Menu</a>
+    <a href="catering.html" class="mobile-nav-link">Catering</a>
+    <div class="mobile-nav-divider">
+      <div class="mobile-phone"><i class="fas fa-phone"></i><span>9369 6504</span></div>
+      <a href="contact.html" class="btn btn-primary" style="width:100%;justify-content:center;">Contact Us</a>
+    </div>
+  </div>
+
+  <!-- HERO SLIDER -->
+  <section class="catering-hero">
+    <!-- Slides -->
+    <div class="catering-slide active" id="slide-0">
+      <img src="assets/gallery/corporate-event.png" alt="Corporate Lunches">
+      <div class="catering-slide-overlay"></div>
+    </div>
+    <div class="catering-slide" id="slide-1">
+      <img src="assets/gallery/patie-fire.png" alt="Private Events">
+      <div class="catering-slide-overlay"></div>
+    </div>
+    <div class="catering-slide" id="slide-2">
+      <img src="assets/catering-slide-3-new.png" alt="Fresh Platters">
+      <div class="catering-slide-overlay"></div>
+    </div>
+    <div class="catering-slide" id="slide-3">
+      <img src="assets/multi-meat-tasty.png" alt="Gourmet Choices">
+      <div class="catering-slide-overlay"></div>
+    </div>
+    <div class="catering-slide" id="slide-4">
+      <img src="assets/catering-slide-5.png" alt="Event Spreads">
+      <div class="catering-slide-overlay"></div>
+    </div>
+    <div class="catering-slide" id="slide-5">
+      <img src="assets/catering-slide-6.png" alt="Dessert Towers">
+      <div class="catering-slide-overlay"></div>
+    </div>
+
+    <!-- Content (updated by JS) -->
+    <div class="catering-hero-content">
+      <div>
+        <span class="catering-hero-tag">Hotts Catering</span>
+        <h1 class="catering-hero-title" id="slideTitle">Corporate Lunches</h1>
+        <p class="catering-hero-desc" id="slideDesc">Impress your team with fresh, gourmet platters.</p>
+      </div>
+    </div>
+
+    <!-- Dots -->
+    <div class="slider-dots" id="sliderDots"></div>
+  </section>
+
+  <!-- INTRO -->
+  <div class="catering-intro">
+    <div class="container">
+      <div class="catering-intro-grid">
+        <div class="reveal reveal-x-left">
+          <h2>Professional Catering <br><span>for every occasion.</span></h2>
+          <p>Whether you're hosting a corporate meeting, a private function, or just need to feed a hungry crowd, Hotts Café provides high-quality catering solutions tailored to your needs.</p>
+          <div class="catering-features">
+            <div class="catering-feature">
+              <div class="catering-feature-icon"><i class="fas fa-utensils"></i></div>
+              <div class="catering-feature-text">
+                <p>Gourmet Platters</p><p>Sandwich &amp; Wrap selections</p>
+              </div>
+            </div>
+            <div class="catering-feature">
+              <div class="catering-feature-icon"><i class="fas fa-fire"></i></div>
+              <div class="catering-feature-text">
+                <p>Hot Food</p><p>Premium Finger Food variety</p>
+              </div>
+            </div>
+            <div class="catering-feature">
+              <div class="catering-feature-icon"><i class="fas fa-leaf"></i></div>
+              <div class="catering-feature-text">
+                <p>Fresh Salads</p><p>Seasonal Fruit &amp; Green platters</p>
+              </div>
+            </div>
+            <div class="catering-feature">
+              <div class="catering-feature-icon"><i class="fas fa-mug-hot"></i></div>
+              <div class="catering-feature-text">
+                <p>Tea Options</p><p>Morning &amp; Afternoon treats</p>
+              </div>
+            </div>
+            <div class="catering-feature">
+              <div class="catering-feature-icon"><i class="fas fa-check-circle"></i></div>
+              <div class="catering-feature-text">
+                <p>300+ Capacity</p><p>Large scale event specialist</p>
+              </div>
+            </div>
+            <div class="catering-feature">
+              <div class="catering-feature-icon"><i class="fas fa-check-circle"></i></div>
+              <div class="catering-feature-text">
+                <p>Custom Menus</p><p>Tailored to your requirements</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="catering-main-img-wrap reveal reveal-x-right reveal-delay-1">
+          <div class="catering-pulse-1"></div>
+          <div class="catering-pulse-2"></div>
+          <img src="assets/gallery/food-in-kitchen.png" alt="Catering Platter" class="catering-main-img">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- GALLERY GRID -->
+  <div class="catering-gallery">
+    <div class="container">
+      <div class="catering-gallery-header reveal">
+        <h2>Catering <span>Excellence</span></h2>
+        <p>A visual journey through our most successful corporate events and gourmet presentations.</p>
+      </div>
+      <div class="gallery-grid reveal reveal-delay-1">
+        <div class="gallery-item"><img src="assets/gallery/catering-intellect.png" alt="Gourmet Buffet"><div class="gallery-item-overlay"><span>Gourmet Buffet</span></div></div>
+        <div class="gallery-item"><img src="assets/gallery/diverse-event-catering.png" alt="Artisan Platters"><div class="gallery-item-overlay"><span>Artisan Platters</span></div></div>
+        <div class="gallery-item"><img src="assets/gallery/food-catering.png" alt="Corporate Lunch"><div class="gallery-item-overlay"><span>Corporate Lunch</span></div></div>
+        <div class="gallery-item"><img src="assets/gallery/corporate-event.png" alt="Event Networking"><div class="gallery-item-overlay"><span>Event Networking</span></div></div>
+        <div class="gallery-item"><img src="assets/gallery/party-crunches.png" alt="Cocktail Party"><div class="gallery-item-overlay"><span>Cocktail Party</span></div></div>
+        <div class="gallery-item"><img src="assets/gallery/catering-banquet.png" alt="Grand Spread"><div class="gallery-item-overlay"><span>Grand Spread</span></div></div>
+        <div class="gallery-item"><img src="assets/gallery/catering-arrangement.png" alt="Seafood Studio"><div class="gallery-item-overlay"><span>Seafood Studio</span></div></div>
+        <div class="gallery-item"><img src="assets/gallery/chef-food-ready.webp" alt="Chef Crafted"><div class="gallery-item-overlay"><span>Chef Crafted</span></div></div>
+        <div class="gallery-item"><img src="assets/gallery-9-new.png" alt="Seasonal Salads"><div class="gallery-item-overlay"><span>Seasonal Salads</span></div></div>
+        <div class="gallery-item"><img src="assets/gallery/tea-party.png" alt="Morning Tea"><div class="gallery-item-overlay"><span>Morning Tea</span></div></div>
+        <div class="gallery-item"><img src="assets/gallery/burger-row.png" alt="Gourmet Sliders"><div class="gallery-item-overlay"><span>Gourmet Sliders</span></div></div>
+        <div class="gallery-item"><img src="assets/gallery-12-new.png" alt="Boardroom Lunch"><div class="gallery-item-overlay"><span>Boardroom Lunch</span></div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div class="container" style="padding-bottom:4rem;">
+    <div class="catering-cta reveal">
+      <h2>Ready to <span>Order?</span></h2>
+      <p>Download our catering menu or get in touch with our team to discuss your specific requirements. We're here to help!</p>
+      <div class="catering-cta-actions">
+        <a href="tel:93696504" class="btn btn-primary btn-lg">
+          <i class="fas fa-phone"></i> Call 9369 6504
+        </a>
+        <a href="mailto:orders@hottscafe.com.au" class="btn btn-outline btn-lg" style="border-color:rgba(255,255,255,0.25);">
+          <i class="fas fa-envelope"></i> Email Us
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo">Hotts Café</div>
+          <p class="footer-tagline">More than just a meal. It is a moment to connect, recharge, and enjoy.</p>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/p/Hotts-Cafe-100063674346035/" target="_blank" rel="noopener noreferrer" class="social-link"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/hottscafe/?hl=en" target="_blank" rel="noopener noreferrer" class="social-link"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div>
+          <h3 class="footer-heading">Contact Us</h3>
+          <div class="footer-contact-item"><i class="fas fa-map-marker-alt"></i><span>Factory 10, 1–3 Kilmur Road,<br>Hoppers Crossing (cnr Old Geelong Road)</span></div>
+          <div class="footer-contact-item"><i class="fas fa-phone"></i><a href="tel:93696504">9369 6504</a></div>
+          <div class="footer-contact-item"><i class="fas fa-envelope"></i><a href="mailto:orders@hottscafe.com.au">orders@hottscafe.com.au</a></div>
+        </div>
+        <div>
+          <h3 class="footer-heading">Opening Hours</h3>
+          <ul class="footer-hours">
+            <li><span>Mon – Fri</span><strong>5.00am – 2.30pm</strong></li>
+            <li>Delivery available till 2pm ($3.00, Min $10)</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">Designed by <a href="https://www.aaria.com.au" target="_blank">Aaria</a> © <script>document.write(new Date().getFullYear())</script> Hotts Café. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/catering.js"></script>
+</body>
+</html>

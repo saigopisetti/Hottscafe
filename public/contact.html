@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Hotts Café — Get In Touch</title>
+  <meta name="description" content="Contact Hotts Café for inquiries, feedback, or catering requests. Visit us in Hoppers Crossing.">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="nav-logo">Hotts Café</a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="menu.html" class="nav-link">Menu</a>
+        <a href="catering.html" class="nav-link">Catering</a>
+      </div>
+      <div class="nav-actions">
+        <a href="tel:93696504" class="phone-badge"><i class="fas fa-phone"></i><span>9369 6504</span></a>
+        <a href="contact.html" class="btn btn-primary btn-sm">Contact Us</a>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu"><i class="fas fa-bars"></i></button>
+      </div>
+    </div>
+  </nav>
+  <div class="mobile-nav" id="mobileNav">
+    <a href="index.html" class="mobile-nav-link">Home</a>
+    <a href="about.html" class="mobile-nav-link">About</a>
+    <a href="menu.html" class="mobile-nav-link">Menu</a>
+    <a href="catering.html" class="mobile-nav-link">Catering</a>
+    <div class="mobile-nav-divider">
+      <div class="mobile-phone"><i class="fas fa-phone"></i><span>9369 6504</span></div>
+      <a href="contact.html" class="btn btn-primary" style="width:100%;justify-content:center;">Contact Us</a>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <div class="contact-header">
+    <div class="container">
+      <span class="contact-header-tag">Get in Touch</span>
+      <h1>Contact <span>Us</span></h1>
+      <p>We look forward to welcoming you soon. Find us in Hoppers Crossing for your daily dose of great coffee and food.</p>
+    </div>
+  </div>
+
+  <!-- BODY -->
+  <div class="contact-body">
+    <div class="container">
+      <div class="contact-grid">
+        
+        <!-- INFO COLUMN -->
+        <div class="reveal reveal-x-left">
+          <h2 class="contact-info-heading">Visit <span>Hotts Café</span></h2>
+          <p class="contact-info-body">Whether you're looking for a quick takeaway, a relaxed dine-in experience, or catering for your next office event, we're here to help.</p>
+          
+          <div class="contact-details">
+            <div class="contact-detail">
+              <div class="contact-detail-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <h3>Address</h3>
+              <p>Factory 10, 1–3 Kilmur Road,<br>Hoppers Crossing (cnr Old Geelong Road)</p>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-detail-icon"><i class="fas fa-phone"></i></div>
+              <h3>Phone &amp; Email</h3>
+              <p>Phone: <a href="tel:93696504"><strong>9369 6504</strong></a><br>
+              <a href="mailto:orders@hottscafe.com.au">orders@hottscafe.com.au</a></p>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-detail-icon"><i class="fas fa-clock"></i></div>
+              <h3>Opening Hours</h3>
+              <p>Mon – Fri: 5.00am – 2.30pm<br>
+              <span class="delivery-note">Delivery till 2pm</span></p>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-detail-icon"><i class="fas fa-utensils"></i></div>
+              <h3>Catering</h3>
+              <p>Corporate, Office &amp; Business Catering Available</p>
+            </div>
+          </div>
+
+          <!-- Map -->
+          <div class="contact-map">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3149.202353724814!2d144.7262243!3d-37.8726309!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad688ef6a4c83e1%3A0xb20cb398f60b1c2f!2sHotts%20Cafe!5e0!3m2!1sen!2sau!4v1709712000000!5m2!1sen!2sau" 
+              allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+              title="Hotts Cafe Location"></iframe>
+          </div>
+        </div>
+
+        <!-- FORM COLUMN -->
+        <div class="reveal reveal-x-right reveal-delay-1">
+          <div class="contact-form-card">
+            <h2>Send a <span>Message</span></h2>
+            <form id="contactForm" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="fname">Name</label>
+                  <input class="form-input" id="fname" name="name" type="text" required placeholder="Your name">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="femail">Email</label>
+                  <input class="form-input" id="femail" name="email" type="email" required placeholder="Your email">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="fphone">Phone Number</label>
+                  <input class="form-input" id="fphone" name="phone" type="tel" placeholder="Your phone (optional)">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="fsubject">Subject</label>
+                  <input class="form-input" id="fsubject" name="subject" type="text" required placeholder="What's this about?">
+                </div>
+              </div>
+              <div class="form-group" style="margin-bottom:1.25rem;">
+                <label class="form-label" for="fmessage">Message</label>
+                <textarea class="form-textarea" id="fmessage" name="message" required placeholder="How can we help?"></textarea>
+              </div>
+
+              <!-- Captcha -->
+              <div class="captcha-box">
+                <div class="captcha-header">
+                  <div class="captcha-security">
+                    <i class="fas fa-shield-alt"></i>
+                    Security Check
+                  </div>
+                  <div class="captcha-code-wrap">
+                    <div class="captcha-code" id="captchaDisplay"></div>
+                    <button type="button" class="captcha-refresh" id="captchaRefresh" title="Refresh">
+                      <i class="fas fa-redo"></i>
+                    </button>
+                  </div>
+                </div>
+                <label class="captcha-label" for="captchaInput">Enter the code above</label>
+                <input class="captcha-input" id="captchaInput" type="text" placeholder="Type code here" autocomplete="off">
+              </div>
+
+              <button type="submit" class="submit-btn" id="submitBtn" disabled>
+                Verify to Send <i class="fas fa-paper-plane" style="margin-left:0.5rem;"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo">Hotts Café</div>
+          <p class="footer-tagline">More than just a meal. It is a moment to connect, recharge, and enjoy.</p>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/p/Hotts-Cafe-100063674346035/" target="_blank" rel="noopener noreferrer" class="social-link"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/hottscafe/?hl=en" target="_blank" rel="noopener noreferrer" class="social-link"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div>
+          <h3 class="footer-heading">Contact Us</h3>
+          <div class="footer-contact-item"><i class="fas fa-map-marker-alt"></i><span>Factory 10, 1–3 Kilmur Road,<br>Hoppers Crossing (cnr Old Geelong Road)</span></div>
+          <div class="footer-contact-item"><i class="fas fa-phone"></i><a href="tel:93696504">9369 6504</a></div>
+          <div class="footer-contact-item"><i class="fas fa-envelope"></i><a href="mailto:orders@hottscafe.com.au">orders@hottscafe.com.au</a></div>
+        </div>
+        <div>
+          <h3 class="footer-heading">Opening Hours</h3>
+          <ul class="footer-hours">
+            <li><span>Mon – Fri</span><strong>5.00am – 2.30pm</strong></li>
+            <li>Delivery available till 2pm ($3.00, Min $10)</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">Designed by <a href="https://www.aaria.com.au" target="_blank">Aaria</a> © <script>document.write(new Date().getFullYear())</script> Hotts Café. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+</html>

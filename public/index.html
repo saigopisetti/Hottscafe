@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotts Café | Craft Coffee & Fresh Flavors in Hoppers Crossing</title>
+  <meta name="description" content="Welcome to Hotts Café, your local destination for premium coffee, gourmet burgers, and fresh community vibes in Hoppers Crossing.">
+  <link rel="icon" type="image/png" href="favicon.png">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@300;400;700;900&display=swap" rel="stylesheet">
+  
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+
+  <!-- ═══ NAVBAR ═══ -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="nav-logo">Hotts Café</a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="menu.html" class="nav-link">Menu</a>
+        <a href="catering.html" class="nav-link">Catering</a>
+      </div>
+      <div class="nav-actions">
+        <a href="tel:93696504" class="phone-badge">
+          <i class="fas fa-phone"></i>
+          <span>9369 6504</span>
+        </a>
+        <a href="contact.html" class="btn btn-primary btn-sm">Contact Us</a>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobileNav" role="navigation" aria-label="Mobile navigation">
+    <a href="index.html" class="mobile-nav-link">Home</a>
+    <a href="about.html" class="mobile-nav-link">About</a>
+    <a href="menu.html" class="mobile-nav-link">Menu</a>
+    <a href="catering.html" class="mobile-nav-link">Catering</a>
+    <div class="mobile-nav-divider">
+      <div class="mobile-phone">
+        <i class="fas fa-phone"></i>
+        <span>9369 6504</span>
+      </div>
+      <a href="contact.html" class="btn btn-primary" style="width:100%; justify-content:center;">Contact Us</a>
+    </div>
+  </div>
+
+  <!-- ═══ HERO ═══ -->
+  <header class="hero">
+    <div class="hero-bg">
+      <img src="assets/gallery/calebrate-coffee.png" alt="Hotts Cafe Modern Interior" loading="eager" fetchpriority="high">
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="reveal">
+        <span class="hero-badge"><i class="fas fa-sparkles"></i> NEW VIBE, SAME FLAVOR</span>
+      </div>
+      <h1 class="hero-title reveal reveal-delay-1" 
+          style="text-shadow: 0 8px 32px rgba(0,0,0,0.8), 0 2px 8px rgba(255,0,0,0.3);">
+        CRAFT COFFEE. <span style="font-style:italic; color:#ff4444; filter:drop-shadow(0 4px 16px rgba(255,0,0,0.5));">FRESH FLAVOURS.</span> EVERYDAY COMFORT.
+      </h1>
+      <div class="hero-actions reveal reveal-delay-2">
+        <a href="menu.html" class="btn btn-primary btn-lg">See the Menu</a>
+        <a href="contact.html" class="btn btn-outline btn-lg">Visit Us</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ═══ INTRO — Not Just A Café ═══ -->
+  <section class="intro-section">
+    <div class="container">
+      <div class="intro-grid">
+        <!-- Image -->
+        <div class="intro-img-wrap reveal reveal-x-left">
+          <div class="intro-img-bg"></div>
+          <img src="assets/cappuccino.jpg" alt="Barista pouring latte art" class="intro-img" loading="lazy">
+        </div>
+        <!-- Text -->
+        <div class="reveal reveal-x-right reveal-delay-1">
+          <h2 class="font-heading" style="font-size:clamp(2.5rem,5vw,3.75rem); font-weight:900; color:#201839; margin-bottom:1.25rem; text-align:left; text-transform:none; letter-spacing:-0.02em;">
+            Not Just A Café.<br>
+            <span class="intro-underline-wrapper">
+              A Movement.
+              <span class="intro-underline"></span>
+            </span>
+          </h2>
+          <p style="color:rgba(0,0,0,0.7); font-size:1.1rem; line-height:1.75; margin-bottom:2.5rem; max-width:100%; text-align:left;">
+            At Hotts Café, we believe a café is more than just a place to grab a cup of coffee. It is a space where community comes together. Whether you prefer something light and wholesome or a hearty meal to fuel your day, we have options to suit every appetite.
+          </p>
+          <div class="grid-2" style="gap:1.25rem;">
+            <div class="info-card">
+              <div class="info-card-icon">🎸</div>
+              <h3>Vibe Check</h3>
+              <p>The best beats and the boldest beans in Hoppers Crossing.</p>
+            </div>
+            <div class="info-card">
+              <div class="info-card-icon">👨‍🍳</div>
+              <h3>Soul Food</h3>
+              <p>Gourmet flavors that make your tastebuds dance.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ FUEL SECTION ═══ -->
+  <section class="fuel-section" style="background:#fff;">
+    <div class="container">
+      <div class="fuel-grid">
+        <!-- Text -->
+        <div class="reveal reveal-x-left">
+          <h2 class="font-heading" style="font-size:clamp(2.5rem,5vw,4rem); font-weight:900; color:#201839; margin-bottom:1.5rem; text-align:left; text-transform:none; letter-spacing:-0.02em;">
+            The Afternoon <span style="color:var(--primary); font-style:italic;">FUEL.</span>
+          </h2>
+          <div class="quote-box">
+            <i class="fas fa-quote-left quote-icon"></i>
+            <p class="quote-text">"When the mid-day slump hits, our Caffeine Boost and Quick Bites are designed to recharge your focus. From a punchy double-shot espresso to gourmet mini-sliders, we provide the perfect high-energy pause."</p>
+          </div>
+          <div class="fuel-tags reveal reveal-delay-1">
+            <span class="fuel-tag">Double Espresso</span>
+            <span class="fuel-tag">Artisan Sliders</span>
+            <span class="fuel-tag">Savory Bites</span>
+          </div>
+          <a href="menu.html" class="btn btn-primary btn-lg">View Full Menu</a>
+        </div>
+        <!-- Image -->
+        <div class="fuel-img-wrap reveal reveal-x-right reveal-delay-1">
+          <div class="fuel-img-bg"></div>
+          <img src="assets/egg-bacon-roll-new.png" alt="Quick Bites and Espresso" class="intro-img" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ LUNCHTIME BREAK ═══ -->
+  <section class="lunch-section">
+    <div class="container text-center">
+      <div class="reveal">
+        <h2 class="section-title" style="font-size:clamp(2rem,5vw,3.5rem); text-transform:uppercase;">
+          The <span style="color:var(--primary); font-style:italic;">Lunchtime</span> Break
+        </h2>
+        <p class="section-subtitle">Our lunch menu offers fresh, flavourful dishes prepared with care. Connect, recharge, and enjoy these local favorites.</p>
+      </div>
+      <div class="menu-cards-grid reveal reveal-delay-2">
+        <a href="menu.html" class="menu-card">
+          <img src="assets/burger-lot-v3.png" alt="The Lot Burger">
+          <div class="menu-card-overlay"></div>
+          <div class="menu-card-info">
+            <p class="menu-card-cat">Burgers</p>
+            <h3 class="menu-card-title">The Lot Burger</h3>
+          </div>
+        </a>
+        <a href="menu.html" class="menu-card">
+          <img src="assets/chicken-parma-v3.png" alt="Chicken Parma">
+          <div class="menu-card-overlay"></div>
+          <div class="menu-card-info">
+            <p class="menu-card-cat">Favorites</p>
+            <h3 class="menu-card-title">Chicken Parma</h3>
+          </div>
+        </a>
+        <a href="menu.html" class="menu-card">
+          <img src="assets/steak-sandwich-v3.png" alt="Steak Sandwich">
+          <div class="menu-card-overlay"></div>
+          <div class="menu-card-info">
+            <p class="menu-card-cat">Sandwiches</p>
+            <h3 class="menu-card-title">Steak Sandwich</h3>
+          </div>
+        </a>
+        <a href="menu.html" class="menu-card">
+          <img src="assets/gallery-9-new.png" alt="Seasonal Salad">
+          <div class="menu-card-overlay"></div>
+          <div class="menu-card-info">
+            <p class="menu-card-cat">Salads</p>
+            <h3 class="menu-card-title">Seasonal Salad</h3>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ POPULAR PICKS ═══ -->
+  <section class="popular-section">
+    <div class="container">
+      <h2 class="popular-heading reveal">POPULAR <span class="picks">PICKS</span></h2>
+      <div class="popular-grid reveal reveal-delay-1">
+        <!-- Breakfast Classics -->
+        <div>
+          <div class="popular-category-header">
+            <div class="popular-line"></div>
+            <h3 class="popular-cat-title">Breakfast Classics</h3>
+            <div class="popular-line"></div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h4 class="menu-item-title">The Lot Burger</h4>
+              <div class="menu-item-dots"></div>
+              <span class="menu-item-price">$15.50</span>
+            </div>
+            <p class="menu-item-desc">Beef, egg, bacon, cheese, lettuce, tomato, onion &amp; sauce</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h4 class="menu-item-title">Egg &amp; Bacon Roll</h4>
+              <div class="menu-item-dots"></div>
+              <span class="menu-item-price">$9.50</span>
+            </div>
+            <p class="menu-item-desc">Double egg, double bacon on a toasted brioche roll</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h4 class="menu-item-title">Steak Sandwich</h4>
+              <div class="menu-item-dots"></div>
+              <span class="menu-item-price">$16.50</span>
+            </div>
+            <p class="menu-item-desc">Tender steak, lettuce, tomato, onion &amp; secret sauce</p>
+          </div>
+        </div>
+        <!-- Local Favorites -->
+        <div>
+          <div class="popular-category-header">
+            <div class="popular-line"></div>
+            <h3 class="popular-cat-title">Local Favorites</h3>
+            <div class="popular-line"></div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h4 class="menu-item-title">Chicken Parma</h4>
+              <div class="menu-item-dots"></div>
+              <span class="menu-item-price">$18.50</span>
+            </div>
+            <p class="menu-item-desc">Hand-crumbed breast, napoli sauce &amp; melted mozzarella</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h4 class="menu-item-title">Chicken Schnitzel</h4>
+              <div class="menu-item-dots"></div>
+              <span class="menu-item-price">$15.00</span>
+            </div>
+            <p class="menu-item-desc">Golden fried breast with your choice of sides</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h4 class="menu-item-title">Iced Coffee</h4>
+              <div class="menu-item-dots"></div>
+              <span class="menu-item-price">$7.50</span>
+            </div>
+            <p class="menu-item-desc">Double shot espresso, vanilla bean ice cream &amp; whipped cream</p>
+          </div>
+        </div>
+      </div>
+      <div class="text-center reveal" style="margin-top:4rem;">
+        <a href="menu.html" class="btn btn-primary btn-lg">View Full Menu</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CATERING SNIPPET ═══ -->
+  <section class="catering-banner-section">
+    <div class="container reveal">
+      <div class="catering-banner">
+        <div class="catering-banner-img">
+          <img src="assets/catering-slide-1-v3.png" alt="Hotts Cafe Catering">
+        </div>
+        <div class="catering-banner-content">
+          <span class="badge badge-light" style="margin-bottom:1rem;">EVENT CATERING</span>
+          <h2>Catering for <br><span style="color:var(--primary); font-style:italic;">your next event</span></h2>
+          <p>From office lunches to private functions, we bring the Hotts Café flavor to your event. Fresh platters, hot favorites, and more.</p>
+          <a href="catering.html" class="btn btn-primary btn-lg">Explore Catering</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CTA ═══ -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-box reveal">
+        <div style="position:relative; z-index:1;">
+          <h2 class="cta-title">
+            <span style="opacity:0.6;">BE THERE.</span> <br>
+            <span style="color:var(--primary);">AT HOTTS CAFÉ.</span>
+          </h2>
+          <p class="cta-subtitle">Connect, recharge, and enjoy the experience. We look forward to welcoming you soon.</p>
+          <div class="cta-actions reveal reveal-delay-1">
+            <div class="cta-card">
+              <i class="far fa-clock cta-card-icon" style="font-size:2rem;"></i>
+              <p>
+                <span class="label">Early Birds</span>
+                <span class="value">5:00 AM – 2:30 PM</span>
+              </p>
+            </div>
+            <a href="mailto:orders@hottscafe.com.au" class="cta-card">
+              <i class="far fa-envelope cta-card-icon red" style="font-size:2rem;"></i>
+              <p>
+                <span class="label">Email Us</span>
+                <span class="value">orders@hottscafe.com.au</span>
+              </p>
+            </a>
+          </div>
+          <div class="cta-delivery reveal reveal-delay-2">Delivery at <span>$3</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo">Hotts Café</div>
+          <p class="footer-tagline">More than just a meal. It is a moment to connect, recharge, and enjoy. Be there for the experience. Be there for the community.</p>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/p/Hotts-Cafe-100063674346035/" target="_blank" rel="noopener noreferrer" class="social-link" title="Facebook">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/hottscafe/?hl=en" target="_blank" rel="noopener noreferrer" class="social-link" title="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.ubereats.com/au/store/hotts-cafe/QoOdDWzaUXi-cK0VFzzgxw" target="_blank" rel="noopener noreferrer" class="social-link" title="Uber Eats">
+              <i class="fas fa-motorcycle"></i>
+            </a>
+          </div>
+        </div>
+        <div>
+          <h3 class="footer-heading">Contact Us</h3>
+          <div class="footer-contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Factory 10, 1–3 Kilmur Road,<br>Hoppers Crossing (cnr Old Geelong Road)</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-phone"></i>
+            <a href="tel:93696504">9369 6504</a>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:orders@hottscafe.com.au">orders@hottscafe.com.au</a>
+          </div>
+        </div>
+        <div>
+          <h3 class="footer-heading">Opening Hours</h3>
+          <ul class="footer-hours">
+            <li><span>Mon – Fri</span><strong>5.00am – 2.30pm</strong></li>
+            <li>Delivery available till 2pm ($3.00, Min $10)</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        Designed by <a href="https://www.aaria.com.au" target="_blank">Aaria</a> © <script>document.write(new Date().getFullYear())</script> Hotts Café. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu | Hotts Café — The Lineup</title>
+  <meta name="description" content="Browse the full Hotts Café menu — breakfast, burgers, chicken, sandwiches, coffees and more.">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/menu.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="nav-logo">Hotts Café</a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="menu.html" class="nav-link">Menu</a>
+        <a href="catering.html" class="nav-link">Catering</a>
+      </div>
+      <div class="nav-actions">
+        <a href="tel:93696504" class="phone-badge"><i class="fas fa-phone"></i><span>9369 6504</span></a>
+        <a href="contact.html" class="btn btn-primary btn-sm">Contact Us</a>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu"><i class="fas fa-bars"></i></button>
+      </div>
+    </div>
+  </nav>
+  <div class="mobile-nav" id="mobileNav">
+    <a href="index.html" class="mobile-nav-link">Home</a>
+    <a href="about.html" class="mobile-nav-link">About</a>
+    <a href="menu.html" class="mobile-nav-link">Menu</a>
+    <a href="catering.html" class="mobile-nav-link">Catering</a>
+    <div class="mobile-nav-divider">
+      <div class="mobile-phone"><i class="fas fa-phone"></i><span>9369 6504</span></div>
+      <a href="contact.html" class="btn btn-primary" style="width:100%;justify-content:center;">Contact Us</a>
+    </div>
+  </div>
+
+  <!-- MENU PAGE -->
+  <div class="menu-page">
+    <div class="container">
+      <div class="menu-header reveal">
+        <span class="menu-header-tag">Flavor Town</span>
+        <h1>THE <span>LINEUP</span></h1>
+      </div>
+
+      <!-- Tabs -->
+      <div class="menu-tabs-wrap reveal reveal-delay-1">
+        <div class="menu-tabs">
+          <button class="menu-tab active" data-category="breakfast">Breakfast</button>
+          <button class="menu-tab" data-category="breakfast-extras">Breakfast Extras</button>
+          <button class="menu-tab" data-category="coffees-shakes">Coffees & Shakes</button>
+          <button class="menu-tab" data-category="combos">Combos</button>
+          <button class="menu-tab" data-category="chicken-parmas">Chicken Parmas</button>
+          <button class="menu-tab" data-category="burgers">Burgers</button>
+          <button class="menu-tab" data-category="chicken-burgers-wraps">Chicken Burgers & Wraps</button>
+          <button class="menu-tab" data-category="vegetarian">Vegetarian</button>
+          <button class="menu-tab" data-category="sandwiches">Sandwiches</button>
+          <button class="menu-tab" data-category="tender-chicken-subs">Tender Chicken Subs</button>
+          <button class="menu-tab" data-category="hot-food-bar">Hot Food Bar</button>
+          <button class="menu-tab" data-category="gourmet-sandwich-bar">Gourmet Sandwich Bar</button>
+          <button class="menu-tab" data-category="extras">Extras</button>
+          <button class="menu-tab" data-category="salads">Salads</button>
+        </div>
+      </div>
+
+      <!-- Content Container -->
+      <div id="menuContent" class="reveal reveal-delay-2">
+        <!-- Rendered by menu.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo">Hotts Café</div>
+          <p class="footer-tagline">More than just a meal. It is a moment to connect, recharge, and enjoy.</p>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/p/Hotts-Cafe-100063674346035/" target="_blank" rel="noopener noreferrer" class="social-link"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/hottscafe/?hl=en" target="_blank" rel="noopener noreferrer" class="social-link"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div>
+          <h3 class="footer-heading">Contact Us</h3>
+          <div class="footer-contact-item"><i class="fas fa-map-marker-alt"></i><span>Factory 10, 1–3 Kilmur Road,<br>Hoppers Crossing (cnr Old Geelong Road)</span></div>
+          <div class="footer-contact-item"><i class="fas fa-phone"></i><a href="tel:93696504">9369 6504</a></div>
+          <div class="footer-contact-item"><i class="fas fa-envelope"></i><a href="mailto:orders@hottscafe.com.au">orders@hottscafe.com.au</a></div>
+        </div>
+        <div>
+          <h3 class="footer-heading">Opening Hours</h3>
+          <ul class="footer-hours">
+            <li><span>Mon – Fri</span><strong>5.00am – 2.30pm</strong></li>
+            <li>Delivery available till 2pm ($3.00, Min $10)</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">Designed by <a href="https://www.aaria.com.au" target="_blank">Aaria</a> © <script>document.write(new Date().getFullYear())</script> Hotts Café. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/menu.js"></script>
+</body>
+</html>
