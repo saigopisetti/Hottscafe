@@ -24,13 +24,16 @@
   });
 
   function goTo(idx) {
+    if (!document.getElementById('slide-' + current)) return;
+    
     document.getElementById('slide-' + current).classList.remove('active');
     dotsEl.children[current].classList.remove('active');
     current = idx;
     document.getElementById('slide-' + current).classList.add('active');
     dotsEl.children[current].classList.add('active');
-    titleEl.textContent = slides[current].title;
-    descEl.textContent  = slides[current].desc;
+    
+    if (titleEl) titleEl.textContent = slides[current].title.toUpperCase();
+    if (descEl) descEl.textContent  = slides[current].desc;
   }
 
   setInterval(() => goTo((current + 1) % slides.length), 5000);

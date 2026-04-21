@@ -34,8 +34,19 @@
 }
 
 /* Tabs */
-.menu-tabs-wrap { overflow-x: auto; padding-bottom: 0.5rem; margin-bottom: 3rem; -webkit-overflow-scrolling: touch; }
-.menu-tabs-wrap::-webkit-scrollbar { display: none; }
+.menu-tabs-wrap { overflow-x: auto; padding-bottom: 0.75rem; margin-bottom: 3rem; -webkit-overflow-scrolling: touch; }
+.menu-tabs-wrap::-webkit-scrollbar {
+  height: 4px;
+  display: block;
+}
+.menu-tabs-wrap::-webkit-scrollbar-track {
+  background: rgba(0,0,0,0.05);
+  border-radius: 10px;
+}
+.menu-tabs-wrap::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 10px;
+}
 
 .menu-tabs {
   display: flex;
@@ -129,8 +140,11 @@
 .combo-label { font-size: 0.65rem; font-weight: 800; text-transform: uppercase; background: #f0f0f0; padding: 0.15rem 0.4rem; border-radius: 4px; }
 .combo-price { font-size: 0.85rem; font-weight: 700; color: var(--secondary); }
 
-@media (max-width: 768px) {
-  .menu-panel-inner { padding: 2rem 1.5rem; }
-  .menu-items-grid { grid-template-columns: 1fr; gap: 2rem; }
+@media (max-width: 1024px) {
   .menu-panel-fresh { display: none; }
+}
+
+@media (max-width: 768px) {
+  .menu-panel-inner { padding: 2.5rem 1.5rem; }
+  .menu-items-grid { grid-template-columns: 1fr; gap: 2rem; }
 }

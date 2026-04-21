@@ -135,3 +135,96 @@
   .form-row { grid-template-columns: 1fr; }
   .contact-form-card { padding: 2rem 1.5rem; border-radius: 2rem; }
 }
+
+
+/* ================= FIX SIDE SCROLL + MOBILE ALIGNMENT ================= */
+
+/* GLOBAL FIX (MOST IMPORTANT) */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+/* MEDIA FIX */
+img, iframe {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* CONTAINER FIX */
+.container {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* ================= MOBILE FIX ================= */
+
+@media (max-width: 768px) {
+
+  /* GRID FIX */
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  /* HEADER */
+  .contact-header {
+    padding: 2.5rem 1rem;
+  }
+
+  .contact-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .contact-header p {
+    font-size: 0.95rem;
+    padding: 0 0.5rem;
+  }
+
+  /* DETAILS */
+  .contact-details {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  /* MAP */
+  .contact-map {
+    height: 250px;
+  }
+
+  /* FORM */
+  .contact-form-card {
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .form-input,
+  .form-textarea {
+    font-size: 0.9rem;
+  }
+
+  /* CAPTCHA FIX (IMPORTANT) */
+  .captcha-code {
+    font-size: 1rem;
+    letter-spacing: 0.3em;
+    padding: 0.5rem 0.75rem;
+  }
+
+  /* BUTTON */
+  .submit-btn {
+    height: 3rem;
+    font-size: 0.95rem;
+  }
+
+}
