@@ -185,6 +185,7 @@
   width: 100%;
   aspect-ratio: 3/4;
   object-fit: cover;
+  transform: rotate(1deg);
 }
 
 /* About CTA */

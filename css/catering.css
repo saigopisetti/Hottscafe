@@ -1,3 +1,8 @@
+html,
+body {
+  overflow-x: hidden;
+}
+
 .catering-hero {
   position: relative;
   height: clamp(450px, 80vh, 750px);
