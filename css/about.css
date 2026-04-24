@@ -3,8 +3,8 @@
 /* Hero */
 .about-hero {
   position: relative;
-  height: 80vh;
-  min-height: 650px;
+  height: 95vh;
+  min-height: 750px;
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -251,9 +251,10 @@
 
   /* HERO */
   .about-hero {
-    height: auto;
-    min-height: 420px;
-    padding: 3rem 0;
+    height: 80vh;
+    min-height: 550px;
+    display: flex;
+    align-items: center;
   }
 
   .about-hero-title {

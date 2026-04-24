@@ -5,7 +5,8 @@ body {
 
 .catering-hero {
   position: relative;
-  height: clamp(450px, 80vh, 750px);
+  height: 95vh;
+  min-height: 750px;
   overflow: hidden;
   background: #000;
 }
@@ -46,7 +47,7 @@ body {
 }
 
 .catering-hero-tag {
-  font-size: 0.75rem;
+  font-size: 0.95rem;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.15em;
@@ -57,7 +58,7 @@ body {
 
 .catering-hero-title {
   font-family: var(--font-heading);
-  font-size: clamp(1.5rem, 5vw, 3rem);
+  font-size: clamp(1.5rem, 6vw, 4.5rem);
   font-weight: 900;
   line-height: 1;
   margin-bottom: 1.5rem;
@@ -65,7 +66,7 @@ body {
 }
 
 .catering-hero-desc {
-  font-size: clamp(1rem, 4vw, 1.35rem);
+  font-size: clamp(1rem, 4vw, 1.55rem);
   font-weight: 500;
   max-width: 700px;
   margin: 0 auto;
@@ -440,6 +441,11 @@ body {
 
   .catering-hero-content {
     padding: 0 1rem;
+  }
+
+  .catering-hero {
+    height: 80vh;
+    min-height: 550px;
   }
 
   .catering-hero-title {

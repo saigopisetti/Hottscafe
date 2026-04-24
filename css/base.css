@@ -45,6 +45,10 @@ body {
   color: var(--foreground);
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  padding-top: 80px; /* Offset for fixed navbar */
+}
+@media (max-width: 768px) {
+  body { padding-top: 65px; } /* Offset for mobile navbar */
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
