@@ -181,33 +181,29 @@
       overflow: hidden;
       aspect-ratio: 1;
       border-radius: 0;
-      /* Sharp edges for professional look */
+      transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+      background: #fff;
     }
 
-    .gallery-overlay {
-      position: absolute;
-      inset: 0;
-      background: rgba(255, 0, 0, 0.82); /* Vibrant red tint from reference */
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      opacity: 0;
-      transition: opacity 0.3s ease;
-      border-bottom: 8px solid #ff0000; /* Distinct bright red bottom bar from reference */
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    .gallery-item:hover .gallery-overlay {
-      opacity: 1;
+    .gallery-item:hover {
+      box-shadow: 0 15px 45px rgba(255, 0, 0, 0.15); /* Subtle red tinted glow */
+      transform: translateY(-5px);
+      z-index: 10;
     }
 
-    .gallery-label {
-      color: #fff;
-      font-weight: 800;
-      font-size: 0.85rem;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    .gallery-item:hover img {
+      transform: scale(1.15);
+      filter: brightness(1.05);
     }
+    
+    /* Removed red line elements */
 
     .gallery-grid {
       display: grid;
@@ -378,81 +374,52 @@
       <!-- Main Gallery Grid (Fixed 16 Items) -->
       <div class="gallery-grid reveal" id="mainCateringGrid">
         <div class="gallery-item">
-          <img src="assets/gallery/tea-party.png" alt="Morning break" style="width:100%; height:100%; object-fit:cover;">
-          <div class="gallery-overlay"><span class="gallery-label">Morning break</span></div>
+          <img src="assets/images/1.png" alt="Catering Excellence" style="width:100%; height:100%; object-fit:cover;">
         </div>
         <div class="gallery-item">
-          <img src="assets/images/ai-buffet.png" alt="Gourmet Buffet"
-            style="width:100%; height:100%; object-fit:cover;">
-          <div class="gallery-overlay"><span class="gallery-label">Gourmet Buffet</span></div>
+          <img src="assets/images/2.png" alt="Catering Excellence" style="width:100%; height:100%; object-fit:cover;">
         </div>
         <div class="gallery-item">
-          <img src="assets/images/ai-platters.png" alt="Artisan Platters"
-            style="width:100%; height:100%; object-fit:cover;">
-          <div class="gallery-overlay"><span class="gallery-label">Artisan Platters</span></div>
+          <img src="assets/images/3.png" alt="Catering Excellence" style="width:100%; height:100%; object-fit:cover;">
         </div>
         <div class="gallery-item">
-          <img src="assets/images/ai-lunch.png" alt="Corporate Lunch"
-            style="width:100%; height:100%; object-fit:cover;">
-          <div class="gallery-overlay"><span class="gallery-label">Corporate Lunch</span></div>
+          <img src="assets/images/4.png" alt="Catering Excellence" style="width:100%; height:100%; object-fit:cover;">
         </div>
         <div class="gallery-item">
-          <img src="assets/images/ai-networking.png" alt="Event Networking"
-            style="width:100%; height:100%; object-fit:cover;">
-          <div class="gallery-overlay"><span class="gallery-label">Event Networking</span></div>
+          <img src="assets/images/5.png" alt="Catering Excellence" style="width:100%; height:100%; object-fit:cover;">
         </div>
         <div class="gallery-item">
-          <img src="assets/images/ai-cocktail.png" alt="Cocktail Party"
-            style="width:100%; height:100%; object-fit:cover;">
-          <div class="gallery-overlay"><span class="gallery-label">Cocktail Party</span></div>
+          <img src="assets/images/6.png" alt="Catering Excellence" style="width:100%; height:100%; object-fit:cover;">
         </div>
         <div class="gallery-item">
-          <img src="assets/images/ai-grand.png" alt="Grand Spread" style="width:100%; height:100%; object-fit:cover;">
-          <div class="gallery-overlay"><span class="gallery-label">Grand Spread</span></div>
+          <img src="assets/images/7.png" alt="Catering Excellence" style="width:100%; height:100%; object-fit:cover;">
         </div>
         <div class="gallery-item">
-          <img src="assets/images/ai-seafood.png" alt="Seafood Studio"
-            style="width:100%; height:100%; object-fit:cover;">
-          <div class="gallery-overlay"><span class="gallery-label">Seafood Studio</span></div>
+          <img src="assets/images/8.png" alt="Catering Excellence" style="width:100%; height:100%; object-fit:cover;">
         </div>
         <div class="gallery-item">
-          <img src="assets/images/ai-chef.png" alt="Chef Crafted" style="width:100%; height:100%; object-fit:cover;">
-          <div class="gallery-overlay"><span class="gallery-label">Chef Crafted</span></div>
+          <img src="assets/images/9.png" alt="Catering Excellence" style="width:100%; height:100%; object-fit:cover;">
         </div>
         <div class="gallery-item">
-          <img src="assets/images/ai-salads.png" alt="Seasonal Salads"
-            style="width:100%; height:100%; object-fit:cover;">
-          <div class="gallery-overlay"><span class="gallery-label">Seasonal Salads</span></div>
+          <img src="assets/images/10.png" alt="Catering Excellence" style="width:100%; height:100%; object-fit:cover;">
         </div>
         <div class="gallery-item">
-          <img src="assets/gallery/burger-beautiful.png" alt="Gourmet Sliders"
-            style="width:100%; height:100%; object-fit:cover;">
-          <div class="gallery-overlay"><span class="gallery-label">Gourmet Sliders</span></div>
+          <img src="assets/images/11.png" alt="Catering Excellence" style="width:100%; height:100%; object-fit:cover;">
         </div>
         <div class="gallery-item">
-          <img src="assets/gallery/corporate-event.png" alt="Boardroom Lunch"
-            style="width:100%; height:100%; object-fit:cover;">
-          <div class="gallery-overlay"><span class="gallery-label">Boardroom Lunch</span></div>
+          <img src="assets/images/12.png" alt="Catering Excellence" style="width:100%; height:100%; object-fit:cover;">
         </div>
         <div class="gallery-item">
-          <img src="assets/gallery/catering-arrangement.png" alt="Gourmet Display"
-            style="width:100%; height:100%; object-fit:cover;">
-          <div class="gallery-overlay"><span class="gallery-label">Gourmet Display</span></div>
+          <img src="assets/images/13.png" alt="Catering Excellence" style="width:100%; height:100%; object-fit:cover;">
         </div>
         <div class="gallery-item">
-          <img src="assets/gallery/sandwiches-rolls-catering.png" alt="Signature Wraps"
-            style="width:100%; height:100%; object-fit:cover;">
-          <div class="gallery-overlay"><span class="gallery-label">Signature Wraps</span></div>
+          <img src="assets/images/14.png" alt="Catering Excellence" style="width:100%; height:100%; object-fit:cover;">
         </div>
         <div class="gallery-item">
-          <img src="assets/gallery/party-crunches.png" alt="Crispy Bites"
-            style="width:100%; height:100%; object-fit:cover;">
-          <div class="gallery-overlay"><span class="gallery-label">Crispy Bites</span></div>
+          <img src="assets/images/15.png" alt="Catering Excellence" style="width:100%; height:100%; object-fit:cover;">
         </div>
         <div class="gallery-item">
-          <img src="assets/images/fruit-platter.png" alt="Seasonal Fresh"
-            style="width:100%; height:100%; object-fit:cover;">
-          <div class="gallery-overlay"><span class="gallery-label">Seasonal Fresh</span></div>
+          <img src="assets/images/16.png" alt="Catering Excellence" style="width:100%; height:100%; object-fit:cover;">
         </div>
       </div>
     </div>
