@@ -96,53 +96,68 @@
   <div class="catering-intro" style="padding: 100px 0;">
     <div class="container">
       <div class="catering-intro-grid">
-        <div class="reveal reveal-x-left">
-          <h1 class="catering-main-title">
-            CATERING <br>
-            <span class="text-primary italic">EXCELLENCE</span>
+        <div class="reveal reveal-x-left" style="text-align: left;">
+          <h1 class="catering-main-title"
+            style="text-align: left; margin-bottom: 20px; line-height: 1.1; font-weight: 900; color: #1a152e;">
+            PROFESSIONAL CATERING <br>
+            <span style="color: #ff0000; font-style: italic;">FOR EVERY OCCASION.</span>
           </h1>
-          <p class="catering-main-subtitle" style="margin-bottom: 40px;">Whether you're hosting a corporate meeting, a private function, or just
-            need to feed a hungry crowd, Hotts Café provides high-quality catering solutions tailored to your needs.
+          <p class="catering-main-subtitle"
+            style="text-align: left; margin: 0 0 40px 0; max-width: 650px; font-size: 1.15rem; font-weight: 400; color: #666; text-transform: none; letter-spacing: normal;">
+            Whether you're hosting a corporate meeting, a private function, or just need to feed a hungry crowd, Hotts
+            Café provides high-quality catering solutions tailored to your needs.
           </p>
 
-          <div class="catering-features" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 30px;">
+          <div class="catering-features">
             <div class="catering-feature">
-              <div class="catering-feature-icon" style="background-color: #fff1f2;"><i class="fas fa-utensils" style="color: #ef4444;"></i></div>
+              <div class="catering-feature-icon"
+                style="background-color: #fff1f2; border-radius: 12px; width: 50px; height: 50px;"><i
+                  class="fas fa-utensils" style="color: #ef4444;"></i></div>
               <div class="catering-feature-text">
                 <h3>Gourmet Platters</h3>
                 <p>Sandwich & Wrap selections</p>
               </div>
             </div>
             <div class="catering-feature">
-              <div class="catering-feature-icon" style="background-color: #fff1f2;"><i class="fas fa-utensils" style="color: #ef4444;"></i></div>
+              <div class="catering-feature-icon"
+                style="background-color: #fff1f2; border-radius: 12px; width: 50px; height: 50px;"><i
+                  class="fas fa-utensils" style="color: #ef4444;"></i></div>
               <div class="catering-feature-text">
                 <h3>Hot Food</h3>
                 <p>Premium Finger Food variety</p>
               </div>
             </div>
             <div class="catering-feature">
-              <div class="catering-feature-icon" style="background-color: #fff1f2;"><i class="fas fa-leaf" style="color: #ef4444;"></i></div>
+              <div class="catering-feature-icon"
+                style="background-color: #fff1f2; border-radius: 12px; width: 50px; height: 50px;"><i
+                  class="fas fa-leaf" style="color: #ef4444;"></i></div>
               <div class="catering-feature-text">
                 <h3>Fresh Salads</h3>
                 <p>Seasonal Fruit & Green platters</p>
               </div>
             </div>
             <div class="catering-feature">
-              <div class="catering-feature-icon" style="background-color: #fff1f2;"><i class="fas fa-leaf" style="color: #ef4444;"></i></div>
+              <div class="catering-feature-icon"
+                style="background-color: #fff1f2; border-radius: 12px; width: 50px; height: 50px;"><i
+                  class="fas fa-leaf" style="color: #ef4444;"></i></div>
               <div class="catering-feature-text">
                 <h3>Tea Options</h3>
                 <p>Morning & Afternoon treats</p>
               </div>
             </div>
             <div class="catering-feature">
-              <div class="catering-feature-icon" style="background-color: #fff1f2;"><i class="fas fa-check-circle" style="color: #ef4444;"></i></div>
+              <div class="catering-feature-icon"
+                style="background-color: #fff1f2; border-radius: 12px; width: 50px; height: 50px;"><i
+                  class="fas fa-check-circle" style="color: #ef4444;"></i></div>
               <div class="catering-feature-text">
                 <h3>300+ Capacity</h3>
                 <p>Large scale event specialist</p>
               </div>
             </div>
             <div class="catering-feature">
-              <div class="catering-feature-icon" style="background-color: #fff1f2;"><i class="fas fa-check-circle" style="color: #ef4444;"></i></div>
+              <div class="catering-feature-icon"
+                style="background-color: #fff1f2; border-radius: 12px; width: 50px; height: 50px;"><i
+                  class="fas fa-check-circle" style="color: #ef4444;"></i></div>
               <div class="catering-feature-text">
                 <h3>Custom Menus</h3>
                 <p>Tailored to your requirements</p>
@@ -165,31 +180,37 @@
       cursor: pointer;
       overflow: hidden;
       aspect-ratio: 1;
-      border-radius: 0; /* Sharp edges for professional look */
+      border-radius: 0;
+      /* Sharp edges for professional look */
     }
+
     .gallery-overlay {
       position: absolute;
       inset: 0;
       background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.4) 50%, transparent 100%);
       display: flex;
-      align-items: flex-end; /* Reveal from bottom */
+      align-items: flex-end;
+      /* Reveal from bottom */
       justify-content: center;
       padding-bottom: 30px;
       opacity: 0;
-      transform: translateY(20px); /* Slide up effect */
+      transform: translateY(20px);
+      /* Slide up effect */
       transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
     }
+
     .gallery-item:hover .gallery-overlay {
       opacity: 1;
       transform: translateY(0);
     }
+
     .gallery-label {
       color: #fff;
       font-weight: 800;
       font-size: 1.1rem;
       text-transform: uppercase;
       letter-spacing: 2px;
-      text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+      text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
     }
 
     .gallery-grid {
@@ -203,15 +224,54 @@
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
       }
+
       .gallery-label {
         font-size: 0.8rem;
         text-align: center;
         padding: 0 5px;
       }
+
       .cta-card {
         padding: 50px 20px;
         border-radius: 30px;
       }
+
+      .cta-btns {
+        flex-direction: column;
+        align-items: center;
+        /* Center the buttons */
+        gap: 15px;
+      }
+
+      .cta-btn {
+        width: auto;
+        min-width: 240px;
+        /* Reduced min-width */
+        justify-content: center;
+        padding: 12px 25px;
+        /* Reduced padding */
+        font-size: 0.9rem;
+        /* Reduced font size */
+        font-weight: 900;
+        /* Bold as per image */
+      }
+
+      .cta-title {
+        font-size: 2.2rem;
+        margin-bottom: 20px;
+      }
+
+      .cta-text {
+        font-size: 1rem;
+        max-width: 100%;
+        margin-bottom: 30px;
+        padding: 0 10px;
+      }
+    }
+
+    .cta-btn-call i {
+      transform: scaleX(-1);
+      /* Reverse phone icon as per screenshot */
     }
 
     /* CTA SECTION - MATCHING SCREENSHOT */
@@ -219,15 +279,19 @@
       padding: 100px 0;
       background: #fff;
     }
+
     .cta-card {
-      background: #1a152e; /* Dark midnight blue from screenshot */
+      background: #1a152e;
+      /* Dark midnight blue from screenshot */
       padding: 80px 40px;
-      border-radius: 60px; /* Large rounded corners */
+      border-radius: 60px;
+      /* Large rounded corners */
       text-align: center;
       max-width: 1100px;
       margin: 0 auto;
       color: #fff;
     }
+
     .cta-title {
       font-family: 'Outfit', sans-serif;
       font-size: clamp(2.5rem, 6vw, 4.5rem);
@@ -237,28 +301,34 @@
       margin-bottom: 30px;
       line-height: 1;
     }
+
     .cta-title span {
-      color: #ff0000; /* Bright red from screenshot */
+      color: #ff0000;
+      /* Bright red from screenshot */
     }
+
     .cta-title i {
       font-style: italic;
       color: #ff0000;
     }
+
     .cta-text {
       font-size: clamp(1.1rem, 2vw, 1.4rem);
-      color: rgba(255,255,255,0.7);
+      color: rgba(255, 255, 255, 0.7);
       max-width: 700px;
       margin: 0 auto 50px;
       line-height: 1.5;
     }
+
     .cta-btns {
       display: flex;
       justify-content: center;
       gap: 25px;
       flex-wrap: wrap;
     }
+
     .cta-btn {
-      padding: 18px 45px;
+      padding: 14px 35px;
       border-radius: 50px;
       font-weight: 800;
       text-transform: uppercase;
@@ -268,23 +338,30 @@
       display: inline-flex;
       align-items: center;
       gap: 12px;
-      font-size: 1.1rem;
+      font-size: 0.95rem;
     }
+
     .cta-btn-call {
-      background: #ff0000; /* Solid red button */
+      background: #ff0000;
+      /* Solid red button */
       color: #fff;
     }
+
     .cta-btn-call:hover {
       transform: scale(1.05);
       background: #cc0000;
     }
+
     .cta-btn-email {
-      background: rgba(255,255,255,0.05); /* Darker/semi-transparent background */
+      background: rgba(255, 255, 255, 0.05);
+      /* Darker/semi-transparent background */
       color: #fff;
-      border: 1px solid rgba(255,255,255,0.2); /* Thin border from screenshot */
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      /* Thin border from screenshot */
     }
+
     .cta-btn-email:hover {
-      background: rgba(255,255,255,0.1);
+      background: rgba(255, 255, 255, 0.1);
       transform: scale(1.05);
     }
   </style>
@@ -293,7 +370,8 @@
   <section class="catering-gallery-section" style="padding: 100px 0; background: #fff;">
     <div class="container">
       <div class="section-header reveal" style="text-align: center; margin-bottom: 60px;">
-        <h2 style="font-weight: 900; font-size: clamp(2.5rem, 6vw, 4rem); text-transform: uppercase; letter-spacing: -2px; margin-bottom: 20px;">
+        <h2
+          style="font-weight: 900; font-size: clamp(2.5rem, 6vw, 4rem); text-transform: uppercase; letter-spacing: -2px; margin-bottom: 20px;">
           CATERING <span class="text-primary italic">EXCELLENCE</span>
         </h2>
         <p style="max-width: 700px; margin: 0 auto; color: #666; font-size: 1.1rem;">
@@ -304,23 +382,28 @@
       <!-- Main Gallery Grid (Fixed 16 Items) -->
       <div class="gallery-grid reveal" id="mainCateringGrid">
         <div class="gallery-item">
-          <img src="assets/images/ai-buffet.png" alt="Gourmet Buffet" style="width:100%; height:100%; object-fit:cover;">
+          <img src="assets/images/ai-buffet.png" alt="Gourmet Buffet"
+            style="width:100%; height:100%; object-fit:cover;">
           <div class="gallery-overlay"><span class="gallery-label">Gourmet Buffet</span></div>
         </div>
         <div class="gallery-item">
-          <img src="assets/images/ai-platters.png" alt="Artisan Platters" style="width:100%; height:100%; object-fit:cover;">
+          <img src="assets/images/ai-platters.png" alt="Artisan Platters"
+            style="width:100%; height:100%; object-fit:cover;">
           <div class="gallery-overlay"><span class="gallery-label">Artisan Platters</span></div>
         </div>
         <div class="gallery-item">
-          <img src="assets/images/ai-lunch.png" alt="Corporate Lunch" style="width:100%; height:100%; object-fit:cover;">
+          <img src="assets/images/ai-lunch.png" alt="Corporate Lunch"
+            style="width:100%; height:100%; object-fit:cover;">
           <div class="gallery-overlay"><span class="gallery-label">Corporate Lunch</span></div>
         </div>
         <div class="gallery-item">
-          <img src="assets/images/ai-networking.png" alt="Event Networking" style="width:100%; height:100%; object-fit:cover;">
+          <img src="assets/images/ai-networking.png" alt="Event Networking"
+            style="width:100%; height:100%; object-fit:cover;">
           <div class="gallery-overlay"><span class="gallery-label">Event Networking</span></div>
         </div>
         <div class="gallery-item">
-          <img src="assets/images/ai-cocktail.png" alt="Cocktail Party" style="width:100%; height:100%; object-fit:cover;">
+          <img src="assets/images/ai-cocktail.png" alt="Cocktail Party"
+            style="width:100%; height:100%; object-fit:cover;">
           <div class="gallery-overlay"><span class="gallery-label">Cocktail Party</span></div>
         </div>
         <div class="gallery-item">
@@ -328,7 +411,8 @@
           <div class="gallery-overlay"><span class="gallery-label">Grand Spread</span></div>
         </div>
         <div class="gallery-item">
-          <img src="assets/images/ai-seafood.png" alt="Seafood Studio" style="width:100%; height:100%; object-fit:cover;">
+          <img src="assets/images/ai-seafood.png" alt="Seafood Studio"
+            style="width:100%; height:100%; object-fit:cover;">
           <div class="gallery-overlay"><span class="gallery-label">Seafood Studio</span></div>
         </div>
         <div class="gallery-item">
@@ -336,7 +420,8 @@
           <div class="gallery-overlay"><span class="gallery-label">Chef Crafted</span></div>
         </div>
         <div class="gallery-item">
-          <img src="assets/images/ai-salads.png" alt="Seasonal Salads" style="width:100%; height:100%; object-fit:cover;">
+          <img src="assets/images/ai-salads.png" alt="Seasonal Salads"
+            style="width:100%; height:100%; object-fit:cover;">
           <div class="gallery-overlay"><span class="gallery-label">Seasonal Salads</span></div>
         </div>
         <div class="gallery-item">
@@ -344,27 +429,33 @@
           <div class="gallery-overlay"><span class="gallery-label">Morning Tea</span></div>
         </div>
         <div class="gallery-item">
-          <img src="assets/gallery/burger-beautiful.png" alt="Gourmet Sliders" style="width:100%; height:100%; object-fit:cover;">
+          <img src="assets/gallery/burger-beautiful.png" alt="Gourmet Sliders"
+            style="width:100%; height:100%; object-fit:cover;">
           <div class="gallery-overlay"><span class="gallery-label">Gourmet Sliders</span></div>
         </div>
         <div class="gallery-item">
-          <img src="assets/gallery/corporate-event.png" alt="Boardroom Lunch" style="width:100%; height:100%; object-fit:cover;">
+          <img src="assets/gallery/corporate-event.png" alt="Boardroom Lunch"
+            style="width:100%; height:100%; object-fit:cover;">
           <div class="gallery-overlay"><span class="gallery-label">Boardroom Lunch</span></div>
         </div>
         <div class="gallery-item">
-          <img src="assets/gallery/catering-arrangement.png" alt="Gourmet Display" style="width:100%; height:100%; object-fit:cover;">
+          <img src="assets/gallery/catering-arrangement.png" alt="Gourmet Display"
+            style="width:100%; height:100%; object-fit:cover;">
           <div class="gallery-overlay"><span class="gallery-label">Gourmet Display</span></div>
         </div>
         <div class="gallery-item">
-          <img src="assets/gallery/sandwiches-rolls-catering.png" alt="Signature Wraps" style="width:100%; height:100%; object-fit:cover;">
+          <img src="assets/gallery/sandwiches-rolls-catering.png" alt="Signature Wraps"
+            style="width:100%; height:100%; object-fit:cover;">
           <div class="gallery-overlay"><span class="gallery-label">Signature Wraps</span></div>
         </div>
         <div class="gallery-item">
-          <img src="assets/gallery/party-crunches.png" alt="Crispy Bites" style="width:100%; height:100%; object-fit:cover;">
+          <img src="assets/gallery/party-crunches.png" alt="Crispy Bites"
+            style="width:100%; height:100%; object-fit:cover;">
           <div class="gallery-overlay"><span class="gallery-label">Crispy Bites</span></div>
         </div>
         <div class="gallery-item">
-          <img src="assets/images/fruit-platter.png" alt="Seasonal Fresh" style="width:100%; height:100%; object-fit:cover;">
+          <img src="assets/images/fruit-platter.png" alt="Seasonal Fresh"
+            style="width:100%; height:100%; object-fit:cover;">
           <div class="gallery-overlay"><span class="gallery-label">Seasonal Fresh</span></div>
         </div>
       </div>
@@ -377,7 +468,8 @@
       <div class="cta-card reveal">
         <h2 class="cta-title"><span>READY TO</span> <i>ORDER?</i></h2>
         <p class="cta-text">
-          Download our catering menu or get in touch with our team to discuss your specific requirements. We're here to help!
+          Download our catering menu or get in touch with our team to discuss your specific requirements. We're here to
+          help!
         </p>
         <div class="cta-btns">
           <a href="tel:93696504" class="cta-btn cta-btn-call">
@@ -429,4 +521,9 @@
 
   <script src="js/main.js"></script>
   <script src="js/catering.js"></script>
+</body>iv>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/catering.js"></script>
 </body>
