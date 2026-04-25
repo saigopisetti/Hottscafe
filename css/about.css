@@ -9,13 +9,24 @@
   align-items: center;
   overflow: hidden;
 }
-.about-hero-bg { position: absolute; inset: 0; }
-.about-hero-bg img { width: 100%; height: 100%; object-fit: cover; }
+
+.about-hero-bg {
+  position: absolute;
+  inset: 0;
+}
+
+.about-hero-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .about-hero-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.42);
+  background: rgba(0, 0, 0, 0.42);
 }
+
 .about-hero-content {
   position: relative;
   z-index: 2;
@@ -25,6 +36,7 @@
   max-width: 700px;
   margin: 0 auto;
 }
+
 .about-hero-tag {
   font-size: 0.72rem;
   font-weight: 700;
@@ -34,6 +46,7 @@
   display: block;
   margin-bottom: 1rem;
 }
+
 .about-hero-title {
   font-family: var(--font-heading);
   font-size: clamp(1.75rem, 6vw, 3.5rem);
@@ -43,6 +56,7 @@
   letter-spacing: -0.02em;
   line-height: 1;
 }
+
 .about-hero-title span {
   color: var(--primary);
   font-style: italic;
@@ -50,7 +64,10 @@
 }
 
 /* Philosophy */
-.philosophy-section { background: #fff; }
+.philosophy-section {
+  background: #fff;
+}
+
 .philosophy-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -58,38 +75,80 @@
   align-items: center;
   padding-bottom: 100px;
 }
+
 .philosophy-text h2 {
   font-size: clamp(1.8rem, 4vw, 3rem);
   color: var(--secondary);
   text-transform: uppercase;
   margin-bottom: 1.5rem;
 }
-.philosophy-text h2 span { color: var(--primary); font-style: italic; }
-.philosophy-text p { font-size: 1rem; color: rgba(0,0,0,0.7); line-height: 1.75; margin-bottom: 1rem; }
+
+.philosophy-text h2 span {
+  color: var(--primary);
+  font-style: italic;
+}
+
+.philosophy-text p {
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.7);
+  line-height: 1.75;
+  margin-bottom: 1rem;
+}
 
 .value-cards {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1.25rem;
 }
+
 .value-card {
   padding: 1.75rem;
   border-radius: 1.75rem;
-  border: 1px solid rgba(0,0,0,0.06);
+  border: 1px solid rgba(0, 0, 0, 0.06);
   text-align: center;
 }
-.value-card:nth-child(1) { background: rgba(var(--primary-rgb),0.04); border-color: rgba(var(--primary-rgb),0.08); }
-.value-card:nth-child(2) { background: rgba(var(--secondary-rgb),0.04); border-color: rgba(var(--secondary-rgb),0.08); margin-top: 2rem; }
-.value-card:nth-child(3) { background: rgba(255,204,51,0.06); border-color: rgba(255,204,51,0.1); }
-.value-card:nth-child(4) { background: rgba(var(--primary-rgb),0.04); border-color: rgba(var(--primary-rgb),0.08); margin-top: 2rem; }
+
+.value-card:nth-child(1) {
+  background: rgba(var(--primary-rgb), 0.04);
+  border-color: rgba(var(--primary-rgb), 0.08);
+}
+
+.value-card:nth-child(2) {
+  background: rgba(var(--secondary-rgb), 0.04);
+  border-color: rgba(var(--secondary-rgb), 0.08);
+  margin-top: 2rem;
+}
+
+.value-card:nth-child(3) {
+  background: rgba(255, 204, 51, 0.06);
+  border-color: rgba(255, 204, 51, 0.1);
+}
+
+.value-card:nth-child(4) {
+  background: rgba(var(--primary-rgb), 0.04);
+  border-color: rgba(var(--primary-rgb), 0.08);
+  margin-top: 2rem;
+}
+
 .value-card i {
   font-size: 1.75rem;
   margin-bottom: 0.75rem;
   display: block;
 }
-.value-card:nth-child(1) i, .value-card:nth-child(4) i { color: var(--primary); }
-.value-card:nth-child(2) i { color: var(--secondary); }
-.value-card:nth-child(3) i { color: var(--accent); }
+
+.value-card:nth-child(1) i,
+.value-card:nth-child(4) i {
+  color: var(--primary);
+}
+
+.value-card:nth-child(2) i {
+  color: var(--secondary);
+}
+
+.value-card:nth-child(3) i {
+  color: var(--accent);
+}
+
 .value-card h4 {
   font-size: 0.75rem;
   font-weight: 900;
@@ -98,42 +157,73 @@
   letter-spacing: 0.1em;
   margin-bottom: 0.4rem;
 }
-.value-card p { font-size: 0.78rem; color: rgba(0,0,0,0.6); line-height: 1.5; }
+
+.value-card p {
+  font-size: 0.78rem;
+  color: rgba(0, 0, 0, 0.6);
+  line-height: 1.5;
+}
 
 /* Culinary Section */
-.culinary-section { background: #fff; overflow: hidden; }
+.culinary-section {
+  background: #fff;
+  overflow: hidden;
+}
+
 .culinary-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
   align-items: center;
 }
-.culinary-img-wrap { position: relative; }
+
+.culinary-img-wrap {
+  position: relative;
+}
+
 .culinary-img-bg {
   position: absolute;
   inset: -1rem;
-  background: rgba(var(--secondary-rgb),0.05);
+  background: rgba(var(--secondary-rgb), 0.05);
   border-radius: 3rem;
   transform: rotate(-2deg);
 }
+
 .culinary-img {
   position: relative;
   border-radius: 2.5rem;
   border: 8px solid #fff;
-  box-shadow: 0 25px 50px rgba(0,0,0,0.12);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.12);
   width: 100%;
   aspect-ratio: 4/5;
   object-fit: cover;
 }
+
 .culinary-content h2 {
   font-size: clamp(1.8rem, 4vw, 3rem);
   color: var(--secondary);
   text-transform: uppercase;
   margin-bottom: 1.25rem;
 }
-.culinary-content h2 span { color: var(--secondary); font-style: italic; }
-.culinary-content > p { font-size: 1rem; color: rgba(0,0,0,0.7); line-height: 1.75; margin-bottom: 2rem; }
-.culinary-features { display: flex; flex-direction: column; gap: 1.25rem; }
+
+.culinary-content h2 span {
+  color: var(--secondary);
+  font-style: italic;
+}
+
+.culinary-content>p {
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.7);
+  line-height: 1.75;
+  margin-bottom: 2rem;
+}
+
+.culinary-features {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
 .culinary-feature {
   display: flex;
   align-items: center;
@@ -144,13 +234,20 @@
   border: 1px solid #f0f0f0;
   transition: all 0.5s ease;
 }
-.culinary-feature:hover { background: #fff; box-shadow: 0 20px 40px rgba(0,0,0,0.08); border-color: rgba(var(--primary-rgb),0.1); }
+
+.culinary-feature:hover {
+  background: #fff;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+  border-color: rgba(var(--primary-rgb), 0.1);
+}
+
 .culinary-feature-icon {
-  width: 5rem; height: 5rem;
+  width: 5rem;
+  height: 5rem;
   flex-shrink: 0;
   border-radius: 2rem;
   background: #fff;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -158,31 +255,55 @@
   color: var(--primary);
   transition: all 0.5s;
 }
-.culinary-feature:hover .culinary-feature-icon { background: var(--primary); color: #fff; }
-.culinary-feature h3 { font-size: 1.3rem; color: var(--secondary); text-transform: uppercase; margin-bottom: 0.4rem; }
-.culinary-feature p { font-size: 0.95rem; color: rgba(0,0,0,0.6); line-height: 1.65; }
+
+.culinary-feature:hover .culinary-feature-icon {
+  background: var(--primary);
+  color: #fff;
+}
+
+.culinary-feature h3 {
+  font-size: 1.3rem;
+  color: var(--secondary);
+  text-transform: uppercase;
+  margin-bottom: 0.4rem;
+}
+
+.culinary-feature p {
+  font-size: 0.95rem;
+  color: rgba(0, 0, 0, 0.6);
+  line-height: 1.65;
+}
 
 /* Quick Bites */
-.quickbites-section { background: #fff; overflow: hidden; }
+.quickbites-section {
+  background: #fff;
+  overflow: hidden;
+}
+
 .quickbites-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
   align-items: center;
 }
-.quickbites-img-wrap { position: relative; }
+
+.quickbites-img-wrap {
+  position: relative;
+}
+
 .quickbites-img-bg {
   position: absolute;
   inset: -1rem;
-  background: rgba(var(--primary-rgb),0.05);
+  background: rgba(var(--primary-rgb), 0.05);
   border-radius: 3rem;
   transform: rotate(-2deg);
 }
+
 .quickbites-img {
   position: relative;
   border-radius: 3rem;
   border: 8px solid #fff;
-  box-shadow: 0 25px 50px rgba(0,0,0,0.12);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.12);
   width: 100%;
   aspect-ratio: 3/4;
   object-fit: cover;
@@ -190,7 +311,10 @@
 }
 
 /* About CTA */
-.about-cta-section { background: #fff; }
+.about-cta-section {
+  background: #fff;
+}
+
 .about-cta-box {
   background: var(--secondary);
   border-radius: 4rem;
@@ -200,13 +324,16 @@
   position: relative;
   overflow: hidden;
 }
+
 .about-cta-box::before {
   content: '';
-  position: absolute; inset: 0;
+  position: absolute;
+  inset: 0;
   background: var(--primary);
   opacity: 0.1;
   mix-blend-mode: overlay;
 }
+
 .about-cta-box h2 {
   font-family: var(--font-heading);
   font-size: clamp(3rem, 7vw, 5rem);
@@ -215,19 +342,57 @@
   color: #fff;
   margin-bottom: 1.5rem;
 }
-.about-cta-box h2 span { color: var(--primary); font-style: italic; }
-.about-cta-box p { font-size: 1.2rem; color: rgba(255,255,255,0.8); max-width: 32rem; margin: 0 auto 3rem; }
-.about-cta-actions { display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; }
+
+.about-cta-box h2 span {
+  color: var(--primary);
+  font-style: italic;
+}
+
+.about-cta-box p {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.8);
+  max-width: 32rem;
+  margin: 0 auto 3rem;
+}
+
+.about-cta-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
 
 @media (max-width: 1024px) {
-  .culinary-grid, .quickbites-grid { grid-template-columns: 1fr; }
-  .culinary-img-wrap, .quickbites-img-wrap { order: -1; }
+
+  .culinary-grid,
+  .quickbites-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .culinary-img-wrap,
+  .quickbites-img-wrap {
+    order: -1;
+  }
 }
+
 @media (max-width: 768px) {
-  .philosophy-grid { grid-template-columns: 1fr; }
-  .value-cards { grid-template-columns: 1fr; }
-  .value-card:nth-child(2), .value-card:nth-child(4) { margin-top: 0; }
-  .about-cta-box { border-radius: 2rem; padding: 4rem 1.5rem; }
+  .philosophy-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .value-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .value-card:nth-child(2),
+  .value-card:nth-child(4) {
+    margin-top: 0;
+  }
+
+  .about-cta-box {
+    border-radius: 2rem;
+    padding: 4rem 1.5rem;
+  }
 }
 
 
@@ -311,7 +476,7 @@
     font-size: 1.8rem;
   }
 
-  .culinary-content > p {
+  .culinary-content>p {
     font-size: 0.95rem;
   }
 
