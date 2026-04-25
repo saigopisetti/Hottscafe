@@ -3,8 +3,8 @@
 /* Hero */
 .about-hero {
   position: relative;
-  height: 95vh;
-  min-height: 750px;
+  height: 65vh;
+  /* min-height: 750px; */
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -56,6 +56,7 @@
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
   align-items: center;
+  padding-bottom: 100px;
 }
 .philosophy-text h2 {
   font-size: clamp(1.8rem, 4vw, 3rem);
